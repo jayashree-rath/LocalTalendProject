@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:XmlFileConnection XmlFilePath="tempXSDFile6787650862215288935.zip" dataPackage="_Drl2uqzlEeKlNafnRqT25w" fileContent="504B0304140008000800888598420000000000000000000000002200000074656D7058534446696C65383032353237383530363332323237303238362E787364CD565D6FDA30147D9FB4FF10E50710D6BD219884C2362105A8804EDDA3EBDCA69E1C27B5AF0BDDAFDF4D08214020A1A2D57840F2F53DE77EF8F83AFDB5097B863F41CC9C752C95E99161E03E21A63DCF5BAD569DD5D74EA223EFA6DBFDE2DD4F8245EEEB6E9C4B4703FA4570301D6412549823B88E3D7C4DC114CE3D325C06F8135722E4714D87764CC2D21CB032A1F4C8C9DB02349C4F89F6C9CA50246A3F5246D91C2A5B95B1B0A1FCF92ED662B3BD45665CCDC15C87216AF160117E243A1EC123B31207AE55CF9649F12820741D901083C2D30EC8740438653198947168D9FF6F9F3F39F4EB67E22842388A3806AE6F0D2631E811201392FA97018ECC4B32BADE6996208984BAA31CB6F8D2D0849CFF0EFC0532B465E89DE518CB933895B0CE360E23E7CE856FE96FE0D982E250B11FE5110B35E3DC6A3AFDAE5BB066FFDB7C721E3A381595B9B4E6B194D8B5B84855423610F5BD9AAA37C64AEBCE77B4EEE8AFD5572EF0F5A37AD18A28A2BBB2536D5BA60D5684559C4CDE12FF5AE2307B57C89F4F6A6ED005641A00FF37FDFF15E9D5D56F4466AE8A7FAF7387B2A7E786A2F2EC09701E98D9CFA4B61E65E926E56F86F3C2A425C47436FD7EA2F83AE7F96418B476FF390B46AD9D6F83E1723CBD9BD4B4B052E75E1777ED3A3F420E46F85BA647312F8A5934BEF0AA15E82484E357C5276BF3BD28183484026F13A1D05433A0354434372E167108866B91669D7D7F31D7D4FC1E8A1EFACBF1AFF69A1E4F6B0017E8AE30E59F59B4FC07504B0708E2CCF1032C020000F10A0000504B0304140008000800888598420000000000000000000000002200000074656D7058534446696C65323430323636343738373636353737323130302E787364ED57DB6E1331107D47E21F56FB01D9026F518B84921655A4B44A2A018F8E77921A7CD9DAE326F97B66379BC49B6C7331058144DE3C9E33D733B3CEF9DCE55DC71F40B164AEA4765D125CA40F884537CB66B35967F6AE63EC347B7B76F626FB7A331855BAE95279ADE8C03E090EAE834C82CE2B848552CA50189DE1A2005783BADCAABD40BA6F02BEABC053E5DF75E8C61956548099CB65464AD90A40AEE3422B4D1E76559ED6BEF04019861B5FA3E5F50A59DA3AEC2C4D18A215638F7065ACEAC384798917A9D78F9E49311190A7094850A0F1790564760AF899297005E3706275DEBF7E95D0EFBC248B5085B198E8A34C6D5A998536EA702B2317E9F0727467CD4448AA4CA91C4AEEE97C00DB6376201C06D85A7210BBC9730DDE884E408F90A17741004BC10916EE4DCFE889B02A22901AD9C82394EDE2B95185847979D1124AA95E6BAF110E1E3D680E817C271A25F42DE7DED2389CA5B5DD804AD7F92AB8CA20515A4FD761B51A5C9AE0DEA151605768A254B757CBFA804CC866A1F79962B6C9926381136B549F21C46580E608EC79D652E7A53068D7FE2EEE743DA68DFF1B775AE39E0BD9422EF0CE088D2EB44067985251F69A681BA51C1CB7A208A7FC3752696B03C71389BADE5C8F150D86372D2B721F1D1792EF9A197E1BF496D29EC9E12FE2C40B7520FC8E456D64365FD1C8EBB1F13A2F9F026DE43A3C602F97D2AF128AD9D88D442324A6FA86B82223875A32E7E2A063CB7464D89608D7678B78F017801F10EBDD017145E0E2A3679402C21FE27EB01FE2B922623F5D4491EDE71C3F6EC7B44ED7BFF42D70A214B734635380ED86D063813CF3329C64CC5C339AD6DCB4A74740F5BA489E98F484B8FDF44C197655AF3E5C0F2EFB2D6906713432DDA444E25A54FDDDA2E34F504B0708BE031F118B020000010F0000504B0102140014000800080088859842E2CCF1032C020000F10A000022000000000000000000000000000000000074656D7058534446696C65383032353237383530363332323237303238362E787364504B0102140014000800080088859842BE031F118B020000010F000022000000000000000000000000007C02000074656D7058534446696C65323430323636343738373636353737323130302E787364504B05060000000002000200A0000000570500000000" inputModel="false" name="Reservation" xmi:id="_Drl2oqzlEeKlNafnRqT25w">
+    <root Attribute="main" Order="1" Type="id_String" XMLPath="/res:Reservation" xmi:id="_Drl2o6zlEeKlNafnRqT25w"/>
+    <root Attribute="ns" DefaultValue="http://services.talend.org/reservation/types" Order="2" Type="id_String" XMLPath="res" xmi:id="_Drl2pKzlEeKlNafnRqT25w"/>
+    <root Attribute="main" Order="4" Type="id_String" XMLPath="/res:Reservation/customer" xmi:id="_Drl2pazlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="5" RelatedColumn="city" Type="id_String" XMLPath="/res:Reservation/customer/city" xmi:id="_Drl2pqzlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="6" RelatedColumn="email" Type="id_String" XMLPath="/res:Reservation/customer/email" xmi:id="_Drl2p6zlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="7" RelatedColumn="gender" Type="id_String" XMLPath="/res:Reservation/customer/gender" xmi:id="_Drl2qKzlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="8" RelatedColumn="id" Type="id_Integer" XMLPath="/res:Reservation/customer/id" xmi:id="_Drl2qazlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="9" RelatedColumn="name" Type="id_String" XMLPath="/res:Reservation/customer/name" xmi:id="_Drl2qqzlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="10" RelatedColumn="status" Type="id_String" XMLPath="/res:Reservation/customer/status" xmi:id="_Drl2q6zlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="11" RelatedColumn="street" Type="id_String" XMLPath="/res:Reservation/customer/street" xmi:id="_Drl2rKzlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="12" RelatedColumn="username" Type="id_String" XMLPath="/res:Reservation/customer/username" xmi:id="_Drl2razlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="13" RelatedColumn="zip" Type="id_String" XMLPath="/res:Reservation/customer/zip" xmi:id="_Drl2rqzlEeKlNafnRqT25w"/>
+    <root Attribute="main" Order="14" Type="id_String" XMLPath="/res:Reservation/car" xmi:id="_Drl2r6zlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="15" RelatedColumn="carId" Type="id_String" XMLPath="/res:Reservation/car/carId" xmi:id="_Drl2sKzlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="16" RelatedColumn="designModel" Type="id_String" XMLPath="/res:Reservation/car/designModel" xmi:id="_Drl2sazlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="17" RelatedColumn="class" Type="id_String" XMLPath="/res:Reservation/car/class" xmi:id="_Drl2sqzlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="18" RelatedColumn="brand" Type="id_String" XMLPath="/res:Reservation/car/brand" xmi:id="_Drl2s6zlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="19" RelatedColumn="rateDay" Type="id_String" XMLPath="/res:Reservation/car/rateDay" xmi:id="_Drl2tKzlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="20" RelatedColumn="rateWeekend" Type="id_String" XMLPath="/res:Reservation/car/rateWeekend" xmi:id="_Drl2tazlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="21" RelatedColumn="securityGuarantee" Type="id_String" XMLPath="/res:Reservation/car/securityGuarantee" xmi:id="_Drl2tqzlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="22" RelatedColumn="fromDate" Type="id_String" XMLPath="/res:Reservation/fromDate" xmi:id="_Drl2t6zlEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="23" RelatedColumn="toDate" Type="id_String" XMLPath="/res:Reservation/toDate" xmi:id="_Drl2uKzlEeKlNafnRqT25w"/>
+    <loop Attribute="branch" Order="3" RelatedColumn="reservationId" Type="id_String" XMLPath="/res:Reservation/reservationId" xmi:id="_Drl2uazlEeKlNafnRqT25w"/>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile dataManager="_Drl2oqzlEeKlNafnRqT25w" name="default" xmi:id="_Drl2uqzlEeKlNafnRqT25w">
+    <ownedElement id="_Drl2oKzlEeKlNafnRqT25w" label="metadata" xmi:id="_Drl2u6zlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="reservationId" talendType="id_String" xmi:id="_Drl2vKzlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="city" talendType="id_String" xmi:id="_Drl2vazlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="email" talendType="id_String" xmi:id="_Drl2vqzlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="gender" talendType="id_String" xmi:id="_Drl2v6zlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="id" talendType="id_Integer" xmi:id="_Drl2wKzlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="name" talendType="id_String" xmi:id="_Drl2wazlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="status" talendType="id_String" xmi:id="_Drl2wqzlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="street" talendType="id_String" xmi:id="_Drl2w6zlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="username" talendType="id_String" xmi:id="_Drl2xKzlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="zip" talendType="id_String" xmi:id="_Drl2xazlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="carId" talendType="id_String" xmi:id="_Drl2xqzlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="designModel" talendType="id_String" xmi:id="_Drl2x6zlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="class" talendType="id_String" xmi:id="_Drl2yKzlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="brand" talendType="id_String" xmi:id="_Drl2yazlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="rateDay" talendType="id_String" xmi:id="_Drl2yqzlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="rateWeekend" talendType="id_String" xmi:id="_Drl2y6zlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="securityGuarantee" talendType="id_String" xmi:id="_Drl2zKzlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="fromDate" talendType="id_String" xmi:id="_Drl2zazlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="toDate" talendType="id_String" xmi:id="_Drl2zqzlEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wNWqa2OR22KALIrr5h86L+coWV/tqqV4bYnB6phChhnzK9WgNhKH8N6fxbSb/hat95WbP34jr4Uc
+YQkxvJ7LFw==</DigestValue></Reference></SignedInfo><SignatureValue>26w9I/pTj/BcQ5VnSJMcnhBYR2qRIkVkUVBlm+TT1ukGZiE0As1bpAjyqz8bwnZatGhZTQCtsKO0
+7wL/BzsjiB0oeAg3kzezIlPcMZDpEUp8/oS80IWZ7tv1pKEm44zBxIaLRNmuUNC3STV3VvZqJyvG
+B8s3ox9LPL2VBqYbtrvMGAJnqLAV+HmPXLbdCx5C1wI3oPFQ69CIl6JEjaJ/4VVZtEmBjzm86koY
+xfYvfi+MGFa5WK4bC8wXQeYAJ5IRvRRV52MRAksF2A+Z66Y6isr+zMggkl3NL4wbADeVv1XzRrtQ
+aKGq27tPCnfIgfu0SSx8TSJ7mB0IYrdAfO3xNg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo></Signature></xmi:XMI>

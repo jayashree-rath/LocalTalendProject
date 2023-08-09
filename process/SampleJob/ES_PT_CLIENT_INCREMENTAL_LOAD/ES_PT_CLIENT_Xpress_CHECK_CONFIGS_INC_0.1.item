@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="PROD" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="DDL_LandingPath" prompt="DDL_LandingPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="ExtractPath" prompt="ExtractPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="InputFilePath" prompt="InputFilePath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="LogPath" prompt="LogPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="OutputPath" prompt="OutputPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value="\\\\frawipdb001095\\Emma_Talend_UAT\\"/>
+    <contextParameter comment="" name="OutputSQL" prompt="OutputSQL?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="SQLPath" prompt="SQLPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="STGLoadPath" prompt="STGLoadPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xf2sYDX1Ee6YOr0WthLGaw" name="XMLOutputPath" prompt="XMLOutputPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xf2sYTX1Ee6YOr0WthLGaw" name="XpressCAInputFilePath" prompt="XpressCAInputFilePath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xf2sYjX1Ee6YOr0WthLGaw" name="XpressCALogPath" prompt="XpressCALogPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xf2sYzX1Ee6YOr0WthLGaw" name="XpressCAoutputSQLLIVE" prompt="XpressCAoutputSQLLIVE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xf2sZDX1Ee6YOr0WthLGaw" name="XpressCASQLPath" prompt="XpressCASQLPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="CLIENTACCOUNTID" prompt="CLIENTACCOUNTID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="32"/>
+    <contextParameter comment="" name="CLIENTLIST" prompt="CLIENTLIST?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="CONTACTID" prompt="CONTACTID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_BigDecimal" value="0"/>
+    <contextParameter comment="" name="DoneMandatory" prompt="DoneMandatory?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="EMPLOYEEID" prompt="EMPLOYEEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ENDMONTH" prompt="ENDMONTH?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="ENDTIME" prompt="ENDTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="ENTITYID" prompt="ENTITYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="INSTANCEID" prompt="INSTANCEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="INVOICEID" prompt="INVOICEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="320001316740"/>
+    <contextParameter comment="" name="JOBDURATION" prompt="JOBDURATION?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="LASTRUNTIME" prompt="LASTRUNTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Date" value="2021-02-05 17:02:59"/>
+    <contextParameter comment="" name="LISTOFENTITYID" prompt="LISTOFENTITYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="LOADTYPE" prompt="LOADTYPE?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="SPC"/>
+    <contextParameter comment="" name="MAXDATE" prompt="MAXDATE?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="NUMBEROFYEARS" prompt="NUMBEROFYEARS?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="NUMOFOUTPUT" prompt="NUMOFOUTPUT?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="NUMOFRECORDS" prompt="NUMOFRECORDS?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="OUTPUTFILENAME" prompt="OUTPUTFILENAME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="POLICYID" prompt="POLICYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="320000097115"/>
+    <contextParameter comment="" name="POLICYLIST" prompt="POLICYLIST?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="QUERYFILTER" prompt="QUERYFILTER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ROWNUMBER" prompt="ROWNUMBER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="000"/>
+    <contextParameter comment="" name="SERVICERID" prompt="SERVICERID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="STARTMONTH" prompt="STARTMONTH?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="STARTTIME" prompt="STARTTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="TABLENAME" prompt="TABLENAME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="TRANIDENTIFIER" prompt="TRANIDENTIFIER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="USERID" prompt="USERID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_BigDecimal" value="0"/>
+    <contextParameter comment="" name="XMLCONTENT" prompt="XMLCONTENT?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_AdditionalParams" prompt="ODSDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="TRUE"/>
+    <contextParameter comment="" name="ODSDB_Database" prompt="ODSDB_Database?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="ODSPUB_UAT"/>
+    <contextParameter comment="" name="ODSDB_Login" prompt="ODSDB_Login?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Password" prompt="ODSDB_Password?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Port" prompt="ODSDB_Port?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="13163"/>
+    <contextParameter comment="" name="ODSDB_Schema" prompt="ODSDB_Schema?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Server" prompt="ODSDB_Server?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="10.143.144.34"/>
+    <contextParameter comment="" name="ReferenceDB_AdditionalParams" prompt="ReferenceDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="integratedSecurity=true;instance=FRAEMMAP01"/>
+    <contextParameter comment="" name="ReferenceDB_Database" prompt="ReferenceDB_Database?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="TLD_REF"/>
+    <contextParameter comment="" name="ReferenceDB_Login" prompt="ReferenceDB_Login?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Password" prompt="ReferenceDB_Password?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_Password" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Port" prompt="ReferenceDB_Port?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="13163"/>
+    <contextParameter comment="" name="ReferenceDB_Schema" prompt="ReferenceDB_Schema?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Server" prompt="ReferenceDB_Server?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="FRAWIPDB001095"/>
+    <contextParameter comment="" name="StagingDB_AdditionalParams" prompt="StagingDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="integratedSecurity=true"/>
+    <contextParameter comment="" name="StagingDB_Database" prompt="StagingDB_Database?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="TLD_UAT_REF"/>
+    <contextParameter comment="" name="StagingDB_Login" prompt="StagingDB_Login?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value=""/>
+    <contextParameter comment="" name="StagingDB_Password" prompt="StagingDB_Password?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_Password" value=""/>
+    <contextParameter comment="" name="StagingDB_Port" prompt="StagingDB_Port?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="13163"/>
+    <contextParameter comment="" name="StagingDB_Schema" prompt="StagingDB_Schema?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="STG"/>
+    <contextParameter comment="" name="StagingDB_Server" prompt="StagingDB_Server?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="FRAWIPDB001095"/>
+    <contextParameter comment="" name="XpressESPT_AdditionalParams" prompt="XpressESPT_AdditionalParams?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value=""/>
+    <contextParameter comment="" name="XpressESPT_Login" prompt="XpressESPT_Login?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="Emma"/>
+    <contextParameter comment="" name="XpressESPT_Password" prompt="XpressESPT_Password?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_Password" value=""/>
+    <contextParameter comment="" name="XpressESPT_Port" prompt="XpressESPT_Port?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="1521"/>
+    <contextParameter comment="" name="XpressESPT_Schema" prompt="XpressESPT_Schema?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value=""/>
+    <contextParameter comment="" name="XpressESPT_Server" prompt="XpressESPT_Server?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="fravipap001144"/>
+    <contextParameter comment="" name="XpressESPT_ServiceName" prompt="XpressESPT_ServiceName?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="XPMSPRD.mpc.aon.net"/>
+    <contextParameter comment="" internalId="_xf2sZTX1Ee6YOr0WthLGaw" name="IS_RUNNABLE" prompt="IS_RUNNABLE?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_xf2sZjX1Ee6YOr0WthLGaw" name="JOBID" prompt="JOBID?" promptNeeded="false" type="id_Integer" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="DDL_LandingPath" prompt="DDL_LandingPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="ExtractPath" prompt="ExtractPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="InputFilePath" prompt="InputFilePath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="LogPath" prompt="LogPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="OutputPath" prompt="OutputPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value="\\\\frawipdb001095\\Emma_Talend_UAT\\"/>
+    <contextParameter comment="" name="OutputSQL" prompt="OutputSQL?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="SQLPath" prompt="SQLPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="STGLoadPath" prompt="STGLoadPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xf2sZzX1Ee6YOr0WthLGaw" name="XMLOutputPath" prompt="XMLOutputPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xf2saDX1Ee6YOr0WthLGaw" name="XpressCAInputFilePath" prompt="XpressCAInputFilePath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xf2saTX1Ee6YOr0WthLGaw" name="XpressCALogPath" prompt="XpressCALogPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xf2sajX1Ee6YOr0WthLGaw" name="XpressCAoutputSQLLIVE" prompt="XpressCAoutputSQLLIVE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xf2sazX1Ee6YOr0WthLGaw" name="XpressCASQLPath" prompt="XpressCASQLPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="CLIENTACCOUNTID" prompt="CLIENTACCOUNTID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="32"/>
+    <contextParameter comment="" name="CLIENTLIST" prompt="CLIENTLIST?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="CONTACTID" prompt="CONTACTID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_BigDecimal" value="0"/>
+    <contextParameter comment="" name="DoneMandatory" prompt="DoneMandatory?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="EMPLOYEEID" prompt="EMPLOYEEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ENDMONTH" prompt="ENDMONTH?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="ENDTIME" prompt="ENDTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="ENTITYID" prompt="ENTITYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="INSTANCEID" prompt="INSTANCEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="INVOICEID" prompt="INVOICEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="320001316740"/>
+    <contextParameter comment="" name="JOBDURATION" prompt="JOBDURATION?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="LASTRUNTIME" prompt="LASTRUNTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Date" value="2021-02-05 17:02:59"/>
+    <contextParameter comment="" name="LISTOFENTITYID" prompt="LISTOFENTITYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="LOADTYPE" prompt="LOADTYPE?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="SPC"/>
+    <contextParameter comment="" name="MAXDATE" prompt="MAXDATE?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="NUMBEROFYEARS" prompt="NUMBEROFYEARS?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="NUMOFOUTPUT" prompt="NUMOFOUTPUT?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="NUMOFRECORDS" prompt="NUMOFRECORDS?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="OUTPUTFILENAME" prompt="OUTPUTFILENAME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="POLICYID" prompt="POLICYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="320000097115"/>
+    <contextParameter comment="" name="POLICYLIST" prompt="POLICYLIST?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="QUERYFILTER" prompt="QUERYFILTER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ROWNUMBER" prompt="ROWNUMBER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="000"/>
+    <contextParameter comment="" name="SERVICERID" prompt="SERVICERID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="STARTMONTH" prompt="STARTMONTH?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="STARTTIME" prompt="STARTTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="TABLENAME" prompt="TABLENAME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="TRANIDENTIFIER" prompt="TRANIDENTIFIER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="USERID" prompt="USERID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_BigDecimal" value="0"/>
+    <contextParameter comment="" name="XMLCONTENT" prompt="XMLCONTENT?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_AdditionalParams" prompt="ODSDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="TRUE"/>
+    <contextParameter comment="" name="ODSDB_Database" prompt="ODSDB_Database?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="ODSPUB_UAT"/>
+    <contextParameter comment="" name="ODSDB_Login" prompt="ODSDB_Login?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Password" prompt="ODSDB_Password?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Port" prompt="ODSDB_Port?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="13163"/>
+    <contextParameter comment="" name="ODSDB_Schema" prompt="ODSDB_Schema?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Server" prompt="ODSDB_Server?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="10.143.144.34"/>
+    <contextParameter comment="" name="ReferenceDB_AdditionalParams" prompt="ReferenceDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="integratedSecurity=true;instance=FRAEMMAP01"/>
+    <contextParameter comment="" name="ReferenceDB_Database" prompt="ReferenceDB_Database?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="TLD_REF"/>
+    <contextParameter comment="" name="ReferenceDB_Login" prompt="ReferenceDB_Login?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Password" prompt="ReferenceDB_Password?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_Password" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Port" prompt="ReferenceDB_Port?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="13163"/>
+    <contextParameter comment="" name="ReferenceDB_Schema" prompt="ReferenceDB_Schema?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Server" prompt="ReferenceDB_Server?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="FRAWIPDB001095"/>
+    <contextParameter comment="" name="StagingDB_AdditionalParams" prompt="StagingDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="integratedSecurity=true"/>
+    <contextParameter comment="" name="StagingDB_Database" prompt="StagingDB_Database?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="TLD_UAT_REF"/>
+    <contextParameter comment="" name="StagingDB_Login" prompt="StagingDB_Login?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value=""/>
+    <contextParameter comment="" name="StagingDB_Password" prompt="StagingDB_Password?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_Password" value=""/>
+    <contextParameter comment="" name="StagingDB_Port" prompt="StagingDB_Port?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="13163"/>
+    <contextParameter comment="" name="StagingDB_Schema" prompt="StagingDB_Schema?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="STG"/>
+    <contextParameter comment="" name="StagingDB_Server" prompt="StagingDB_Server?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="FRAWIPDB001095"/>
+    <contextParameter comment="" name="XpressESPT_AdditionalParams" prompt="XpressESPT_AdditionalParams?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value=""/>
+    <contextParameter comment="" name="XpressESPT_Login" prompt="XpressESPT_Login?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="Emma"/>
+    <contextParameter comment="" name="XpressESPT_Password" prompt="XpressESPT_Password?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_Password" value=""/>
+    <contextParameter comment="" name="XpressESPT_Port" prompt="XpressESPT_Port?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="1521"/>
+    <contextParameter comment="" name="XpressESPT_Schema" prompt="XpressESPT_Schema?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value=""/>
+    <contextParameter comment="" name="XpressESPT_Server" prompt="XpressESPT_Server?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="fravipap001144"/>
+    <contextParameter comment="" name="XpressESPT_ServiceName" prompt="XpressESPT_ServiceName?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="XPMSPRD.mpc.aon.net"/>
+    <contextParameter comment="" internalId="_xf2sbDX1Ee6YOr0WthLGaw" name="IS_RUNNABLE" prompt="IS_RUNNABLE?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_xf2sbTX1Ee6YOr0WthLGaw" name="JOBID" prompt="JOBID?" promptNeeded="false" type="id_Integer" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="UAT">
+    <contextParameter comment="" name="DDL_LandingPath" prompt="DDL_LandingPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="ExtractPath" prompt="ExtractPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="InputFilePath" prompt="InputFilePath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="LogPath" prompt="LogPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="OutputPath" prompt="OutputPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value="\\\\frawipdb001095\\Emma_Talend_UAT\\"/>
+    <contextParameter comment="" name="OutputSQL" prompt="OutputSQL?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="SQLPath" prompt="SQLPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="STGLoadPath" prompt="STGLoadPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xf2sbjX1Ee6YOr0WthLGaw" name="XMLOutputPath" prompt="XMLOutputPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xf2sbzX1Ee6YOr0WthLGaw" name="XpressCAInputFilePath" prompt="XpressCAInputFilePath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xf2scDX1Ee6YOr0WthLGaw" name="XpressCALogPath" prompt="XpressCALogPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xf2scTX1Ee6YOr0WthLGaw" name="XpressCAoutputSQLLIVE" prompt="XpressCAoutputSQLLIVE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xf2scjX1Ee6YOr0WthLGaw" name="XpressCASQLPath" prompt="XpressCASQLPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="CLIENTACCOUNTID" prompt="CLIENTACCOUNTID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="32"/>
+    <contextParameter comment="" name="CLIENTLIST" prompt="CLIENTLIST?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="CONTACTID" prompt="CONTACTID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_BigDecimal" value="0"/>
+    <contextParameter comment="" name="DoneMandatory" prompt="DoneMandatory?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="EMPLOYEEID" prompt="EMPLOYEEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ENDMONTH" prompt="ENDMONTH?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="ENDTIME" prompt="ENDTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="ENTITYID" prompt="ENTITYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="INSTANCEID" prompt="INSTANCEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="INVOICEID" prompt="INVOICEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="320001316740"/>
+    <contextParameter comment="" name="JOBDURATION" prompt="JOBDURATION?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="LASTRUNTIME" prompt="LASTRUNTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Date" value="2021-02-05 17:02:59"/>
+    <contextParameter comment="" name="LISTOFENTITYID" prompt="LISTOFENTITYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="LOADTYPE" prompt="LOADTYPE?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="SPC"/>
+    <contextParameter comment="" name="MAXDATE" prompt="MAXDATE?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="NUMBEROFYEARS" prompt="NUMBEROFYEARS?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="NUMOFOUTPUT" prompt="NUMOFOUTPUT?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="NUMOFRECORDS" prompt="NUMOFRECORDS?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="OUTPUTFILENAME" prompt="OUTPUTFILENAME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="POLICYID" prompt="POLICYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="320000097115"/>
+    <contextParameter comment="" name="POLICYLIST" prompt="POLICYLIST?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="QUERYFILTER" prompt="QUERYFILTER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ROWNUMBER" prompt="ROWNUMBER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="000"/>
+    <contextParameter comment="" name="SERVICERID" prompt="SERVICERID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="STARTMONTH" prompt="STARTMONTH?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="STARTTIME" prompt="STARTTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="TABLENAME" prompt="TABLENAME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="TRANIDENTIFIER" prompt="TRANIDENTIFIER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="USERID" prompt="USERID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_BigDecimal" value="0"/>
+    <contextParameter comment="" name="XMLCONTENT" prompt="XMLCONTENT?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_AdditionalParams" prompt="ODSDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="TRUE"/>
+    <contextParameter comment="" name="ODSDB_Database" prompt="ODSDB_Database?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="ODSPUB_UAT"/>
+    <contextParameter comment="" name="ODSDB_Login" prompt="ODSDB_Login?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Password" prompt="ODSDB_Password?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Port" prompt="ODSDB_Port?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="13163"/>
+    <contextParameter comment="" name="ODSDB_Schema" prompt="ODSDB_Schema?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Server" prompt="ODSDB_Server?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="10.143.144.34"/>
+    <contextParameter comment="" name="ReferenceDB_AdditionalParams" prompt="ReferenceDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="integratedSecurity=true;instance=FRAEMMAP01"/>
+    <contextParameter comment="" name="ReferenceDB_Database" prompt="ReferenceDB_Database?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="TLD_UAT"/>
+    <contextParameter comment="" name="ReferenceDB_Login" prompt="ReferenceDB_Login?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Password" prompt="ReferenceDB_Password?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_Password" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Port" prompt="ReferenceDB_Port?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="13163"/>
+    <contextParameter comment="" name="ReferenceDB_Schema" prompt="ReferenceDB_Schema?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Server" prompt="ReferenceDB_Server?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="FRAWIPDB001095"/>
+    <contextParameter comment="" name="StagingDB_AdditionalParams" prompt="StagingDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="integratedSecurity=true"/>
+    <contextParameter comment="" name="StagingDB_Database" prompt="StagingDB_Database?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="TLD_UAT_REF"/>
+    <contextParameter comment="" name="StagingDB_Login" prompt="StagingDB_Login?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value=""/>
+    <contextParameter comment="" name="StagingDB_Password" prompt="StagingDB_Password?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_Password" value=""/>
+    <contextParameter comment="" name="StagingDB_Port" prompt="StagingDB_Port?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="13163"/>
+    <contextParameter comment="" name="StagingDB_Schema" prompt="StagingDB_Schema?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="STG"/>
+    <contextParameter comment="" name="StagingDB_Server" prompt="StagingDB_Server?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="FRAWIPDB001095"/>
+    <contextParameter comment="" name="XpressESPT_AdditionalParams" prompt="XpressESPT_AdditionalParams?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value=""/>
+    <contextParameter comment="" name="XpressESPT_Login" prompt="XpressESPT_Login?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="Emma"/>
+    <contextParameter comment="" name="XpressESPT_Password" prompt="XpressESPT_Password?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_Password" value=""/>
+    <contextParameter comment="" name="XpressESPT_Port" prompt="XpressESPT_Port?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="1521"/>
+    <contextParameter comment="" name="XpressESPT_Schema" prompt="XpressESPT_Schema?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value=""/>
+    <contextParameter comment="" name="XpressESPT_Server" prompt="XpressESPT_Server?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="fravipap001144"/>
+    <contextParameter comment="" name="XpressESPT_ServiceName" prompt="XpressESPT_ServiceName?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="XPMSPRD.mpc.aon.net"/>
+    <contextParameter comment="" internalId="_xf2sczX1Ee6YOr0WthLGaw" name="IS_RUNNABLE" prompt="IS_RUNNABLE?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_xf2sdDX1Ee6YOr0WthLGaw" name="JOBID" prompt="JOBID?" promptNeeded="false" type="id_Integer" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="32"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:8pfZvRbDEkwe4yZSMW96kMoDIN+OsktXZL92fUa1"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/svc-GBNH138017/Downloads/LocalTalend/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:uUyihXXlwOP2kv4UbUfwajka2Iw7zk0wKVOIjrWP"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_wsu1wFrbEeuZeNYRkFeoDw" name="DQTechnical"/>
+    <routinesParameter id="_wsEHYFrbEeuZeNYRkFeoDw" name="DataMasking"/>
+    <routinesParameter id="_wqTz4FrbEeuZeNYRkFeoDw" name="DataOperation"/>
+    <routinesParameter id="_wsassFrbEeuZeNYRkFeoDw" name="DataQualityDependencies"/>
+    <routinesParameter id="_wsQ7sFrbEeuZeNYRkFeoDw" name="DataQuality"/>
+    <routinesParameter id="_wslEwFrbEeuZeNYRkFeoDw" name="DqStringHandling"/>
+    <routinesParameter id="_wqn88FrbEeuZeNYRkFeoDw" name="Mathematical"/>
+    <routinesParameter id="_wq30kFrbEeuZeNYRkFeoDw" name="Numeric"/>
+    <routinesParameter id="_wq97MFrbEeuZeNYRkFeoDw" name="Relational"/>
+    <routinesParameter id="_wr69cFrbEeuZeNYRkFeoDw" name="SQLike"/>
+    <routinesParameter id="_wrI6UFrbEeuZeNYRkFeoDw" name="StringHandling"/>
+    <routinesParameter id="_wrSrUFrbEeuZeNYRkFeoDw" name="TalendDataGenerator"/>
+    <routinesParameter id="_wrccUFrbEeuZeNYRkFeoDw" name="TalendDate"/>
+    <routinesParameter id="_wr1d4FrbEeuZeNYRkFeoDw" name="TalendStringUtil"/>
+    <routinesParameter id="_wrmNUFrbEeuZeNYRkFeoDw" name="TalendString"/>
+    <routinesParameter id="_zz-ygKvWEemAOq48iY0W5A" name="utils"/>
+  </parameters>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(context.LogPath);&#10;//Generate the instance ID&#10;context.INSTANCEID = utils.getUUID();&#10;&#10;//Log file creation&#10;java.io.File folder = new java.io.File(context.LogPath);&#10;if (!folder.exists()) {&#10;if (folder.mkdir()) {&#10;System.out.println(&quot;Directory is created!&quot;);&#10;&#10;}&#10;else {&#10;System.out.println(&quot;Failed to create directory!&quot;);&#10;}&#10;}&#10;java.io.File logFile = new java.io.File(context.LogPath + &quot;CLI_ESPT_EXP_&quot; + context.INSTANCEID + &quot;.log&quot;);&#10;java.io.PrintStream ps = new java.io.PrintStream(new java.io.FileOutputStream(logFile));&#10;System.setOut(ps);&#10;System.setErr(ps);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Initialise&lt;br&gt;Logging"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tOracleConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_lzLYEHBtEeu6mNeMW3QmFA"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.XpressESPT_Server"/>
+    <elementParameter field="CHECK" name="USE_TNS_FILE" value="false"/>
+    <elementParameter field="FILE" name="TNS_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TNS_EDITOR" name="TNS_EDITOR" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.XpressESPT_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="TEXT" name="PORT" value="context.XpressESPT_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.XpressESPT_ServiceName"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.XpressESPT_ServiceName"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.XpressESPT_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.XpressESPT_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qqQbmz4nzNPE7SwEvXpDweb+sEtn5kYpYW5+sfhccv94HyiDwp56BhBsKPr1aL0A/FWHVPo/8g=="/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
+    <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:9XDDJzx7+T9x4zTTOdtq+nZoJ3+bKixsiDNsjC7z"/>
+    <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" show="false" value="false"/>
+    <elementParameter field="FILE" name="SSL_KEYSTORE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:sWd8ciyovMGqVayc7TioQf2g1Q8yuSOQfOFtflFA"/>
+    <elementParameter field="CHECK" name="DISABLE_CBC_PROTECTION" show="false" value="true"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.XpressESPT_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:thin:USER/MDP@server&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="XpressDB"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Connection to the source database has failed&quot;);&#10;System.out.println(&quot;The server details are given below :-&quot;);&#10;System.out.println(context.XpressESPT_Server);&#10;System.out.println(context.XpressESPT_ServiceName);&#10;System.out.println(&quot;--------------------------------------------------------&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log Failure"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Database connection to source failed&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Connection to the source database is successful&quot;);&#10;System.out.println(&quot;The server details are given below :-&quot;);&#10;System.out.println(context.XpressESPT_Server);&#10;System.out.println(context.XpressESPT_ServiceName);&#10;System.out.println(&quot;--------------------------------------------------------&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log success"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_3"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_X9OFW2yFEeuZn6xCE5ArrA"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.ODSDB_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.ODSDB_Port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.ODSDB_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.ODSDB_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.ODSDB_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:g1tZSZR16RJj2qmH8HVOWejyg6CcxMf1YUDZ5j3iotzTtsXKeOx9ZedBJ5CxV1CYkls="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.ODSDB_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="ODS DB"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_3"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Database connection to ODS database failed&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_3"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_7"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Connection to the ODS database us successful&quot;);&#10;System.out.println(&quot;The server details are given below :-&quot;);&#10;System.out.println(context.ODSDB_Server);&#10;System.out.println(context.ODSDB_AdditionalParams);&#10;System.out.println(context.ODSDB_Database);&#10;System.out.println(&quot;--------------------------------------------------------&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log Failure"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_7"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_8"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;[ERROR]Another instance of this job is running currently&quot;);&#10;System.out.println(&quot;--------------------------------------------------------&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log Failure"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_8"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_4"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Another instance already running&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_4"/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:HO+kT5NroOS8Xm95kxcJ2JRikC5ZMk4482ul2E4O"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;update ETL.ETL_CONFIGURATION set IS_RUNNABLE = 0 where JOB_NAME = 'XpressESPTClient';&#13;&#10;insert into ETL.ETL_TRANSACTION_HISTORY (INSTANCE_ID,JOB_ID,JOB_START_TIME) values ('&quot;+context.INSTANCEID+&quot;',&quot;+context.JOBID+&quot;,CURRENT_TIMESTAMP);&#13;&#10;COMMIT&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="Update flag"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBRow_2"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_6"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Connection to the ODS database has failed&quot;);&#10;System.out.println(&quot;The server details are given below :-&quot;);&#10;System.out.println(context.ODSDB_Server);&#10;System.out.println(context.ODSDB_AdditionalParams);&#10;System.out.println(context.ODSDB_Database);&#10;System.out.println(&quot;--------------------------------------------------------&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log Failure"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_6">
+      <column comment="" key="false" length="-1" name="IS_RUNNABLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Eo0S/UURCvGYve43eYyrJA7WGNd+ermvT5CxsXVz"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select ID,IS_RUNNABLE from ETL.ETL_CONFIGURATION where JOB_NAME = 'XpressESPTClient'&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_RUNNABLE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Check flag"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="-1" name="ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IS_RUNNABLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;context.JOBID = input_row.ID;&#13;&#10;context.IS_RUNNABLE = input_row.IS_RUNNABLE;&#13;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column comment="" key="false" length="-1" name="ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IS_RUNNABLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="ES_PT_CLIENT_Xpress_ORCHESTRATOR_INC"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="CLIENT_NEARREALTIME:_FyO6Vd0SEey63t-RaZDA7g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Trigger ETL"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:T8UvaZxb6/v3W0n9skUg9BHpuyiDL2auKu53Q+2R"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;update ETL.ETL_TRANSACTION_HISTORY set JOB_END_TIME = CURRENT_TIMESTAMP, JOB_STATUS = 'SUCCESS',JOB_DURATION = &quot;+ ((Long)globalMap.get(&quot;tChronometerStop_2_DURATION&quot;))/1000 +&quot; WHERE INSTANCE_ID = '&quot;+context.INSTANCEID+&quot;';&#13;&#10;update ETL.ETL_CONFIGURATION set IS_RUNNABLE = 1 where JOB_NAME = 'XpressESPTClient';&#13;&#10;COMMIT&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="Update flag&lt;br&gt;on Success"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_3"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:DdUa4oPDwcWgdYTjIa/TvyIQIpCUjk2Ru/e2djVI"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;update ETL.ETL_TRANSACTION_HISTORY set JOB_END_TIME = CURRENT_TIMESTAMP, JOB_STATUS = 'FAILED',JOB_DURATION = &quot;+ ((Long)globalMap.get(&quot;tChronometerStop_1_DURATION&quot;))/1000 +&quot; WHERE INSTANCE_ID = '&quot;+context.INSTANCEID+&quot;';&#13;&#10;update ETL.ETL_CONFIGURATION set IS_RUNNABLE = 1 where JOB_NAME = 'XpressESPTClient';&#13;&#10;COMMIT&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="Update flag&lt;br&gt;on Failure"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBRow_3"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tChronometerStop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tChronometerStop_1"/>
+    <elementParameter field="RADIO" name="SINCE_BEGINNING" value="true"/>
+    <elementParameter field="RADIO" name="SINCE_STARTER" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="STARTER" show="false" value=""/>
+    <elementParameter field="CHECK" name="DISPLAY" value="true"/>
+    <elementParameter field="CHECK" name="DISPLAY_COMPONENT_NAME" value="true"/>
+    <elementParameter field="TEXT" name="CAPTION" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DISPLAY_READABLE_DURATION" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Stop on fail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tChronometerStop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tChronometerStop_2"/>
+    <elementParameter field="RADIO" name="SINCE_BEGINNING" value="true"/>
+    <elementParameter field="RADIO" name="SINCE_STARTER" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="STARTER" show="false" value=""/>
+    <elementParameter field="CHECK" name="DISPLAY" value="true"/>
+    <elementParameter field="CHECK" name="DISPLAY_COMPONENT_NAME" value="true"/>
+    <elementParameter field="TEXT" name="CAPTION" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DISPLAY_READABLE_DURATION" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Stop on&lt;br&gt;success"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_4"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;FRAWIPDB001095&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;13163&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;ETL&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.ReferenceDB_Database"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jPSdpEDc2yJlnkur4SKRoBkyQajY9j82WO/7VgKW"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;integratedSecurity=true;instance=FRAEMMAP01&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Reference DB"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="32" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_9"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Connection to the reference database is successful&quot;);&#10;System.out.println(&quot;The server details are given below :-&quot;);&#10;System.out.println(context.ReferenceDB_Server);&#10;System.out.println(context.ReferenceDB_AdditionalParams);&#10;System.out.println(context.ReferenceDB_Database);&#10;System.out.println(&quot;--------------------------------------------------------&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log success"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_9"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_10"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Connection to the reference database has failed&quot;);&#10;System.out.println(&quot;The server details are given below :-&quot;);&#10;System.out.println(context.ReferenceDB_Server);&#10;System.out.println(context.ReferenceDB_AdditionalParams);&#10;System.out.println(context.ReferenceDB_Database);&#10;System.out.println(&quot;--------------------------------------------------------&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log Failure"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_10"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_5"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Database connection to reference database failed&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_5"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_k-PNMGFQEeuk8Jf0H1UTkg"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.ReferenceDB_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.ReferenceDB_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="context.ReferenceDB_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.ReferenceDB_Database"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.ReferenceDB_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:54Fwt/4J+TEhZHEbKPOzZxpTQpGpWx5RRwx+98iZAr+PBg60rzPXHQ0mC1p78bD7tQSwIubAZ2M="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  [KEY], [VALUE]&#13;&#10;from [ETL].[ETL_CONF_CONN]&#13;&#10;where (cd_country='GENERAL' or cd_country='ESPT')&quot;&#13;&#10;&#13;&#10;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.ReferenceDB_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="getCONN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" key="false" length="100" name="key" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="value" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="32" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tContextLoad_1"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tContextLoad_1">
+      <column defaultValue="" key="false" length="255" name="key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="value" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="13" offsetLabelY="14" source="tJava_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk20"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBConnection_1" offsetLabelX="25" offsetLabelY="22" source="tDBConnection_1" target="tJava_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tJava_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="-18" offsetLabelY="28" source="tJava_2" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tDBConnection_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBConnection_3" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_3" target="tJava_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError3"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_3" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_3" target="tJava_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk10"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_7" offsetLabelX="0" offsetLabelY="0" source="tJava_7" target="tDBInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk11"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_8" offsetLabelX="0" offsetLabelY="0" source="tJava_8" target="tDie_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk12"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBRow_2" offsetLabelX="0" offsetLabelY="0" source="tDBRow_2" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_6" offsetLabelX="0" offsetLabelY="0" source="tJava_6" target="tDie_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk9"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJavaRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJavaRow_1" target="tJava_8">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.IS_RUNNABLE == 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJavaRow_1" target="tDBRow_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.IS_RUNNABLE == 1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tChronometerStop_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError4"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tChronometerStop_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk13"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tChronometerStop_1" offsetLabelX="0" offsetLabelY="0" source="tChronometerStop_1" target="tDBRow_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk15"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tChronometerStop_2" offsetLabelX="0" offsetLabelY="0" source="tChronometerStop_2" target="tDBRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk16"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_4" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_4" target="tJava_9">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk14"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBConnection_4" offsetLabelX="25" offsetLabelY="28" source="tDBConnection_4" target="tJava_10">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError5"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_9" offsetLabelX="-2" offsetLabelY="28" source="tJava_9" target="tDBInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk21"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_10" offsetLabelX="0" offsetLabelY="0" source="tJava_10" target="tDie_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tContextLoad_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <note opaque="false" posX="-32" posY="64" sizeHeight="64" sizeWidth="192" text="ESPT - Get All Connections">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="155;199;204"/>
+    <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
+  </note>
+  <note opaque="true" posX="288" posY="256" sizeHeight="64" sizeWidth="192" text="Check Conn To Source System">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="237;201;122"/>
+    <elementParameter field="TEXT" name="FONT_SIZE" value="8"/>
+  </note>
+  <note opaque="true" posX="512" posY="256" sizeHeight="64" sizeWidth="192" text="Check Conn To ODS">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="8"/>
+  </note>
+  <note opaque="true" posX="736" posY="256" sizeHeight="64" sizeWidth="192" text="Check Jobs Running">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="8"/>
+  </note>
+  <note opaque="true" posX="1024" posY="256" sizeHeight="64" sizeWidth="192" text="Trigger ES/PT Client ETL">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="166;193;152"/>
+    <elementParameter field="TEXT" name="FONT_SIZE" value="8"/>
+  </note>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_7"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_8"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_6"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tChronometerStop_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tChronometerStop_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_9"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_10"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b6c549e5-5050-4a9c-81f9-ad9874e67d85"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2EUVwhVBZWhjGPJ0oW0GL+jljp1zM6kXj6MTfTWSSsmFiJMSeJRScvEVKEwws5YeW4jtk2Gi0iFP
+wxwLmYiazQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9320d757-7e69-41e3-bd1b-19019b1e8db9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>i4rwB/Up4Yq3WYuz3GptVxaZy6aqUL9D2HhG0HxeimTBrkXcf7XHE4oF63ipo9oBQkWIzANNu796
+CKW9qXYZ1A==</DigestValue></Reference></SignedInfo><SignatureValue>cjgWBj6Qx3NBEF418/Vs/1MX0NTo1EtXfyY9q5/4H/pV776hYg+0Wm96KfE4fYhhCJo7O92elXfE
+2zsDbndsHAor44sxmKcfrdtrlo/qRuGDEL6Jk6h5MWSQglflnZRCB+23cTiNWjcw3H+sBBONhJHS
+HfX7ddEHgR7Sf+Bs7YSWYO8GC6YZ87A1NuWieQN3+qwR2CPj4MApSPL16PKfQ2f36sXr4tXJF1bz
+LJnKrRc3otjAEZOPrUkWHiA4xr7ht2GNnd4iTBqhav/US3D3fEw6Kbw5oNXrzN2mwuDEzugcvKrj
+DVuQZD2juQVGFGqcsdtoIdYzndwBENIwvdg/hw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9320d757-7e69-41e3-bd1b-19019b1e8db9" Target="#_b6c549e5-5050-4a9c-81f9-ad9874e67d85"><Timestamp>2023-08-08 15:13:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

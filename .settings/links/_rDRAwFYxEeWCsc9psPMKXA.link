@@ -1,0 +1,14 @@
+{
+  "itemId" : "_rDRAwFYxEeWCsc9psPMKXA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_l55BsDX8EeW5dtX7d0ubwQ",
+    "parameterList" : [ {
+      "id" : "_Th_eoTMoEeiszeRsSWl-Pg",
+      "name" : "username_rest"
+    }, {
+      "id" : "_Th_eojMoEeiszeRsSWl-Pg",
+      "name" : "password_rest"
+    } ]
+  } ]
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:id="_T-BTUDMoEeiszeRsSWl-Pg" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default" xmi:id="_T-BTUTMoEeiszeRsSWl-Pg">
+    <contextParameter comment="" name="username_soap" prompt="username_soap?" promptNeeded="false" repositoryContextId="_ah5EIDX7EeW5dtX7d0ubwQ" type="id_String" value="tadmin" xmi:id="_T-BTUjMoEeiszeRsSWl-Pg"/>
+    <contextParameter comment="" name="password_soap" prompt="password_soap?" promptNeeded="false" repositoryContextId="_ah5EIDX7EeW5dtX7d0ubwQ" type="id_Password" value="enc:system.encryption.key.v1:ZqA8DvFyjgyKGpSCogBV9Qb2ylCMTBnxEk4lTLzQp8EZlA==" xmi:id="_T-BTUzMoEeiszeRsSWl-Pg"/>
+  </context>
+  <parameters xmi:id="_T-BTVDMoEeiszeRsSWl-Pg">
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0" xmi:id="_T-BTVTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0" xmi:id="_T-BTVjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value="" xmi:id="_T-BTVzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value="" xmi:id="_T-BTWDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value="" xmi:id="_T-BTWTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value="" xmi:id="_T-BTWjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value="" xmi:id="_T-BTWzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value="" xmi:id="_T-BTXDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value="" xmi:id="_T-BTXTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value="" xmi:id="_T-BTXjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value="" xmi:id="_T-BTXzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value="" xmi:id="_T-BTYDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value="" xmi:id="_T-BTYTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value="" xmi:id="_T-BTYjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value="" xmi:id="_T-BTYzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value="" xmi:id="_T-BTZDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value="" xmi:id="_T-BTZTMoEeiszeRsSWl-Pg"/>
+    <routinesParameter id="__utwwARrEeGb2dr9_uAKEQ" name="DataOperation" xmi:id="_T-BTZjMoEeiszeRsSWl-Pg"/>
+    <routinesParameter id="__v3AQARrEeGb2dr9_uAKEQ" name="Mathematical" xmi:id="_T-BTZzMoEeiszeRsSWl-Pg"/>
+    <routinesParameter id="__wCmcARrEeGb2dr9_uAKEQ" name="Numeric" xmi:id="_T-BTaDMoEeiszeRsSWl-Pg"/>
+    <routinesParameter id="__wWIcARrEeGb2dr9_uAKEQ" name="Relational" xmi:id="_T-BTaTMoEeiszeRsSWl-Pg"/>
+    <routinesParameter id="_Q58CMB_tEeGxipE2QhRsgA" name="SQLike" xmi:id="_T-BTajMoEeiszeRsSWl-Pg"/>
+    <routinesParameter id="__wstwARrEeGb2dr9_uAKEQ" name="StringHandling" xmi:id="_T-BTazMoEeiszeRsSWl-Pg"/>
+    <routinesParameter id="__xEhMARrEeGb2dr9_uAKEQ" name="TalendDataGenerator" xmi:id="_T-BTbDMoEeiszeRsSWl-Pg"/>
+    <routinesParameter id="__xR8kARrEeGb2dr9_uAKEQ" name="TalendDate" xmi:id="_T-BTbTMoEeiszeRsSWl-Pg"/>
+    <routinesParameter id="__xibQARrEeGb2dr9_uAKEQ" name="TalendString" xmi:id="_T-BTbjMoEeiszeRsSWl-Pg"/>
+    <routinesParameter id="__HobtjJVEeiYFf1bJ7c1ww" name="TalendStringUtil" xmi:id="_T-BTbzMoEeiszeRsSWl-Pg"/>
+  </parameters>
+  <node componentName="cMessagingEndpoint" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="128" xmi:id="_T-BTcDMoEeiszeRsSWl-Pg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cMessagingEndpoint_1" xmi:id="_T-BTcTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="URI" value="&quot;jetty:http://0.0.0.0:8088/demo&quot;" xmi:id="_T-BTcjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TABLE" name="HOTLIBS" xmi:id="_T-BTczMoEeiszeRsSWl-Pg">
+      <elementValue elementRef="LIBPATH" value="JETTY" xmi:id="_T-BTdDMoEeiszeRsSWl-Pg"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_CUSTOM_COMPONENT" value="false" xmi:id="_T-BTdTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="MODULE_LIST" name="LIBRARY" show="false" value="" xmi:id="_T-BTdjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="LABEL" value="RESTEndpoint" xmi:id="_T-BTdzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_T-BTeDMoEeiszeRsSWl-Pg"/>
+  </node>
+  <node componentName="cSOAP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="128" xmi:id="_T-BTeTMoEeiszeRsSWl-Pg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cSOAP_1" xmi:id="_T-BTejMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="SERVICE_NS" show="false" value="" xmi:id="_T-BTezMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="ADDRESS" value="&quot;http://localhost:8040/services/DemoService&quot;" xmi:id="_T-BTfDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CLOSED_LIST" name="SERVICE_TYPE" value="wsdlURL" xmi:id="_T-BTfTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CLOSED_LIST" name="WSDL_TYPE" value="file" xmi:id="_T-BTfjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="FILE" name="WSDL_FILE" value="&quot;http://localhost:8040/services/DemoService?wsdl&quot;" xmi:id="_T-BTfzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="ROUTE_RESOURCE_TYPE" name="WSDL_FILE_REPO" show="false" value="" xmi:id="_T-BTgDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TECHNICAL" name="WSDL_FILE_REPO:ROUTE_RESOURCE_TYPE_VERSION" value="Latest" xmi:id="_T-BTgTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="SERVICE_CLASS" show="false" value="&quot;beans.ServiceClass&quot;" xmi:id="_T-BTgjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="EXTERNAL" name="SERVICE_CONFIGURATION" value="" xmi:id="_T-BTgzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CLOSED_LIST" name="DATAFORMAT" value="PAYLOAD" xmi:id="_T-BThDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CHECK" name="ALLOW_STREAMING" value="false" xmi:id="_T-BThTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="LABEL" name="RAW_TOOLTIP" show="false" value=" (MESSAGE dataFormat without SAM Support)" xmi:id="_T-BThjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="LABEL" name="CXF_MESSAGE_TOOLTIP" show="false" value=" (MESSAGE dataFormat plus SAM Support)" xmi:id="_T-BThzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CHECK" name="ENABLE_CXF_MESSAGE_GZIP" value="false" xmi:id="_T-BTiDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;{http://www.talend.org/service/}DemoService&quot;" xmi:id="_T-BTiTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="PORT_NAME" value="&quot;{http://www.talend.org/service/}DemoServicePort&quot;" xmi:id="_T-BTijMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="OPERATION_NAME" value="&quot;{http://www.talend.org/service/}DemoServiceOperation&quot;" xmi:id="_T-BTizMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CHECK" name="ENABLE_REGISTRY" value="false" xmi:id="_T-BTjDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CHECK" name="ENABLE_SL" value="false" xmi:id="_T-BTjTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CHECK" name="ENABLE_SAM" value="false" xmi:id="_T-BTjjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CHECK" name="ENABLE_SAM_MESSAGE" show="false" value="false" xmi:id="_T-BTjzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CHECK" name="ENABLE_SECURITY" value="false" xmi:id="_T-BTkDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_TYPE" show="false" value="BASIC" xmi:id="_T-BTkTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="LABEL" name="AUTHENTICATION_LABEL" show="false" value="Authentication:" xmi:id="_T-BTkjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CLOSED_LIST" name="SAML_SECURITY_TYPES" show="false" value="NO_PROPAGATE" xmi:id="_T-BTkzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="LABEL" name="PROPAGATE_UP_LABEL" show="false" value="" xmi:id="_T-BTlDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="LABEL" name="PROPAGATE_AP_LABEL" show="false" value="" xmi:id="_T-BTlTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CHECK" name="USE_PROPAGATE_CREDENTIAL" show="false" value="false" xmi:id="_T-BTljMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="ALIASNAME" show="false" value="&quot;&quot;" xmi:id="_T-BTlzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="USERNAME" show="false" value="context.username_soap" xmi:id="_T-BTmDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:C2SeWk8W7yoI9cz2Y556wwuq/pIKlLEnU0nWUiuYkT+OtnJoXm/cU+bkmWM+TzZ3VQ==" xmi:id="_T-BTmTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CHECK" name="USE_AUTHORIZATION" show="false" value="false" xmi:id="_T-BTmjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="LABEL" name="AUTHORIZATION_LABEL" show="false" value="Authorization:" xmi:id="_T-BTmzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="ROLE_NAME" show="false" value="&quot;&quot;" xmi:id="_T-BTnDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CHECK" name="ENABLE_CORRELATION" value="false" xmi:id="_T-BTnTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" show="false" value="&quot;&quot;" xmi:id="_T-BTnjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="LABEL" name="CORRELATION_VALUE_TOOLTIP" show="false" value="(Simple Expression is Available)" xmi:id="_T-BTnzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false" xmi:id="_T-BToDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TABLE" name="ADVARGUMENTS" xmi:id="_T-BToTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TABLE" name="SL_META_DATA" show="false" xmi:id="_T-BTojMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="LABEL" value="DemoCXF" xmi:id="_T-BTozMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_T-BTpDMoEeiszeRsSWl-Pg"/>
+  </node>
+  <node componentName="cSetBody" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="128" xmi:id="_T-BTpTMoEeiszeRsSWl-Pg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cSetBody_1" xmi:id="_T-BTpjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CLOSED_LIST" name="LANGUAGES" value="simple" xmi:id="_T-BTpzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="EXPRESSION" value="&quot;&lt;typ:DemoServiceOperationRequest xmlns:typ=\&quot;http://www.talend.org/service/\&quot;&gt;&lt;in&gt;${header.param}&lt;/in&gt;&lt;/typ:DemoServiceOperationRequest&gt;&quot;" xmi:id="_T-BTqDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="CHECK" name="USE_NAMESPACES" show="false" value="false" xmi:id="_T-BTqTMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TABLE" name="NAMESPACES" show="false" xmi:id="_T-BTqjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="LABEL" name="WARNING" show="false" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#10;*Note: For None Language, the Value should be a full expression, instead of a plain text.&#10;*Note: For XPath Language, the Namespaces will be used automatically if it's checked." xmi:id="_T-BTqzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="LABEL" value="SetBody" xmi:id="_T-BTrDMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_T-BTrTMoEeiszeRsSWl-Pg"/>
+  </node>
+  <connection connectorName="ROUTE" label="route1" lineStyle="14" metaname="cMessagingEndpoint_1" offsetLabelX="0" offsetLabelY="0" source="cMessagingEndpoint_1" target="cSetBody_1" xmi:id="_T-BTrjMoEeiszeRsSWl-Pg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="route1" xmi:id="_T-BTrzMoEeiszeRsSWl-Pg"/>
+  </connection>
+  <connection connectorName="ROUTE" label="route2" lineStyle="14" metaname="cSetBody_1" offsetLabelX="0" offsetLabelY="0" source="cSetBody_1" target="cSOAP_1" xmi:id="_T-BTsDMoEeiszeRsSWl-Pg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="route2" xmi:id="_T-BTsTMoEeiszeRsSWl-Pg"/>
+  </connection>
+  <note opaque="true" posX="32" posY="32" sizeHeight="64" sizeWidth="609" text="This route demonstrates how we can call a SOAP service via HTTP GET" xmi:id="_T-BTsjMoEeiszeRsSWl-Pg">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="11" xmi:id="_T-BTszMoEeiszeRsSWl-Pg"/>
+  </note>
+  <note opaque="true" posX="32" posY="192" sizeHeight="161" sizeWidth="609" text="To run that sample you need to&#10;&#9;- Export and deploy DemoService (from Integration perspective) to &#10;&#9;   Talend ESB runtime.&#10;&#9;- Make sure demo service is running in Runtime, check URL&#10;&#9;   http://localhost:8040/services/DemoService?WSDL&#10;&#10;To test how route works just go with your browser to following URL:&#10;&#9;http://localhost:8088/demo?param=Hello" xmi:id="_T-BTtDMoEeiszeRsSWl-Pg"/>
+  <subjob xmi:id="_T-BTtTMoEeiszeRsSWl-Pg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cMessagingEndpoint_1" xmi:id="_T-BTtjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240" xmi:id="_T-BTtzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250" xmi:id="_T-BTuDMoEeiszeRsSWl-Pg"/>
+  </subjob>
+  <subjob xmi:id="_T-BTuTMoEeiszeRsSWl-Pg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cSOAP_1" xmi:id="_T-BTujMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240" xmi:id="_T-BTuzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250" xmi:id="_T-BTvDMoEeiszeRsSWl-Pg"/>
+  </subjob>
+  <subjob xmi:id="_T-BTvTMoEeiszeRsSWl-Pg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cSetBody_1" xmi:id="_T-BTvjMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240" xmi:id="_T-BTvzMoEeiszeRsSWl-Pg"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250" xmi:id="_T-BTwDMoEeiszeRsSWl-Pg"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4836d80f-017c-40e0-8153-4a0b707118e4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/wXB58224nF1YjfPvWqn/OIF4AQ6ONZsNfJcaNEx1ZoO8zjufwjhEwL6FMYtLk/wxz6flxjJ6Qyq
+i9G99MBdGg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_16e0f80e-46cc-4798-bdcd-48d3df7d4492"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BZQHqoQBbD0Ld+chau1id1iV4bX6JYddPSGsZCL+e2A8oNJsz4txUns/FzVzN9Gis6mBQCKXN95e
+3EOhg57Ayg==</DigestValue></Reference></SignedInfo><SignatureValue>iF2uehCWUFZ0v37MA861GRIcvOkAGWKB3tD+6OCw978XyCciT9N2QFZptNirYjfXAzvb0L4RO+NK
+Z6W32I7B+S98/cylU5gByILLrkJJthE6Qfnu5FHGL8lvJW+UlUPtVoQNBq8Q9oAvm8Ac/YvtLLN9
+Gg5useQnxZ6ljaJwz7w7+ohK7cfQgcqpFHGw5aNVXko1e83iCa/peWYrmL+JFAnK/Tx8tYD6oNC5
+/bF0SmmdZDltF6La9fa45Une1MFRb7xPTaNOq4OoK/ByuXjOp+TF3IWCZwgHcxD3hAkgC71O9rpu
+u0PJIYtLD3sQZrESdYumklLJsO5KxciX10WS9w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_16e0f80e-46cc-4798-bdcd-48d3df7d4492" Target="#_4836d80f-017c-40e0-8153-4a0b707118e4"><Timestamp>2023-06-23 09:22:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

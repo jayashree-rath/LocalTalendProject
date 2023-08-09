@@ -1,0 +1,14 @@
+{
+  "itemId" : "_BAyUMCAZEeGcz7LQVWZhpA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_ah5EIDX7EeW5dtX7d0ubwQ",
+    "parameterList" : [ {
+      "id" : "_TiNhETMoEeiszeRsSWl-Pg",
+      "name" : "username_soap"
+    }, {
+      "id" : "_TiNhEjMoEeiszeRsSWl-Pg",
+      "name" : "password_soap"
+    } ]
+  } ]
+}

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:PXnZdbNau5+I1XMMburpzZEVykVy++4Lnu9sxG/a"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/7.0.1/Talend-Studio-20180327_1932-V7.0.1SNAPSHOT/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:BESomgO9+Om7IQDKUAxJhypIi6aaTV4Y1W0JPs9Q"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_ySLvEBAwEeGFz_xdEv1J-Q" name="DataOperation"/>
+    <routinesParameter id="_ySnz8BAwEeGFz_xdEv1J-Q" name="Mathematical"/>
+    <routinesParameter id="_ySpCEBAwEeGFz_xdEv1J-Q" name="Numeric"/>
+    <routinesParameter id="_ySq3QBAwEeGFz_xdEv1J-Q" name="Relational"/>
+    <routinesParameter id="_ySsFYBAwEeGFz_xdEv1J-Q" name="StringHandling"/>
+    <routinesParameter id="_yStTgBAwEeGFz_xdEv1J-Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_ySvIsBAwEeGFz_xdEv1J-Q" name="TalendDate"/>
+    <routinesParameter id="_yTBckBAwEeGFz_xdEv1J-Q" name="TalendString"/>
+    <routinesParameter id="_SPEpoENOEeGBx5wjsDTs5Q" name="SQLike"/>
+    <routinesParameter id="__HobtjJVEeiYFf1bJ7c1ww" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tESBProviderRequest" componentVersion="0.100" offsetLabelX="0" offsetLabelY="0" posX="96" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderRequest_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_e4XwABBXEeGFz_xdEv1J-Q - _e5H98BBXEeGFz_xdEv1J-Q - _e5H98xBXEeGFz_xdEv1J-Q"/>
+    <elementParameter field="CHECK" name="KEEPLISTENING" value="true"/>
+    <elementParameter field="TEXT" name="WSDL_LOCATION" show="false" value="C:/Talend/7.0.1/Talend-Studio-20180327_1932-V7.0.1SNAPSHOT/workspace/LOCAL_PROJECT/services/ReservationService_0.1.wsdl"/>
+    <elementParameter field="TEXT" name="ENDPOINT_URI" show="false" value="http://localhost:8090/services/ReservationServiceProvider"/>
+    <elementParameter field="TEXT" name="SERVICE_NS" show="false" value="http://services.talend.org/ReservationService"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="ReservationServiceProvider"/>
+    <elementParameter field="TEXT" name="PORT_NS" show="false" value="http://services.talend.org/ReservationService"/>
+    <elementParameter field="TEXT" name="PORT_NAME" show="false" value="ReservationServicePort"/>
+    <elementParameter field="TEXT" name="OPERATION_NS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OPERATION_NAME" show="false" value="getConfirmationOfReservation"/>
+    <elementParameter field="TEXT" name="COMMUNICATION_STYLE" show="false" value=""/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="TEXT" name="EXCHANGE_TIMEOUT" value="50"/>
+    <elementParameter field="TEXT" name="MAX_PARALLEL_REQUESTS" value="1000"/>
+    <elementParameter field="TEXT" name="REQUEST_PROCESSING_TIMEOUT" value="120"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tESBProviderRequest_1">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="response">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row1">
+        <nodes expression="" name="payload" type="id_Document" xpath="row1/payload">
+          <children main="true" name="res:ReservationToConfirm" type="id_String" xpath="row1.payload:/res:ReservationToConfirm">
+            <children defaultValue="http://services.talend.org/reservation/types" name="res" nodeType="NAME_SPACE" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/xmlns:res"/>
+            <children loop="true" main="true" name="reservationId" outgoingConnections="//@node.1/@nodeData/@connections.0" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/reservationId"/>
+            <children name="customer" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/customer">
+              <children name="city" outgoingConnections="//@node.1/@nodeData/@connections.3" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/customer/city"/>
+              <children name="email" outgoingConnections="//@node.1/@nodeData/@connections.4" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/customer/email"/>
+              <children name="gender" outgoingConnections="//@node.1/@nodeData/@connections.5" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/customer/gender"/>
+              <children name="id" outgoingConnections="//@node.1/@nodeData/@connections.6" type="id_Integer" xpath="row1.payload:/res:ReservationToConfirm/customer/id"/>
+              <children name="name" outgoingConnections="//@node.1/@nodeData/@connections.7" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/customer/name"/>
+              <children name="status" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/customer/status"/>
+              <children name="street" outgoingConnections="//@node.1/@nodeData/@connections.8" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/customer/street"/>
+              <children name="username" outgoingConnections="//@node.1/@nodeData/@connections.9" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/customer/username"/>
+              <children name="zip" outgoingConnections="//@node.1/@nodeData/@connections.10" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/customer/zip"/>
+            </children>
+            <children name="car" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/car">
+              <children name="carId" outgoingConnections="//@node.1/@nodeData/@connections.11" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/car/carId"/>
+              <children name="designModel" outgoingConnections="//@node.1/@nodeData/@connections.12" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/car/designModel"/>
+              <children name="class" outgoingConnections="//@node.1/@nodeData/@connections.13" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/car/class"/>
+              <children name="brand" outgoingConnections="//@node.1/@nodeData/@connections.14" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/car/brand"/>
+              <children name="rateDay" outgoingConnections="//@node.1/@nodeData/@connections.15" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/car/rateDay"/>
+              <children name="rateWeekend" outgoingConnections="//@node.1/@nodeData/@connections.16" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/car/rateWeekend"/>
+              <children name="securityGuarantee" outgoingConnections="//@node.1/@nodeData/@connections.17" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/car/securityGuarantee"/>
+            </children>
+            <children name="fromDate" outgoingConnections="//@node.1/@nodeData/@connections.1" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/fromDate"/>
+            <children name="toDate" outgoingConnections="//@node.1/@nodeData/@connections.2" type="id_String" xpath="row1.payload:/res:ReservationToConfirm/toDate"/>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="response">
+        <nodes expression="" name="payload" type="id_Document" xpath="response/payload">
+          <children main="true" name="res:Confirmation" type="id_String" xpath="response.payload:/res:Confirmation" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children defaultValue="http://services.talend.org/reservation/types" name="res" nodeType="NAME_SPACE" type="id_String" xpath="response.payload:/res:Confirmation/xmlns:res" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[row1.payload:/res:ReservationToConfirm/reservationId]" incomingConnections="//@node.1/@nodeData/@connections.0" loop="true" main="true" name="reservationId" type="id_String" xpath="response.payload:/res:Confirmation/reservationId" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="customer" type="id_String" xpath="response.payload:/res:Confirmation/customer" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression="[row1.payload:/res:ReservationToConfirm/customer/city]" incomingConnections="//@node.1/@nodeData/@connections.3" name="city" type="id_String" xpath="response.payload:/res:Confirmation/customer/city" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row1.payload:/res:ReservationToConfirm/customer/email]" incomingConnections="//@node.1/@nodeData/@connections.4" name="email" type="id_String" xpath="response.payload:/res:Confirmation/customer/email" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row1.payload:/res:ReservationToConfirm/customer/gender]" incomingConnections="//@node.1/@nodeData/@connections.5" name="gender" type="id_String" xpath="response.payload:/res:Confirmation/customer/gender" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row1.payload:/res:ReservationToConfirm/customer/id]" incomingConnections="//@node.1/@nodeData/@connections.6" name="id" type="id_Integer" xpath="response.payload:/res:Confirmation/customer/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row1.payload:/res:ReservationToConfirm/customer/name]" incomingConnections="//@node.1/@nodeData/@connections.7" name="name" type="id_String" xpath="response.payload:/res:Confirmation/customer/name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="&quot;GOLD&quot;" name="status" type="id_String" xpath="response.payload:/res:Confirmation/customer/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row1.payload:/res:ReservationToConfirm/customer/street]" incomingConnections="//@node.1/@nodeData/@connections.8" name="street" type="id_String" xpath="response.payload:/res:Confirmation/customer/street" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row1.payload:/res:ReservationToConfirm/customer/username]" incomingConnections="//@node.1/@nodeData/@connections.9" name="username" type="id_String" xpath="response.payload:/res:Confirmation/customer/username" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row1.payload:/res:ReservationToConfirm/customer/zip]" incomingConnections="//@node.1/@nodeData/@connections.10" name="zip" type="id_String" xpath="response.payload:/res:Confirmation/customer/zip" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            </children>
+            <children name="car" type="id_String" xpath="response.payload:/res:Confirmation/car" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression="[row1.payload:/res:ReservationToConfirm/car/carId]" incomingConnections="//@node.1/@nodeData/@connections.11" name="carId" type="id_String" xpath="response.payload:/res:Confirmation/car/carId" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row1.payload:/res:ReservationToConfirm/car/designModel]" incomingConnections="//@node.1/@nodeData/@connections.12" name="designModel" type="id_String" xpath="response.payload:/res:Confirmation/car/designModel" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row1.payload:/res:ReservationToConfirm/car/class]" incomingConnections="//@node.1/@nodeData/@connections.13" name="class" type="id_String" xpath="response.payload:/res:Confirmation/car/class" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row1.payload:/res:ReservationToConfirm/car/brand]" incomingConnections="//@node.1/@nodeData/@connections.14" name="brand" type="id_String" xpath="response.payload:/res:Confirmation/car/brand" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row1.payload:/res:ReservationToConfirm/car/rateDay]" incomingConnections="//@node.1/@nodeData/@connections.15" name="rateDay" type="id_String" xpath="response.payload:/res:Confirmation/car/rateDay" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row1.payload:/res:ReservationToConfirm/car/rateWeekend]" incomingConnections="//@node.1/@nodeData/@connections.16" name="rateWeekend" type="id_String" xpath="response.payload:/res:Confirmation/car/rateWeekend" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row1.payload:/res:ReservationToConfirm/car/securityGuarantee]" incomingConnections="//@node.1/@nodeData/@connections.17" name="securityGuarantee" type="id_String" xpath="response.payload:/res:Confirmation/car/securityGuarantee" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            </children>
+            <children expression="[row1.payload:/res:ReservationToConfirm/fromDate]" incomingConnections="//@node.1/@nodeData/@connections.1" name="fromDate" type="id_String" xpath="response.payload:/res:Confirmation/fromDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[row1.payload:/res:ReservationToConfirm/toDate]" incomingConnections="//@node.1/@nodeData/@connections.2" name="toDate" type="id_String" xpath="response.payload:/res:Confirmation/toDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="100" name="creditPoints" type="id_BigDecimal" xpath="response.payload:/res:Confirmation/creditPoints" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="description" type="id_String" xpath="response.payload:/res:Confirmation/description" xsi:type="TalendXMLMap:OutputTreeNode"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.6" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.7" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.8" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.8" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.6" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.6" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tESBProviderResponse" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderResponse_1"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tESBProviderResponse_1">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tESBProviderRequest_1" offsetLabelX="0" offsetLabelY="0" source="tESBProviderRequest_1" target="tXMLMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="payload"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="FLOW" label="response" lineStyle="0" metaname="response" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tESBProviderResponse_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="payload"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="response"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderRequest_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5a2fd511-b00b-4b6d-9a1a-bcbd82cd126f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>A61LnHpM0oxw2OsOmhznvDE3CEQOgavn7Mb1se7b9908hEsj6E5O5+T/k6JEyrs0Q/xYKWqWYUG/
+N6ox3e2qEg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ffbd7fad-48ed-4e78-848b-25fd4eff7e0f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4bJ46e+EOmhOS3QER1ZNOW4dFs/SDbkxs9H0093/KSV3c96gDBsvTWxes+MhYfnzABgkyLG1oeKK
+DMQR3KbMGg==</DigestValue></Reference></SignedInfo><SignatureValue>CE97XSiHtpQ5Ye+ojabODao1hLIOEfn80GcADWMWQilLGRq8SYA12XtgAE9Gnm5NLxbrx6f6Kwjj
+upvUt3sUZS1ximT/7jEK2khfH0i+7SgwU5z9KrEWmiVkxbhan/prjkr1v95OsuvtfqsmawEGUFJo
+BX46hCIQzv2wF9YVNjsb9r3I1JxjytFLJ7nSmBi7NI4f4Kure1V/Upi89P/KkoqfdyfiDBiOxa5z
+RCQGdoNCpQ0oSgLzkVv6HAe2YQHk7LQgIKPtc3Te4VjYeanxsZgBnJ69YYaktIZmMoDhWkaVQPxZ
+jC8MbqB707lsFq+axCtKgcsFVdWF5GJ4VS5Uig==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ffbd7fad-48ed-4e78-848b-25fd4eff7e0f" Target="#_5a2fd511-b00b-4b6d-9a1a-bcbd82cd126f"><Timestamp>2023-06-23 09:23:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

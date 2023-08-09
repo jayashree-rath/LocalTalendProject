@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:XmlFileConnection XmlFilePath="tempXSDFile7024508880127853304.zip" dataPackage="_-9izLqzkEeKlNafnRqT25w" fileContent="504B0304140008000800768598420000000000000000000000002200000074656D7058534446696C65323236373839303833313435353433303636342E787364CD565D6FDA30147D9FB4FF10E50710B6BD219884C236218550019DBA47D7B94D3D394E6A5F17BA5F3F3B84104868928A4EE301C9D7E79CFBE17B2F8C772A1A29FA0809717609176A640C13F711311B79DE76BB1D6CBF0C52197B9F87C34FDEDD2258E758770F2E810AE433A3A0064838882867509978F892812AC02363E847F89D543CE47ED5C0DCA894643961AB22EE19907720D89B76863D95146CC9C25F2DD67BF3816135DA9DB80E4194EC5E237C4F65328307A2394E5C2D9E34E1EC8141E43AC0210181970148640C189204544628742CDFD78F1F1CF319DBB72D5C38C2684C5C5F2B4C13903340C2B829B425D4CC1B6374BDCB2A411A33716B6238F04B431B73F52BF0D7485097AE8F963A97A649C661672FCE3DE7E0025BE2153C6910142AF65A1C09134B4AB534AF3E740B55FB7D8827D7310F27E23296CE3ADA04762D2DD3558CB7088DBD86ACF7C64AE95EAF68D3D35FABAE94E1CBBFAA4527A1D8CCCAB16BBB2AEDB92CAAF278FA16FFD76A0E7532427645D527A8879804C0FFADFFFFB0ECEADDAF9835579BFFA472E76D2FC17AA5C852E1DC13751A49633E429B492239E199706D18E132FC7621F926F06A310D3AC37F2C835967F04D30DDCCC3DB4543092B799E54F158AED757C8D90A7FCBF628F645B18BE63D47AD60A711D47F557C636D9F8B424142C4F02665025535027386D8EC8DDE4D1C81A29265B6B2EFDFCC0D39BF47474FFDCDFC67F79E9E870D841E7D5798F2BF59E6F817504B0708DD785E831D020000B00A0000504B0102140014000800080076859842DD785E831D020000B00A000022000000000000000000000000000000000074656D7058534446696C65323236373839303833313435353433303636342E787364504B05060000000001000100500000006D0200000000" inputModel="false" name="CustomerDetails" xmi:id="_-9izIqzkEeKlNafnRqT25w">
+    <root Attribute="main" Order="1" Type="id_String" XMLPath="/crm:CustomerDetails" xmi:id="_-9izI6zkEeKlNafnRqT25w"/>
+    <root Attribute="ns" DefaultValue="http://services.talend.org/crm/types" Order="2" Type="id_String" XMLPath="crm" xmi:id="_-9izJKzkEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="4" RelatedColumn="email" Type="id_String" XMLPath="/crm:CustomerDetails/email" xmi:id="_-9izJazkEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="5" RelatedColumn="gender" Type="id_String" XMLPath="/crm:CustomerDetails/gender" xmi:id="_-9izJqzkEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="6" RelatedColumn="id" Type="id_Integer" XMLPath="/crm:CustomerDetails/id" xmi:id="_-9izJ6zkEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="7" RelatedColumn="name" Type="id_String" XMLPath="/crm:CustomerDetails/name" xmi:id="_-9izKKzkEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="8" RelatedColumn="status" Type="id_String" XMLPath="/crm:CustomerDetails/status" xmi:id="_-9izKazkEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="9" RelatedColumn="street" Type="id_String" XMLPath="/crm:CustomerDetails/street" xmi:id="_-9izKqzkEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="10" RelatedColumn="username" Type="id_String" XMLPath="/crm:CustomerDetails/username" xmi:id="_-9izK6zkEeKlNafnRqT25w"/>
+    <root Attribute="branch" Order="11" RelatedColumn="zip" Type="id_String" XMLPath="/crm:CustomerDetails/zip" xmi:id="_-9izLKzkEeKlNafnRqT25w"/>
+    <loop Attribute="branch" Order="3" RelatedColumn="city" Type="id_String" XMLPath="/crm:CustomerDetails/city" xmi:id="_-9izLazkEeKlNafnRqT25w"/>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile dataManager="_-9izIqzkEeKlNafnRqT25w" name="default" xmi:id="_-9izLqzkEeKlNafnRqT25w">
+    <ownedElement id="_-9izIKzkEeKlNafnRqT25w" label="metadata" xmi:id="_-9izL6zkEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="city" talendType="id_String" xmi:id="_-9izMKzkEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="email" talendType="id_String" xmi:id="_-9izMazkEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="gender" talendType="id_String" xmi:id="_-9izMqzkEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="id" talendType="id_Integer" xmi:id="_-9izM6zkEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="name" talendType="id_String" xmi:id="_-9izNKzkEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="status" talendType="id_String" xmi:id="_-9izNazkEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="street" talendType="id_String" xmi:id="_-9izNqzkEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="username" talendType="id_String" xmi:id="_-9izN6zkEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="zip" talendType="id_String" xmi:id="_-9izOKzkEeKlNafnRqT25w" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vWyNpc8LbmkVgn8pyxSC829A9Le6ml39izvKPsBH0/oCAwNZwRolpTArSHl8qkbegbL/0NulJ7eA
+ACAGLWipeQ==</DigestValue></Reference></SignedInfo><SignatureValue>EunYZw1S2q+QjFIeGeNHTS13xodsFls7PkVnkcO5T6C53VnTao4h41in+EPSB7yB54iU63pggLNs
+8rK6WrxhHnm3aUbrYKTH3nlHh6/6Q8+tPzXrY6Pzngbrq1GC+MiOwT3IzKOsebJ6cBfOfajxnT80
+w0P4LJyFGP5np8vml+QSyV8lzUJgfTAI2P76OPD2m8i37XEQr2BOvxjiihzMgjv0Y0PE3nC6Lsbd
+RNBgdoQ88/KHj/5bTc5XdMNxeZA1PdHu3bvJGTvEvll1Ex1j+zUavdgFgxWPpnXjWNHDeggAxdhf
+c7d++wBA0sFykbr89vf+q+9yvUbsdvjRNOmU2g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo></Signature></xmi:XMI>

@@ -1,0 +1,1363 @@
+package routines;
+
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class SQLGeneration {
+
+	  /**
+	   * {talendTypes} String
+	   * 
+	   * {Category} User Defined TEST
+	   * 
+	   * {param} string("ALR_ACCOUNTLOSTREASONKEY=IEBRR")
+	   * {param} string("ALR_ACCOUNTLOSTREASONCODE=BRR")
+	   * {param} string("ALR_SOURCECOUNTRYCODE=IE")
+	   * {param} string("ALR_ACTIVEFLAG=Y")
+	   * {param} string("ALR_SRCREFRESHDATE=2018-12-04T14:58:16.0523120")
+	   * {param} string("ALR_REFRESHDATE=2018-12-04T14:58:16.0455770")
+	   *      
+	   */
+    public static String makeSDO_ACCOUNTLOSTREASON(String ALR_ACCOUNTLOSTREASONKEY,String ALR_ACCOUNTLOSTREASONCODE, String ALR_SOURCECOUNTRYCODE, String ALR_ACTIVEFLAG, String ALR_SRCREFRESHDATE, String ALR_REFRESHDATE ) {
+	
+    	return "INSERT [dbo].[SDO_ACCOUNTLOSTREASON] ([ALR_ACCOUNTLOSTREASONKEY], [ALR_ACCOUNTLOSTREASONCODE], [ALR_SOURCECOUNTRYCODE], [ALR_ACTIVEFLAG], [ALR_SRCREFRESHDATE], [ALR_REFRESHDATE]) VALUES (N'" + ALR_ACCOUNTLOSTREASONKEY + " ', N'" + ALR_ACCOUNTLOSTREASONCODE + "', N'" + ALR_SOURCECOUNTRYCODE + "', N'" + ALR_ACTIVEFLAG + "', CAST(N'" + ALR_SRCREFRESHDATE  + "' AS DateTime2), CAST(N'" + ALR_REFRESHDATE + "' AS DateTime2))";
+
+    } 
+    
+	  /**
+	   * {talendTypes} String
+	   * 
+	   * {Category} User Defined
+	   * 
+	   * {param} string("SYS_SOURCESYSTEMKEY=IEEGL")
+	   * {param} string("SYS_SOURCESYSTEMDESCRIPTION=Policy Management")
+	   * {param} string("SYS_LANGUAGECODE=EN")    
+	   *      
+	   */
+  public static String makeSDO_SOURCESYSTEMTRANSLATION(String SYS_SOURCESYSTEMKEY, String SYS_SOURCESYSTEMDESCRIPTION, String SYS_LANGUAGECODE) {
+	
+
+  	return "INSERT [dbo].[SDO_SOURCESYSTEMTRANSLATION] ([SYS_SOURCESYSTEMKEY], [SYS_SOURCESYSTEMDESCRIPTION], [SYS_LANGUAGECODE]) VALUES (N'" + SYS_SOURCESYSTEMKEY + "', N'" + SYS_SOURCESYSTEMDESCRIPTION + "', N'" + SYS_LANGUAGECODE + "')";
+  } 
+  
+  
+	  /**
+	   * {talendTypes} String
+	   * 
+	   * {Category} User Defined
+	   * 
+	   * {param} string("SYS_SOURCESYSTEMKEY=ESEXP")
+	   * {param} string("SYS_SOURCECOUNTRYCODE=ES")
+	   * {param} string("SYS_SOURCESYSTEMCODE=CRM")
+	   * {param} string("SYS_SOURCESYSTEM=CRM")
+	   * {param} string("SYS_ACTIVEFLAG=Y")
+	   * {param} string("SYS_CLIENTMASTERINGFLAG=N")
+	   * {param} string("SYS_GLOBALSYSTEMID=0")
+	   * {param} string("SYS_REFRESHDATE=2019-06-05T15:37:47.2300000")
+	   * {param} string("SYS_SRCREFRESHDATE=2019-06-05T15:37:47.2300000")
+	   * {param} string("SYS_SOURCESYSTEMTYPENAME=NULL")
+	   *    
+	   */
+	public static String makeSDO_SOURCESYSTEM(String SYS_SOURCESYSTEMKEY, String SYS_SOURCECOUNTRYCODE, String SYS_SOURCESYSTEMCODE, String SYS_SOURCESYSTEM, String SYS_ACTIVEFLAG, String SYS_CLIENTMASTERINGFLAG, String SYS_GLOBALSYSTEMID, Date SYS_REFRESHDATE, Date SYS_SRCREFRESHDATE, String SYS_SOURCESYSTEMTYPENAME) {
+	
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		
+		return "INSERT [dbo].[SDO_SOURCESYSTEM] ([SYS_SOURCESYSTEMKEY], [SYS_SOURCECOUNTRYCODE], [SYS_SOURCESYSTEMCODE], [SYS_SOURCESYSTEM], [SYS_ACTIVEFLAG], [SYS_CLIENTMASTERINGFLAG], [SYS_GLOBALSYSTEMID], [SYS_REFRESHDATE], [SYS_SRCREFRESHDATE], [SYS_SOURCESYSTEMTYPENAME]) VALUES (N'" + SYS_SOURCESYSTEMKEY + "', N'" + SYS_SOURCECOUNTRYCODE + "', N'" + SYS_SOURCESYSTEMCODE + "', N'" + SYS_SOURCESYSTEM + "', N'" + SYS_ACTIVEFLAG + "', N'"+ SYS_CLIENTMASTERINGFLAG + "', N'" + SYS_GLOBALSYSTEMID + "', CAST(N'" + simpleDateFormat.format(SYS_REFRESHDATE)  + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(SYS_REFRESHDATE) + "' AS DateTime2), N'NULL')";
+	}
+
+
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("GRP_GROUPKEY=IE0001")
+	 * {param} string("GRP_SOURCECOUNTRYCODE=IE")
+	 * {param} string("GRP_GROUPCODE=0001")
+	 * {param} string("GRP_GROUPTYPEKEY=CLIGRP")
+	 * {param} string("GRP_ACTIVEFLAG=Y")
+	 * {param} string("GRP_REFRESHDATE=2018-12-04T14:58:17.6041570")
+	 * {param} string("GRP_SRCREFRESHDATE=2018-12-04T14:58:17.6213650")
+	 * {param} string("GRP_REVSHAREENTITYKEY=NULL")
+	 * {param} string("GRP_CREATEDBY=NULL")
+	 * {param} string("GRP_CREATEDDATE=NULL")
+	 * {param} string("GRP_MODIFIEDBY=NULL")
+	 * {param} string("GRP_MODIFIEDDATE=NULL")
+	 *      
+	 */
+	public static String makeSDO_GROUP(String GRP_GROUPKEY, String GRP_SOURCECOUNTRYCODE, String GRP_GROUPCODE, String GRP_GROUPTYPEKEY, String GRP_ACTIVEFLAG, Date GRP_REFRESHDATE, Date GRP_SRCREFRESHDATE, String GRP_REVSHAREENTITYKEY, String GRP_CREATEDBY, Date GRP_CREATEDDATE, String GRP_MODIFIEDBY, Date GRP_MODIFIEDDATE) {
+	
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);	
+		
+		//String date = simpleDateFormat.format(REL_REFRESHDATE);
+		
+		
+	return "INSERT [dbo].[SDO_GROUP] ([GRP_GROUPKEY], [GRP_SOURCECOUNTRYCODE], [GRP_GROUPCODE], [GRP_GROUPTYPEKEY], [GRP_ACTIVEFLAG], [GRP_REFRESHDATE], [GRP_SRCREFRESHDATE], [GRP_REVSHAREENTITYKEY], [GRP_CREATEDBY], [GRP_CREATEDDATE], [GRP_MODIFIEDBY], [GRP_MODIFIEDDATE]) VALUES (N'" + GRP_GROUPKEY + "', N'" + GRP_SOURCECOUNTRYCODE + "', N'" + GRP_GROUPCODE +"', N'" + GRP_GROUPTYPEKEY +"', N'" + GRP_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(GRP_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(GRP_SRCREFRESHDATE) +"' AS DateTime2), NULL, N'" + GRP_CREATEDBY + "', CAST(N'" + simpleDateFormat.format(GRP_CREATEDDATE) +"' AS DateTime2), N'" + GRP_MODIFIEDBY + "', CAST(N'" + simpleDateFormat.format(GRP_MODIFIEDDATE) +"' AS DateTime2));";
+	}
+
+
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("GRP_GROUPKEY=IE0116")
+	 * {param} string("GRP_GROUPDESCRIPTION=Electrical Contractors Scheme - ECSSA")
+	 * {param} string("GRP_LANGUAGECODE=EN")
+	 * {param} string("GRP_ABBRIVIATIONNAME=NULL")
+	 *       
+	 */
+	public static String makeSDO_GROUPTRANSLATION(String GRP_GROUPKEY, String GRP_GROUPDESCRIPTION, String GRP_LANGUAGECODE, String GRP_ABBRIVIATIONNAME) {
+	
+	return "INSERT [dbo].[SDO_GROUPTRANSLATION] ([GRP_GROUPKEY], [GRP_GROUPDESCRIPTION], [GRP_LANGUAGECODE], [GRP_ABBRIVIATIONNAME]) VALUES (N'" + GRP_GROUPKEY + "', N'" + GRP_GROUPDESCRIPTION.replace("'", "") + "', N'" + GRP_LANGUAGECODE +"', NULL);";
+	}
+
+
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("SRR_SERVICEROLEKEY=IECRM")
+	 * {param} string("SRR_SERVICEROLECODE=CRM")
+	 * {param} string("SRR_SOURCECOUNTRYCODE=IE")
+	 * {param} string("SRR_ACTIVEFLAG=Y")
+	 * {param} string("SRR_REFRESHDATE=Date")
+	 * {param} string("SRR_SRCREFRESHDATE=Date")
+	 * {param} string("SRR_SEQUENCENUMBER=4")  
+	 *      
+	 */
+	public static String makeSDO_SERVICEROLE(String SRR_SERVICEROLEKEY, String SRR_SERVICEROLECODE, String SRR_SOURCECOUNTRYCODE, String SRR_ACTIVEFLAG, Date SRR_REFRESHDATE, Date SRR_SRCREFRESHDATE, String SRR_SEQUENCENUMBER) {
+	
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		
+		
+		
+		//String date = simpleDateFormat.format(REL_REFRESHDATE);
+		
+	return "INSERT [dbo].[SDO_SERVICEROLE] ([SRR_SERVICEROLEKEY], [SRR_SERVICEROLECODE], [SRR_SOURCECOUNTRYCODE], [SRR_ACTIVEFLAG], [SRR_REFRESHDATE], [SRR_SRCREFRESHDATE], [SRR_SEQUENCENUMBER]) VALUES (N'" + SRR_SERVICEROLEKEY + "', N'" + SRR_SERVICEROLECODE +"', N'" + SRR_SOURCECOUNTRYCODE + "', N'" + SRR_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(SRR_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(SRR_SRCREFRESHDATE) +"' AS DateTime2), " + SRR_SEQUENCENUMBER + ")";
+	}
+
+	  /**
+	   * {talendTypes} String
+	   * 
+	   * {Category} User Defined
+	   * 
+	   * {param} string("SRR_SERVICEROLEKEY=IEIBR")
+	   * {param} string("SRR_SERVICEROLEDESCRIPTION=Introducing Broker")
+	   * {param} string("SRR_LANGUAGECODE=EN")
+	   *       
+	   */
+	public static String makeSDO_SERVICEROLETRANSLATION(String SRR_SERVICEROLEKEY, String SRR_SERVICEROLEDESCRIPTION, String SRR_LANGUAGECODE) {
+	
+		return "INSERT [dbo].[SDO_SERVICEROLETRANSLATION] ([SRR_SERVICEROLEKEY], [SRR_SERVICEROLEDESCRIPTION], [SRR_LANGUAGECODE]) VALUES (N'" + SRR_SERVICEROLEKEY +"', N'" + SRR_SERVICEROLEDESCRIPTION + "', N'" + SRR_LANGUAGECODE + "')";
+	} 
+
+
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("ESA_EMPLOYEEID=0556783")
+	 * {param} string("ESA_SOURCESYSTEMKEY=ANT")
+	 * {param} string("ESA_SOURCESYSTEMUSERID=hnieuwen")
+	 * {param} string("ESA_ACTIVEFLAG=Y")
+	 * {param} string("ESA_REFRESHDATE=2018-12-18T15:10:00.0000000")
+	 * {param} string("ESA_SRCREFRESHDATE=2018-12-18T15:10:26.3087500")
+	 * {param} string("ESA_TEMPEMPID=NULL")
+	 *   
+	 */
+	public static String makeSDO_EMPLOYEESOURCESYSTEMUSERACCOUNT(String ESA_EMPLOYEEID, String ESA_SOURCESYSTEMKEY, String ESA_SOURCESYSTEMUSERID, String ESA_ACTIVEFLAG, Date ESA_REFRESHDATE, Date ESA_SRCREFRESHDATE, String ESA_TEMPEMPID) {
+	
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);	
+		
+		//String date = simpleDateFormat.format(REL_REFRESHDATE);
+		
+		
+	return "INSERT [dbo].[SDO_EMPLOYEESOURCESYSTEMUSERACCOUNT] ([ESA_EMPLOYEEID], [ESA_SOURCESYSTEMKEY], [ESA_SOURCESYSTEMUSERID], [ESA_ACTIVEFLAG], [ESA_REFRESHDATE], [ESA_SRCREFRESHDATE], [ESA_TEMPEMPID]) VALUES (N'" + ESA_EMPLOYEEID + "', N'" + ESA_SOURCESYSTEMKEY + "', N'" + ESA_SOURCESYSTEMUSERID + "', N'" + ESA_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(ESA_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(ESA_SRCREFRESHDATE) + "' AS DateTime2), NULL)";
+	} 
+
+
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("DEP_DEPARTMENTKEY=IEAONDB2580")
+	 * {param} string("DEP_DEPARTMENTNAME=XXX - DB Comm Team - NO NOT USE")
+	 * {param} string("DEP_ENTITYNAME=NULL")
+	 * {param} string("DEP_LINEOFBUSINESSLINE=NULL")
+	 * {param} string("DEP_LINEOFBUSINESSNAME=NULL")
+	 * {param} string("DEP_LOCATIONNAME=NULL")
+	 * {param} string("DEP_STANDARDNAME=NULL")
+	 * {param} string("DEP_LANGUAGECODE=EN")
+	 * {param} string("DEP_DEPARTMENTHEAD=NULL")
+	 * {param} string("DEP_REGION=NULL")
+	 * {param} string("DEP_SEGMENTTYPE=NULL")
+	 * {param} string("DEP_GCCC=NULL")
+	 * {param} string("DEP_AONREGION=NULL")
+	 * {param} string("DEP_AONCLUSTER=NULL")
+	 * {param} string("DEP_REPORTING=NULL")
+	 * {param} string("DEP_BUSINESSUNIT=NULL")
+	 * {param} string("DEP_LINEOFBUSINESSCOUNTRY=NULL")
+	 * {param} string("DEP_LINEOFBUSINESSLEVEL1=NULL")
+	 * {param} string("DEP_LINEOFBUSINESSLEVEL2=NULL")
+	 * {param} string("DEP_LINEOFBUSINESSLEVEL3=NULL")
+	 * {param} string("DEP_LINEOFBUSINESSLEVEL4=NULL")
+	 * {param} string("DEP_SOURCESYSTEMCODE=EGL")
+	 *        
+	 *        
+	 */
+	public static String makeSDO_DEPARTMENTTRANSLATION(String DEP_DEPARTMENTKEY, String DEP_DEPARTMENTNAME, String DEP_ENTITYNAME, String DEP_LINEOFBUSINESSLINE, String DEP_LINEOFBUSINESSNAME, String DEP_LOCATIONNAME, String DEP_STANDARDNAME, String DEP_LANGUAGECODE, String DEP_DEPARTMENTHEAD, String DEP_REGION, String DEP_SEGMENTTYPE, String DEP_GCCC, String DEP_AONREGION, String DEP_AONCLUSTER, String DEP_REPORTING, String DEP_BUSINESSUNIT, String DEP_LINEOFBUSINESSCOUNTRY, String DEP_LINEOFBUSINESSLEVEL1, String DEP_LINEOFBUSINESSLEVEL2, String DEP_LINEOFBUSINESSLEVEL3, String DEP_LINEOFBUSINESSLEVEL4, String DEP_SOURCESYSTEMCODE) {
+	
+	String holdDEP_DEPARTMENTNAME = DEP_DEPARTMENTNAME.replace("'", "").replaceAll("(\r\n|\r|\n|\n\r)", "");
+		
+	return "INSERT [dbo].[SDO_DEPARTMENTTRANSLATION] ([DEP_DEPARTMENTKEY], [DEP_DEPARTMENTNAME], [DEP_ENTITYNAME], [DEP_LINEOFBUSINESSLINE], [DEP_LINEOFBUSINESSNAME], [DEP_LOCATIONNAME], [DEP_STANDARDNAME], [DEP_LANGUAGECODE], [DEP_DEPARTMENTHEAD], [DEP_REGION], [DEP_SEGMENTTYPE], [DEP_GCCC], [DEP_AONREGION], [DEP_AONCLUSTER], [DEP_REPORTING], [DEP_BUSINESSUNIT], [DEP_LINEOFBUSINESSCOUNTRY], [DEP_LINEOFBUSINESSLEVEL1], [DEP_LINEOFBUSINESSLEVEL2], [DEP_LINEOFBUSINESSLEVEL3], [DEP_LINEOFBUSINESSLEVEL4], [DEP_SOURCESYSTEMCODE]) VALUES (N'" + DEP_DEPARTMENTKEY + "', N'" + holdDEP_DEPARTMENTNAME + "', NULL, NULL, NULL, NULL, NULL, N'" + DEP_LANGUAGECODE + "', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, N'" + DEP_SOURCESYSTEMCODE +"')";
+	} 
+
+
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("DEP_DEPARTMENTKEY=IEACS301")
+	 * {param} string("DEP_SOURCECOUNTRYCODE=IE")
+	 * {param} string("DEP_COMPANYCODE=NULL")
+	 * {param} string("DEP_DEPARTMENTCODE=ACS301")
+	 * {param} string("DEP_ENTITYCODE=NULL")
+	 * {param} string("DEP_LINEOFBUSINESSCODE=NULL")
+	 * {param} string("DEP_LOCATIONCODE=NULL")
+	 * {param} string("DEP_STANDARDCODE=NULL")
+	 * {param} string("DEP_ACTIVEFLAG=Y")
+	 * {param} string("DEP_LOCATIONKEY=NULL")
+	 * {param} string("DEP_REFRESHDATE=2018-12-04T14:58:17.0000000")
+	 * {param} string("DEP_SRCREFRESHDATE=2018-12-04T14:58:17.8863710")
+	 * {param} string("DEP_SOURCESYSTEMCODE=EGL")
+	 *          
+	 */
+	public static String makeSDO_DEPARTMENT(String DEP_DEPARTMENTKEY, String DEP_SOURCECOUNTRYCODE, String DEP_COMPANYCODE, String DEP_DEPARTMENTCODE, String DEP_ENTITYCODE, String DEP_LINEOFBUSINESSCODE, String DEP_LOCATIONCODE, String DEP_STANDARDCODE, String DEP_ACTIVEFLAG, String DEP_LOCATIONKEY, Date DEP_REFRESHDATE, Date DEP_SRCREFRESHDATE, String DEP_SOURCESYSTEMCODE ) {
+	
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(DEP_REFRESHDATE);	
+	
+	return "INSERT [dbo].[SDO_DEPARTMENT] ([DEP_DEPARTMENTKEY], [DEP_SOURCECOUNTRYCODE], [DEP_COMPANYCODE], [DEP_DEPARTMENTCODE], [DEP_ENTITYCODE], [DEP_LINEOFBUSINESSCODE], [DEP_LOCATIONCODE], [DEP_STANDARDCODE], [DEP_ACTIVEFLAG], [DEP_LOCATIONKEY], [DEP_REFRESHDATE], [DEP_SRCREFRESHDATE], [DEP_SOURCESYSTEMCODE]) VALUES (N'" + DEP_DEPARTMENTKEY + "', N'" + DEP_SOURCECOUNTRYCODE + "', N'" + DEP_COMPANYCODE + "', N'" + DEP_DEPARTMENTCODE + "', NULL, NULL, NULL, NULL, N'" + DEP_ACTIVEFLAG +"', NULL, CAST(N'" + simpleDateFormat.format(DEP_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(DEP_SRCREFRESHDATE) + "' AS DateTime2), N'" + DEP_SOURCESYSTEMCODE +"')";
+	} 
+
+
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("CEX_CLIENTEXTREFERENCEKEY=IEDUNS")
+	 * {param} string("CEX_CLIENTEXTREFDESCRIPTION=DUNS")
+	 * {param} string("CEX_LANGUAGECODE=EN")
+	 *         
+	 */
+	public static String makeSDO_CLIENTEXTREFERENCETRANSLATION(String CEX_CLIENTEXTREFERENCEKEY, String CEX_CLIENTEXTREFDESCRIPTION, String CEX_LANGUAGECODE) {
+	
+		
+		
+	return "INSERT [dbo].[SDO_CLIENTEXTREFERENCETRANSLATION] ([CEX_CLIENTEXTREFERENCEKEY], [CEX_CLIENTEXTREFDESCRIPTION], [CEX_LANGUAGECODE]) VALUES (N'" + CEX_CLIENTEXTREFERENCEKEY + "', N'" + CEX_CLIENTEXTREFDESCRIPTION + "', N'" + CEX_LANGUAGECODE + "')";
+	} 
+
+
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("CEX_CLIENTEXTREFERENCEKEY=IEDUNS")
+	 * {param} string("CEX_SOURCECOUNTRYCODE=IE")
+	 * {param} string("CEX_CLIENTEXTREFERENCECODE=DUNS")
+	 * {param} string("CEX_ACTIVEFLAG=Y")
+	 * {param} string("CEX_REFRESHDATE=DATE")
+	 * {param} string("CEX_SRCREFRESHDATE=DATE")
+	 *      
+	 */
+	public static String makeSDO_CLIENTEXTREFERENCE(String CEX_CLIENTEXTREFERENCEKEY, String CEX_SOURCECOUNTRYCODE, String CEX_CLIENTEXTREFERENCECODE, String CEX_ACTIVEFLAG, Date CEX_REFRESHDATE, Date CEX_SRCREFRESHDATE) {
+	
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(CEX_REFRESHDATE);	
+		
+		
+	return "INSERT [dbo].[SDO_CLIENTEXTREFERENCE] ([CEX_CLIENTEXTREFERENCEKEY], [CEX_SOURCECOUNTRYCODE], [CEX_CLIENTEXTREFERENCECODE], [CEX_ACTIVEFLAG], [CEX_REFRESHDATE], [CEX_SRCREFRESHDATE]) VALUES (N'" + CEX_CLIENTEXTREFERENCEKEY +"', N'" + CEX_SOURCECOUNTRYCODE + "', N'" + CEX_CLIENTEXTREFERENCECODE + "', N'" + CEX_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(CEX_REFRESHDATE) +"' AS DateTime2), CAST(N'" + simpleDateFormat.format(CEX_SRCREFRESHDATE) + "' AS DateTime2))";
+	} 
+	
+
+
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("ALR_ACCOUNTLOSTREASONKEY=IETRN")
+	 * {param} string("ALR_ACCOUNTLOSTREASONSHORTNAME=LOST BUS./TRANSFER")
+	 * {param} string("ALR_ACCOUNTLOSTREASONDESCRIPTION=Business lost to Alternative Broker")
+	 * {param} string("ALR_LANGUAGECODE=EN")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_ACCOUNTLOSTREASONTRANSLATION(String ALR_ACCOUNTLOSTREASONKEY,String ALR_ACCOUNTLOSTREASONSHORTNAME,String ALR_ACCOUNTLOSTREASONDESCRIPTION,String ALR_LANGUAGECODE) {
+		
+	return "INSERT [dbo].[SDO_ACCOUNTLOSTREASONTRANSLATION] ([ALR_ACCOUNTLOSTREASONKEY], [ALR_ACCOUNTLOSTREASONSHORTNAME], [ALR_ACCOUNTLOSTREASONDESCRIPTION], [ALR_LANGUAGECODE]) VALUES (N'" + ALR_ACCOUNTLOSTREASONKEY + "', N'" + ALR_ACCOUNTLOSTREASONSHORTNAME + "', N'" + ALR_ACCOUNTLOSTREASONDESCRIPTION + "', N'" + ALR_LANGUAGECODE + "')";
+	} 
+
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("CST_CLIENTSTATUSKEY=A")
+	 * {param} string("CST_CLIENTSTATUSCODE=A")
+	 * {param} string("CST_ACTIVEFLAG=Y")
+	 * {param} string("CST_REFRESHDATE=DATE")
+	 * {param} string("CST_SRCREFRESHDATE=DATE")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_CLIENTSTATUS(String CST_CLIENTSTATUSKEY,String CST_CLIENTSTATUSCODE,String CST_ACTIVEFLAG,Date CST_REFRESHDATE,Date CST_SRCREFRESHDATE) {
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		
+	return "INSERT [dbo].[SDO_CLIENTSTATUS] ([CST_CLIENTSTATUSKEY], [CST_CLIENTSTATUSCODE], [CST_ACTIVEFLAG], [CST_REFRESHDATE], [CST_SRCREFRESHDATE]) VALUES (N'" + CST_CLIENTSTATUSKEY + "', N'" + CST_CLIENTSTATUSCODE + "', N'" + CST_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(CST_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(CST_SRCREFRESHDATE) + "' AS DateTime2))";
+	} 
+
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("CST_CLIENTSTATUSKEY=P")
+	 * {param} string("CST_CLIENTSTATUSDESCRIPTION=Prospect")
+	 * {param} string("CST_LANGUAGECODE=EN")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_CLIENTSTATUSTRANSLATION(String CST_CLIENTSTATUSKEY,String CST_CLIENTSTATUSDESCRIPTION,String CST_LANGUAGECODE) {
+		
+		
+	return "INSERT [dbo].[SDO_CLIENTSTATUSTRANSLATION] ([CST_CLIENTSTATUSKEY], [CST_CLIENTSTATUSDESCRIPTION], [CST_LANGUAGECODE]) VALUES (N'" + CST_CLIENTSTATUSKEY + "', N'" + CST_CLIENTSTATUSDESCRIPTION + "', N'" + CST_LANGUAGECODE + "')";
+	} 
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("CLT_CLIENTTYPEKEY=B")
+	 * {param} string("CLT_CLIENTTYPECODE=B")
+	 * {param} string("CLT_ACTIVEFLAG=Y")
+	 * {param} string("CLT_REFRESHDATE=Date")
+	 * {param} string("CLT_SRCREFRESHDATE=Date")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_CLIENTTYPE(String CLT_CLIENTTYPEKEY, String CLT_CLIENTTYPECODE, String CLT_ACTIVEFLAG, Date CLT_REFRESHDATE, Date CLT_SRCREFRESHDATE) {
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(CLT_REFRESHDATE);	
+		
+	return "INSERT [dbo].[SDO_CLIENTTYPE] ([CLT_CLIENTTYPEKEY], [CLT_CLIENTTYPECODE], [CLT_ACTIVEFLAG], [CLT_REFRESHDATE], [CLT_SRCREFRESHDATE]) VALUES (N'" + CLT_CLIENTTYPEKEY +"', N'" + CLT_CLIENTTYPECODE + "', N'" + CLT_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(CLT_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(CLT_SRCREFRESHDATE) + "' AS DateTime2))";
+
+	
+	} 
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("CLT_CLIENTTYPEKEY=B")
+	 * {param} string("CLT_CLIENTTYPEDESCRIPTION=Business")
+	 * {param} string("CLT_LANGUAGECODE=EN")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_CLIENTTYPETRANSLATION(String CLT_CLIENTTYPEKEY, String CLT_CLIENTTYPEDESCRIPTION, String CLT_LANGUAGECODE) {
+			
+	return "INSERT [dbo].[SDO_CLIENTTYPETRANSLATION] ([CLT_CLIENTTYPEKEY], [CLT_CLIENTTYPEDESCRIPTION], [CLT_LANGUAGECODE]) VALUES (N'" + CLT_CLIENTTYPEKEY + "', N'" + CLT_CLIENTTYPEDESCRIPTION + "', N'" + CLT_LANGUAGECODE + "')";
+	
+
+	} 
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("IND_INDUSTRYKEY=IEEGL9")
+	 * {param} string("IND_SOURCECOUNTRYCODE=IE")
+	 * {param} string("IND_SOURCESYSTEMCODE=EGL")
+	 * {param} string("IND_INDUSTRYCODE=9")
+	 * {param} string("IND_STANDARDCODE=NULL")
+	 * {param} string("IND_GLOBALCODE=NULL")
+	 * {param} string("IND_GLOBALCATCODE=NULL")
+	 * {param} string("IND_ACTIVEFLAG=Y")
+	 * {param} string("IND_REFRESHDATE=Date")
+	 * {param} string("IND_SRCREFRESHDATE=Date")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_INDUSTRY(String IND_INDUSTRYKEY, String IND_SOURCECOUNTRYCODE, String IND_SOURCESYSTEMCODE, String IND_INDUSTRYCODE, String IND_STANDARDCODE, String IND_GLOBALCODE, String IND_GLOBALCATCODE, String IND_ACTIVEFLAG, Date IND_REFRESHDATE, Date IND_SRCREFRESHDATE) {
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(IND_REFRESHDATE);	
+		
+	return "INSERT [dbo].[SDO_INDUSTRY] ([IND_INDUSTRYKEY], [IND_SOURCECOUNTRYCODE], [IND_SOURCESYSTEMCODE], [IND_INDUSTRYCODE], [IND_STANDARDCODE], [IND_GLOBALCODE], [IND_GLOBALCATCODE], [IND_ACTIVEFLAG], [IND_REFRESHDATE], [IND_SRCREFRESHDATE]) VALUES (N'" + IND_INDUSTRYKEY + "', N'" + IND_SOURCECOUNTRYCODE + "', N'" + IND_SOURCESYSTEMCODE +"', N'" + IND_INDUSTRYCODE + "', NULL, NULL, NULL, N'" + IND_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(IND_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(IND_REFRESHDATE) + "' AS DateTime2))";
+
+	 
+	} 
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("IND_INDUSTRYKEY=IEEGLB056")
+	 * {param} string("IND_INDUSTRYNAME=Power Supply & Generation - Electricity, Gas, Wind etc...")
+	 * {param} string("IND_STANDARDNAME=NULL")
+	 * {param} string("IND_GLOBALNAME=NULL")
+	 * {param} string("IND_GLOBALCATEGORY=NULL")
+	 * {param} string("IND_SPECIALITY=NULL")
+	 * {param} string("IND_INDUSTRYSHORTNAME=NULL")
+	 * {param} string("IND_LANGUAGECODE=EN")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_INDUSTRYTRANSLATION(String IND_INDUSTRYKEY, String IND_INDUSTRYNAME, String IND_STANDARDNAME, String IND_GLOBALNAME, String IND_GLOBALCATEGORY, String IND_SPECIALITY, String IND_INDUSTRYSHORTNAME, String IND_LANGUAGECODE) {
+			
+	return "INSERT [dbo].[SDO_INDUSTRYTRANSLATION] ([IND_INDUSTRYKEY], [IND_INDUSTRYNAME], [IND_STANDARDNAME], [IND_GLOBALNAME], [IND_GLOBALCATEGORY], [IND_SPECIALITY], [IND_INDUSTRYSHORTNAME], [IND_LANGUAGECODE]) VALUES (N'" + IND_INDUSTRYKEY + "', N'" + IND_INDUSTRYNAME + "', N'" + IND_STANDARDNAME + "', NULL, N'" + IND_GLOBALCATEGORY + "', N'" + IND_SPECIALITY + "', N'" + IND_INDUSTRYSHORTNAME + "', N'" + IND_LANGUAGECODE + "')";
+		
+	
+	}
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("REL_REPORTINGLINEKEY=HKTBA")
+	 * {param} string("REL_SOURCECOUNTRYCODE=HK")
+	 * {param} string("REL_REPORTINGLINECODE=TBA")
+	 * {param} string("REL_ACTIVEFLAG=Y")
+	 * {param} string("REL_REFRESHDATE=DATE")
+	 * {param} string("REL_SRCREFRESHDATE=DATE")
+	 *    
+	 *      
+	 */
+	public static String makeLDO_REPORTLINE(String REL_REPORTINGLINEKEY, String REL_SOURCECOUNTRYCODE, String REL_REPORTINGLINECODE, String REL_ACTIVEFLAG, Date REL_REFRESHDATE, Date REL_SRCREFRESHDATE) {
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(REL_REFRESHDATE);	
+		
+	return "INSERT [dbo].[LDO_REPORTINGLINE] ([REL_REPORTINGLINEKEY], [REL_SOURCECOUNTRYCODE], [REL_REPORTINGLINECODE], [REL_ACTIVEFLAG], [REL_REFRESHDATE], [REL_SRCREFRESHDATE]) VALUES (N'" + REL_REPORTINGLINEKEY + "', N'" + REL_SOURCECOUNTRYCODE + "', N'" + REL_REPORTINGLINECODE + "', N'" + REL_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(REL_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(REL_SRCREFRESHDATE) + "' AS DateTime2))";
+
+
+	} 
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("REL_REPORTINGLINEKEY=HKTBA")
+	 * {param} string("REL_REPORTINGLINEDESCRIPTION=To Be Added")
+	 * {param} string("REL_LANGUAGECODE=EN")
+	 *    
+	 *      
+	 */
+	public static String makeLDO_REPORTLINETRANSLATION(String REL_REPORTINGLINEKEY, String REL_REPORTINGLINEDESCRIPTION, String REL_LANGUAGECODE) {
+			
+	return "INSERT [dbo].[LDO_REPORTINGLINETRANSLATION] ([REL_REPORTINGLINEKEY], [REL_REPORTINGLINEDESCRIPTION], [REL_LANGUAGECODE]) VALUES (N'" + REL_REPORTINGLINEKEY + "', N'" + REL_REPORTINGLINEDESCRIPTION + "', N'" + REL_LANGUAGECODE + "')";
+
+	
+	} 
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("EMP_EMPLOYEEID=0599465")
+	 * {param} string("EMP_SUPERVISORID=0754388")
+	 * {param} string("EMP_BRANCHKEY=NULL")
+	 * {param} string("EMP_CURRENTSTATUS=NULL")
+	 * {param} string("EMP_COMPANY=Aon Risk Solutions")
+	 * {param} string("EMP_REGION=EMEA")
+	 * {param} string("EMP_ACTIVEFLAG=Y")
+	 * {param} string("EMP_LOCATIONKEY=NULL")
+	 * {param} string("EMP_REFRESHDATE=2019-02-27T11:47:00.0000000")
+	 * {param} string("EMP_SRCREFRESHDATE=2019-02-27T11:47:18.5592670")
+	 * {param} string("EMP_DEPARTMENTCODE=60889")
+	 * {param} string("EMP_EMPLOYEETYPE=Aon-Emp")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_EMPLOYEE(String EMP_EMPLOYEEID, String EMP_SUPERVISORID, String EMP_BRANCHKEY, String EMP_CURRENTSTATUS, String EMP_COMPANY, String EMP_REGION, String EMP_ACTIVEFLAG, String EMP_LOCATIONKEY, Date EMP_REFRESHDATE, Date EMP_SRCREFRESHDATE, String EMP_DEPARTMENTCODE, String EMP_EMPLOYEETYPE) {
+			
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(REL_REFRESHDATE);
+		
+		String EMP_REFRESHDATEStr= "";
+		if ( EMP_REFRESHDATE != null) {
+			EMP_REFRESHDATEStr = simpleDateFormat.format(EMP_REFRESHDATE);
+		}
+		
+		String EMP_SRCREFRESHDATEStr= "";
+		if ( EMP_SRCREFRESHDATE != null) {
+			EMP_SRCREFRESHDATEStr = simpleDateFormat.format(EMP_SRCREFRESHDATE);
+		} 
+
+		
+	return "INSERT [dbo].[SDO_EMPLOYEE] ([EMP_EMPLOYEEID], [EMP_SUPERVISORID], [EMP_BRANCHKEY], [EMP_CURRENTSTATUS], [EMP_COMPANY], [EMP_REGION], [EMP_ACTIVEFLAG], [EMP_LOCATIONKEY], [EMP_REFRESHDATE], [EMP_SRCREFRESHDATE], [EMP_DEPARTMENTCODE], [EMP_EMPLOYEETYPE]) VALUES (N'" + EMP_EMPLOYEEID + "', N'" + EMP_SUPERVISORID + "', NULL, NULL, N'" + EMP_COMPANY + "', N'" + EMP_REGION + "', N'" + EMP_ACTIVEFLAG + "', NULL, CAST(N'" + EMP_REFRESHDATEStr + "' AS DateTime2), CAST(N'" + EMP_SRCREFRESHDATEStr + "' AS DateTime2), N'" + EMP_DEPARTMENTCODE + "', N'" + EMP_EMPLOYEETYPE + "')";
+	} 
+	
+	
+	
+	
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("CNR_CANCELREASONKEY=IEBRR")
+	 * {param} string("CNR_CANCELREASONCODE=BRR")
+	 * {param} string("CNR_SOURCECOUNTRYCODE=IE")
+	 * {param} string("CNR_ACTIVEFLAG=Y")
+	 * {param} string("CNR_REFRESHDATE=2019-08-08T03:49:01.5170000")
+	 * {param} string("CNR_SRCREFRESHDATE=2019-08-08T02:48:03.0770000")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_CANCELREASON(String CNR_CANCELREASONKEY, String CNR_CANCELREASONCODE, String CNR_SOURCECOUNTRYCODE, String CNR_ACTIVEFLAG, Date CNR_REFRESHDATE, Date CNR_SRCREFRESHDATE) {
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(REL_REFRESHDATE);	
+		
+		
+	return "INSERT [dbo].[SDO_CANCELREASON] ([CNR_CANCELREASONKEY], [CNR_CANCELREASONCODE], [CNR_SOURCECOUNTRYCODE], [CNR_ACTIVEFLAG], [CNR_REFRESHDATE], [CNR_SRCREFRESHDATE]) VALUES (N'"+ CNR_CANCELREASONKEY + "', N'"+ CNR_CANCELREASONCODE +"', N'" + CNR_SOURCECOUNTRYCODE + "', N'" + CNR_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(CNR_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(CNR_SRCREFRESHDATE) + "' AS DateTime2))";
+	} 
+	
+	public static String makeSDO_MARKETSEGMENT(String MS_MARKETSEGMENTKEY, String MS_MARKETSEGMENTCODE, String MS_ACTIVEFLAG,  Date MS_REFRESHDATE, Date MS_SRCREFRESHDATE, String MS_SOURCECOUNTRYCODE) {
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(REL_REFRESHDATE);			
+		
+	return "INSERT [dbo].[SDO_MARKETSEGMENT] ( [MS_MARKETSEGMENTKEY], [MS_MARKETSEGMENTCODE], [MS_ACTIVEFLAG], [MS_REFRESHDATE], [MS_SRCREFRESHDATE], [MS_SOURCECOUNTRYCODE]) VALUES (N'"+ MS_MARKETSEGMENTKEY + "', N'"+ MS_MARKETSEGMENTCODE +"', N'" + MS_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(MS_SRCREFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(MS_SRCREFRESHDATE) + "' AS DateTime2),  N'" + MS_SOURCECOUNTRYCODE + "' )";
+	}
+	public static String makeSDO_MARKETSEGMENTTRANSLATION(String MS_MARKETSEGMENTKEY, String MS_MARKETSEGMENTDESC, String MS_LANGUAGECODE) {
+		
+
+		return "INSERT [dbo].[SDO_MARKETSEGMENTTRANSLATION] ([MS_MARKETSEGMENTKEY], [MS_MARKETSEGMENTDESC], [MS_LANGUAGECODE]) VALUES (N'" + MS_MARKETSEGMENTKEY + "', N'" + MS_MARKETSEGMENTDESC +"', N'" + MS_LANGUAGECODE + "')";
+		} 
+	
+	public static String makeLDO_FUNCTIONROLE(String FTR_FUNCTIONROLEKEY, String FTR_FUNCTIONROLECODE, String FTR_ACTIVEFLAG,  Date FTR_SRCREFRESHDATE, Date FTR_CREATEDDATE, Date FTR_MODIFIEDDATE, String FTR_SOURCECOUNTRYCODE) {
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(REL_REFRESHDATE);			
+		
+	return "INSERT [dbo].[LDO_FUNCTIONROLE] ( [FTR_FUNCTIONROLEKEY], [FTR_FUNCTIONROLECODE], [FTR_ACTIVEFLAG], [FTR_SRCREFRESHDATE], [FTR_CREATEDDATE], [FTR_MODIFIEDDATE], [FTR_SOURCECOUNTRYCODE]) VALUES (N'"+ FTR_FUNCTIONROLEKEY + "', N'"+ FTR_FUNCTIONROLECODE +"', N'" + FTR_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(FTR_SRCREFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(FTR_CREATEDDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(FTR_MODIFIEDDATE) + "' AS DateTime2),  N'" + FTR_SOURCECOUNTRYCODE + "' )";
+	}
+	public static String makeLDO_FUNCTIONROLETRANSLATION(String FTR_FUNCTIONROLEKEY, String FTR_FUNCTIONROLEDESCRIPTION, String FTR_LANGUAGECODE) {
+		
+
+		return "INSERT [dbo].[LDO_FUNCTIONROLETRANSLATION] ([FTR_FUNCTIONROLEKEY], [FTR_FUNCTIONROLEDESCRIPTION], [FTR_LANGUAGECODE]) VALUES (N'" + FTR_FUNCTIONROLEKEY + "', N'" + FTR_FUNCTIONROLEDESCRIPTION +"', N'" + FTR_LANGUAGECODE + "')";
+		} 
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("CNR_CANCELREASONKEY=IEBRR")
+	 * {param} string("CNR_CANCELREASONDESCRIPTION=Broker Request")
+	 * {param} string("CNR_LANGUAGECODE=EN")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_CANCELREASONTRANSLATION(String CNR_CANCELREASONKEY, String CNR_CANCELREASONDESCRIPTION, String CNR_LANGUAGECODE) {
+			
+
+	return "INSERT [dbo].[SDO_CANCELREASONTRANSLATION] ([CNR_CANCELREASONKEY], [CNR_CANCELREASONDESCRIPTION], [CNR_LANGUAGECODE]) VALUES (N'" + CNR_CANCELREASONKEY + "', N'" + CNR_CANCELREASONDESCRIPTION +"', N'" + CNR_LANGUAGECODE + "')";
+	} 
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("PRD_SOURCECOUNTRYCODE=IE")
+	 * {param} string("PRD_PRODUCTKEY=IEO018")
+	 * {param} string("PRD_LOCALPRODUCTCODE=O018")
+	 * {param} string("PRD_PRODUCTTYPE=NULL")
+	 * {param} string("PRD_ACTIVEFLAG=N")
+	 * {param} string("PRD_STANDARDPRODUCTCODE=NULL")
+	 * {param} string("PRD_GLOBALPRODUCTCODE=NULL")
+	 * {param} string("PRD_GLOBALPRODUCTCATEGORYCODE=NULL")
+	 * {param} string("PRD_COVERTYPE=NULL")
+	 * {param} string("PRD_GRIPFACILITYCODE=NULL")
+	 * {param} string("PRD_AFFINITYSPONSOR=NULL")
+	 * {param} string("PRD_AUTORENEWFLAG=N")
+	 * {param} string("PRD_AUTORATEDFLAG=N")
+	 * {param} string("PRD_PLACINGSYSTEMKEY=NULL")
+	 * {param} string("PRD_GOVTFEESTATUSKEY=N")
+	 * {param} string("PRD_PREMFUNDALLOWEDFLAG=N")
+	 * {param} string("PRD_PRODUCTCLASSKEY=NULL")
+	 * {param} string("PRD_DEFAULTCARRIERKEY=IEEGL")
+	 * {param} string("PRD_DEFAULTCARRIERBRANCHKEY=IEEGL")
+	 * {param} string("PRD_DEFAULT1REVSHAREENTITYKEY=IEEGL")
+	 * {param} string("PRD_DEFAULT2REVSHAREENTITYKEY=IEEGL")
+	 * {param} string("PRD_DEFAULT3REVSHAREENTITYKEY=IEEGL")
+	 * {param} string("PRD_REFRESHDATE=DATE")
+	 * {param} string("PRD_SRCREFRESHDATE=DATE")
+	 * {param} string("PRD_MULTIPLACEMENTCOVERFLAG=NULL")
+	 * {param} string("PRD_PARENTPRODUCTKEY=NULL")
+	 * {param} string("PRD_PRODUCTCLASS2TYPEKEY=NULL")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_PRODUCT(String PRD_SOURCECOUNTRYCODE, String PRD_PRODUCTKEY, String PRD_LOCALPRODUCTCODE, String PRD_PRODUCTTYPE, String PRD_ACTIVEFLAG, String PRD_STANDARDPRODUCTCODE, 
+			String PRD_GLOBALPRODUCTCODE, String PRD_GLOBALPRODUCTCATEGORYCODE, String PRD_COVERTYPE, String PRD_GRIPFACILITYCODE, String PRD_AFFINITYSPONSOR, String PRD_AUTORENEWFLAG, String PRD_AUTORATEDFLAG, 
+			String PRD_PLACINGSYSTEMKEY, String PRD_GOVTFEESTATUSKEY, String PRD_PREMFUNDALLOWEDFLAG, String PRD_PRODUCTCLASSKEY, String PRD_DEFAULTCARRIERKEY,  String PRD_DEFAULTCARRIERBRANCHKEY, 
+			String PRD_DEFAULT1REVSHAREENTITYKEY, String PRD_DEFAULT2REVSHAREENTITYKEY, String PRD_DEFAULT3REVSHAREENTITYKEY, Date PRD_REFRESHDATE, Date PRD_SRCREFRESHDATE, String PRD_MULTIPLACEMENTCOVERFLAG, 
+			String PRD_PARENTPRODUCTKEY, String PRD_PRODUCTCLASS2TYPEKEY ) {
+			
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+	
+	return "INSERT [dbo].[SDO_PRODUCT] ([PRD_SOURCECOUNTRYCODE], [PRD_PRODUCTKEY], [PRD_LOCALPRODUCTCODE], [PRD_PRODUCTTYPE], [PRD_ACTIVEFLAG], [PRD_STANDARDPRODUCTCODE], [PRD_GLOBALPRODUCTCODE], [PRD_GLOBALPRODUCTCATEGORYCODE], [PRD_COVERTYPE], [PRD_GRIPFACILITYCODE], [PRD_AFFINITYSPONSOR], [PRD_AUTORENEWFLAG], [PRD_AUTORATEDFLAG], [PRD_PLACINGSYSTEMKEY], [PRD_GOVTFEESTATUSKEY], [PRD_PREMFUNDALLOWEDFLAG], [PRD_PRODUCTCLASSKEY], [PRD_DEFAULTCARRIERKEY], [PRD_DEFAULTCARRIERBRANCHKEY], [PRD_DEFAULT1REVSHAREENTITYKEY], [PRD_DEFAULT2REVSHAREENTITYKEY], [PRD_DEFAULT3REVSHAREENTITYKEY], [PRD_REFRESHDATE], [PRD_SRCREFRESHDATE], [PRD_MULTIPLACEMENTCOVERFLAG], [PRD_PARENTPRODUCTKEY], [PRD_PRODUCTCLASS2TYPEKEY]) VALUES (N'" + PRD_SOURCECOUNTRYCODE + "', N'" + PRD_PRODUCTKEY + "', N'" + PRD_LOCALPRODUCTCODE +"', NULL, N'" + PRD_ACTIVEFLAG + "', NULL, N'" + PRD_GLOBALPRODUCTCODE + "', N'" + PRD_GLOBALPRODUCTCATEGORYCODE + "', NULL, NULL, NULL, N'" + PRD_AUTORENEWFLAG + "', N'" + PRD_AUTORATEDFLAG + "', NULL, N'" + PRD_GOVTFEESTATUSKEY + "', NULL, NULL, N'" + PRD_DEFAULTCARRIERKEY + "', N'" + PRD_DEFAULTCARRIERBRANCHKEY + "', N'" + PRD_DEFAULT1REVSHAREENTITYKEY +"', N'" + PRD_DEFAULT2REVSHAREENTITYKEY +"', N'" + PRD_DEFAULT3REVSHAREENTITYKEY +"', CAST(N'" + simpleDateFormat.format(PRD_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(PRD_SRCREFRESHDATE) + "' AS DateTime2), NULL, NULL, NULL)";
+	} 
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("PRD_PRODUCTKEY=IEO018")
+	 * {param} string("PRD_LOCALPRODUCTNAME=Holiday Homes/Thatched dwellings")
+	 * {param} string("PRD_STANDARDPRODUCTNAME=NULL")
+	 * {param} string("PRD_GLOBALPRODUCTNAME=NULL")
+	 * {param} string("PRD_GLOBALPRODUCTCATEGORYNAME=NULL")
+	 * {param} string("PRD_SPECIALITY=NULL")
+	 * {param} string("PRD_LOCALFACILITYNAME=NULL")
+	 * {param} string("PRD_GRIPFACILITYNAME=NULL")
+	 * {param} string("PRD_LOCALSHORTNAME=HOLIDAY HOME")
+	 * {param} string("PRD_ADDITONALLOCALDESCRIPTION=NULL")
+	 * {param} string("PRD_LANGUAGECODE=EN")
+	 * {param} string("PRD_LOCALPRODUCTCATEGORY=NULL")
+	 * {param} string("PRD_PROGRAM=NULL")
+	 * {param} string("PRD_PRODUCTCLASS2TYPEDESCRIPTION=NULL")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_PRODUCTTRANSLATION(String PRD_PRODUCTKEY, String PRD_LOCALPRODUCTNAME, String PRD_STANDARDPRODUCTNAME, String PRD_GLOBALPRODUCTNAME, String PRD_GLOBALPRODUCTCATEGORYNAME, String PRD_SPECIALITY, String PRD_LOCALFACILITYNAME, String PRD_GRIPFACILITYNAME, String PRD_LOCALSHORTNAME, String PRD_ADDITONALLOCALDESCRIPTION, String PRD_LANGUAGECODE, String PRD_LOCALPRODUCTCATEGORY, String PRD_PROGRAM, String PRD_PRODUCTCLASS2TYPEDESCRIPTION) {
+	
+	
+	return "INSERT [dbo].[SDO_PRODUCTTRANSLATION] ([PRD_PRODUCTKEY], [PRD_LOCALPRODUCTNAME], [PRD_STANDARDPRODUCTNAME], [PRD_GLOBALPRODUCTNAME], [PRD_GLOBALPRODUCTCATEGORYNAME], [PRD_SPECIALITY], [PRD_LOCALFACILITYNAME], [PRD_GRIPFACILITYNAME], [PRD_LOCALSHORTNAME], [PRD_ADDITONALLOCALDESCRIPTION], [PRD_LANGUAGECODE], [PRD_LOCALPRODUCTCATEGORY], [PRD_PROGRAM], [PRD_PRODUCTCLASS2TYPEDESCRIPTION]) VALUES (N'" + PRD_PRODUCTKEY + "', N'" + PRD_LOCALPRODUCTNAME + "', NULL, N'" + PRD_GLOBALPRODUCTNAME + "', N'" + PRD_GLOBALPRODUCTCATEGORYNAME + "', NULL, NULL, NULL, N'" + PRD_LOCALSHORTNAME + "', NULL, N'" +  PRD_LANGUAGECODE+ "', NULL, NULL, NULL)";
+	} 
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("ICL_INCOMECLASSKEY=IECHF'")
+	 * {param} string("ICL_SOURCECOUNTRYCODE=IE")
+	 * {param} string("ICL_LOCALINCOMECLASSCODE=CHF")
+	 * {param} string("ICL_STDINCOMECLASSCODE=NULL")
+	 * {param} string("ICL_INCOMECLASSNEWFLAG=NULL")
+	 * {param} string("ICL_INCOMECLASSRENEWFLAG=NULL")
+	 * {param} string("ICL_INCOMECLASSNEWNEWFLAG=NULL")
+	 * {param} string("ICL_INCOMECLASSREVANALYSIS=NULL")
+	 * {param} string("ICL_ACTIVEFLAG=Y")
+	 * {param} string("ICL_REFRESHDATE=DATE")
+	 * {param} string("ICL_SRCREFRESHDATE=DATE")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_INCOMECLASS(String ICL_INCOMECLASSKEY, String ICL_SOURCECOUNTRYCODE, String ICL_LOCALINCOMECLASSCODE, String ICL_STDINCOMECLASSCODE, String ICL_INCOMECLASSNEWFLAG, 
+			String ICL_INCOMECLASSRENEWFLAG, String ICL_INCOMECLASSNEWNEWFLAG, String ICL_INCOMECLASSREVANALYSIS, String ICL_ACTIVEFLAG, Date ICL_REFRESHDATE, Date ICL_SRCREFRESHDATE) {
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(REL_REFRESHDATE);
+		
+		return "INSERT [dbo].[SDO_INCOMECLASS] ([ICL_INCOMECLASSKEY], [ICL_SOURCECOUNTRYCODE], [ICL_LOCALINCOMECLASSCODE], [ICL_STDINCOMECLASSCODE], [ICL_INCOMECLASSNEWFLAG], [ICL_INCOMECLASSRENEWFLAG], [ICL_INCOMECLASSNEWNEWFLAG], [ICL_INCOMECLASSREVANALYSIS], [ICL_ACTIVEFLAG], [ICL_REFRESHDATE], [ICL_SRCREFRESHDATE]) VALUES (N'" + ICL_INCOMECLASSKEY + "', N'" + ICL_SOURCECOUNTRYCODE + "', N'" + ICL_LOCALINCOMECLASSCODE + "', NULL, NULL, NULL, NULL, NULL, N'" + ICL_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(ICL_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(ICL_SRCREFRESHDATE) + "' AS DateTime2))";
+	} 
+
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("ICL_INCOMECLASSKEY=IECHF")
+	 * {param} string("ICL_LOCALINCOMECLASSNAME=Claim Handling Fee")
+	 * {param} string("ICL_STDINCOMECLASSNAME=NULL")
+	 * {param} string("ICL_STDINCOMECLASSFULLNAME=NULL")
+	 * {param} string("ICL_LANGUAGECODE=EN")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_INCOMECLASSTRANSLATION(String ICL_INCOMECLASSKEY, String ICL_LOCALINCOMECLASSNAME, String ICL_STDINCOMECLASSNAME, String ICL_STDINCOMECLASSFULLNAME, String ICL_LANGUAGECODE) {
+		
+		
+		return "INSERT [dbo].[SDO_INCOMECLASSTRANSLATION] ([ICL_INCOMECLASSKEY], [ICL_LOCALINCOMECLASSNAME], [ICL_STDINCOMECLASSNAME], [ICL_STDINCOMECLASSFULLNAME], [ICL_LANGUAGECODE]) VALUES (N'" + ICL_INCOMECLASSKEY + "', N'" + ICL_LOCALINCOMECLASSNAME + "', NULL, NULL, N'" + ICL_LANGUAGECODE + "')";
+	} 
+
+
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("PHT_PHONETYPEKEY=MOB")
+	 * {param} string("PHT_PHONETYPEDESCRIPTION=Mobile")
+	 * {param} string("PHT_LANGUAGECODE=EN")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_PHONETYPETRANSLATION(String PHT_PHONETYPEKEY, String PHT_PHONETYPEDESCRIPTION, String PHT_LANGUAGECODE) {
+			
+		return "INSERT [dbo].[SDO_PHONETYPETRANSLATION] ([PHT_PHONETYPEKEY], [PHT_PHONETYPEDESCRIPTION], [PHT_LANGUAGECODE]) VALUES (N'" + PHT_PHONETYPEKEY + "', N'" + PHT_PHONETYPEDESCRIPTION + "', N'" + PHT_PHONETYPEDESCRIPTION + "')";
+	} 
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("PHT_PHONETYPEKEY=MOB")
+	 * {param} string("PHT_PHONETYPECODE=MOB")
+	 * {param} string("PHT_ACTIVEFLAG=Y")
+	 * {param} string("PHT_REFRESHDATE=DATE")
+	 * {param} string("PHT_SRCREFRESHDATE=DATE")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_PHONETYPE(String PHT_PHONETYPEKEY, String PHT_PHONETYPECODE, String PHT_ACTIVEFLAG, Date PHT_REFRESHDATE, Date PHT_SRCREFRESHDATE) {
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(REL_REFRESHDATE);
+		
+		
+	return "INSERT [dbo].[SDO_PHONETYPE] ([PHT_PHONETYPEKEY], [PHT_PHONETYPECODE], [PHT_ACTIVEFLAG], [PHT_REFRESHDATE], [PHT_SRCREFRESHDATE]) VALUES (N'" + PHT_PHONETYPEKEY + "', N'" + PHT_PHONETYPECODE + "', N'" + PHT_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(PHT_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(PHT_SRCREFRESHDATE) + "' AS DateTime2))";
+	} 
+	
+	
+	
+
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("BCH_BRANCHKEY=IEEGLACSACS")
+	 * {param} string("BCH_SOURCECOUNTRYCODE=IE")
+	 * {param} string("BCH_SOURCESYSTEMCODE=EGL")
+	 * {param} string("BCH_COMPANY=ACS")
+	 * {param} string("BCH_BRANCHCODE=ACS")
+	 * {param} string("BCH_GLACTIVEFLAG=Y")
+	 * {param} string("BCH_BROKINGONLYFLAG=Y")
+	 * {param} string("BCH_AUTOPREMFUNDINGFLAG=N")
+	 * {param} string("BCH_ACTIVEFLAG=Y")
+	 * {param} string("BCH_REFRESHDATE=Date")
+	 * {param} string("BCH_SRCREFRESHDATE=Date")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_BRANCH(String BCH_BRANCHKEY, String BCH_SOURCECOUNTRYCODE, String BCH_SOURCESYSTEMCODE, String BCH_COMPANY, String BCH_BRANCHCODE, String BCH_GLACTIVEFLAG, String BCH_BROKINGONLYFLAG, String BCH_AUTOPREMFUNDINGFLAG, String BCH_ACTIVEFLAG, Date BCH_REFRESHDATE, Date BCH_SRCREFRESHDATE) {
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(REL_REFRESHDATE);
+		
+		
+	return "INSERT [dbo].[SDO_BRANCH] ([BCH_BRANCHKEY], [BCH_SOURCECOUNTRYCODE], [BCH_SOURCESYSTEMCODE], [BCH_COMPANY], [BCH_BRANCHCODE], [BCH_GLACTIVEFLAG], [BCH_BROKINGONLYFLAG], [BCH_AUTOPREMFUNDINGFLAG], [BCH_ACTIVEFLAG], [BCH_REFRESHDATE], [BCH_SRCREFRESHDATE]) VALUES (N'" + BCH_BRANCHKEY + "', N'" + BCH_SOURCECOUNTRYCODE + "', N'" + BCH_SOURCESYSTEMCODE + "', N'" + BCH_COMPANY + "', N'" + BCH_BRANCHCODE + "', N'" + BCH_GLACTIVEFLAG + "', N'" + BCH_BROKINGONLYFLAG + "', N'" + BCH_AUTOPREMFUNDINGFLAG + "', N'" + BCH_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(BCH_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(BCH_SRCREFRESHDATE)  + "' AS DateTime2))";
+	} 
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("BCH_BRANCHKEY=IEEGLACSACS")
+	 * {param} string("BCH_BRANCHNAME=Aon Commercial Services and Operations Ireland Ltd")
+	 * {param} string("BCH_SHORTNAME=ACSOIL")
+	 * {param} string("BCH_LANGUAGECODE=EN")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_BRANCHTRANSLATION(String BCH_BRANCHKEY, String BCH_BRANCHNAME, String BCH_SHORTNAME, String BCH_LANGUAGECODE) {
+			
+		
+	return "INSERT [dbo].[SDO_BRANCHTRANSLATION] ([BCH_BRANCHKEY], [BCH_BRANCHNAME], [BCH_SHORTNAME], [BCH_LANGUAGECODE]) VALUES (N'" + BCH_BRANCHKEY +"', N'" + BCH_BRANCHNAME + "', N'" + BCH_SHORTNAME + "', N'" + BCH_LANGUAGECODE + "')";
+	} 
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("CMP_COMPANYKEY=IEAA")
+	 * {param} string("CMP_COUNTRYKEY=IE")
+	 * {param} string("CMP_COMPANYCODE=AA")
+	 * {param} string("CMP_ACTIVEFLAG=1")
+	 * {param} string("CMP_CREATEDBY=null")
+	 * {param} string("CMP_CREATEDDATE=Date")
+	 * {param} string("CMP_MODIFIEDBY=null")
+	 * {param} string("CMP_MODIFIEDDATE=Date")
+	 *    
+	 *      
+	 */
+	public static String makeLDO_COMPANY(String CMP_COMPANYKEY, String CMP_COUNTRYKEY, String CMP_COMPANYCODE, String CMP_ACTIVEFLAG, String CMP_CREATEDBY, Date CMP_CREATEDDATE, String CMP_MODIFIEDBY, Date CMP_MODIFIEDDATE) {
+			
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(REL_REFRESHDATE);
+
+		
+	return "INSERT [dbo].[LDO_COMPANY] ([CMP_COMPANYKEY], [CMP_COUNTRYKEY], [CMP_COMPANYCODE], [CMP_ACTIVEFLAG], [CMP_CREATEDBY], [CMP_CREATEDDATE], [CMP_MODIFIEDBY], [CMP_MODIFIEDDATE]) VALUES (N'" + CMP_COMPANYKEY + "', N'" + CMP_COUNTRYKEY +"', N'" + CMP_COMPANYCODE + "', " + CMP_ACTIVEFLAG + ", NULL, CAST(N'" + simpleDateFormat.format(CMP_CREATEDDATE) + "' AS DateTime2), NULL, CAST(N'" + simpleDateFormat.format(CMP_MODIFIEDDATE) + "' AS DateTime2))";
+	} 
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("CMP_COMPANYKEY=IEAA")
+	 * {param} string("CMP_COMPANYDESCRIPTION=AA")
+	 * {param} string("CMP_LANGUAGECODE=EN")
+	 *    
+	 *      
+	 */
+	public static String makeLDO_COMPANYTRANSLATION(String CMP_COMPANYKEY,String CMP_COMPANYDESCRIPTION,String CMP_LANGUAGECODE) {
+		
+	return "INSERT [dbo].[LDO_COMPANYTRANSLATION] ([CMP_COMPANYKEY], [CMP_COMPANYDESCRIPTION], [CMP_LANGUAGECODE]) VALUES (N'" + CMP_COMPANYKEY + "', N'" + CMP_COMPANYDESCRIPTION + "', N'" + CMP_LANGUAGECODE + "')";
+	} 
+	
+
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("EMA_ADDRESSLINE1=Admiraliteitskade 62")
+	 * {param} string("EMA_ADDRESSLINE2=XX")
+	 * {param} string("EMA_ADDRESSLINE3=XX")
+	 * {param} string("EMA_ADDRESSLINE4=XX")
+	 * {param} string("EMA_CITY=Rotterdam")
+	 * {param} string("EMA_STATECODE=XX")
+	 * {param} string("EMA_COUNTRYCODE=NL")
+	 * {param} string("EMA_POSTCODE=3063 ED")
+	 * {param} string("EMA_REFRESHDATE=DATE")
+	 * {param} string("EMA_ADDRESSTYPEKEY=POST")
+	 * {param} string("EMA_EMPLOYEEID=0599465")
+	 * {param} string("EMA_SRCREFRESHDATE=DATE")
+	 * {param} string("EMA_LANGUAGECODE=EN")
+	 *    
+	 *      
+	 */
+	public static String makeEMP_ADDRESS(String EMA_ADDRESSLINE1, String EMA_ADDRESSLINE2, String EMA_ADDRESSLINE3, String EMA_ADDRESSLINE4, String EMA_CITY, String EMA_STATECODE, String EMA_COUNTRYCODE, String EMA_POSTCODE, Date EMA_REFRESHDATE, String EMA_ADDRESSTYPEKEY, String EMA_EMPLOYEEID, Date EMA_SRCREFRESHDATE, String EMA_LANGUAGECODE) {
+	
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(REL_REFRESHDATE);
+
+		
+	    return "INSERT [dbo].[EMP_ADDRESS] ([EMA_ADDRESSLINE1], [EMA_ADDRESSLINE2], [EMA_ADDRESSLINE3], [EMA_ADDRESSLINE4], [EMA_CITY], [EMA_STATECODE], [EMA_COUNTRYCODE], [EMA_POSTCODE], [EMA_REFRESHDATE], [EMA_ADDRESSTYPEKEY], [EMA_EMPLOYEEID], [EMA_SRCREFRESHDATE], [EMA_LANGUAGECODE]) VALUES (N'" + EMA_ADDRESSLINE1 + "', N'" + EMA_ADDRESSLINE2 + "', N'" + EMA_ADDRESSLINE3 + "', N'" + EMA_ADDRESSLINE4 + "', N'" + EMA_CITY + "', N'"+ EMA_STATECODE + "', N'" + EMA_COUNTRYCODE + "', N'" + EMA_POSTCODE + "', CAST(N'" + simpleDateFormat.format(EMA_REFRESHDATE) + "' AS DateTime2), N'" + EMA_ADDRESSTYPEKEY + "', N'" + EMA_EMPLOYEEID + "', CAST(N'" + simpleDateFormat.format(EMA_REFRESHDATE) + "' AS DateTime2), N'" + EMA_LANGUAGECODE + "');";
+	}
+	
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("EME_EMAILTYPEKEY=BUSN")
+	 * {param} string("EME_EMAIL=nils.jonsthovel@aon.nl")
+	 * {param} string("EME_REFRESHDATE=Date")
+	 * {param} string("EME_PRIMARYFLAG=Y")
+	 * {param} string("EME_LANGUAGECODE=EN")
+	 * {param} string("EME_EMPLOYEEID=0599465")
+	 *    
+	 *      
+	 */
+	public static String makeEMP_EMAIL(String EME_EMAILTYPEKEY, String EME_EMAIL, Date EME_REFRESHDATE, String EME_PRIMARYFLAG, String EME_LANGUAGECODE, String EME_EMPLOYEEID) {
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(REL_REFRESHDATE);
+		
+		return "INSERT [dbo].[EMP_EMAIL] ([EME_EMAILTYPEKEY], [EME_EMAIL], [EME_REFRESHDATE], [EME_PRIMARYFLAG], [EME_LANGUAGECODE], [EME_EMPLOYEEID]) VALUES (N'" + EME_EMAILTYPEKEY + "', N'" + EME_EMAIL + "', CAST(N'" + simpleDateFormat.format(EME_REFRESHDATE) + "' AS DateTime2), N'" + EME_PRIMARYFLAG + "', N'" + EME_LANGUAGECODE + "', N'" + EME_EMPLOYEEID + "');";
+	}
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("EMP_PHONETYPEKEY=BUSN")
+	 * {param} string("EMP_AREACODE=XX")
+	 * {param} string("EMP_COUNTRYCODE=XX")
+	 * {param} string("EMP_PHONE=+31104487852")
+	 * {param} string("EMP_REFRESHDATE=DATE")
+	 * {param} string("EMP_PRIMARYFLAG=Y")
+	 * {param} string("EMP_EMPLOYEEID=0599465")
+	 *    
+	 *      
+	 */
+	public static String makeEMP_PHONE(String EMP_PHONETYPEKEY, String EMP_AREACODE, String EMP_COUNTRYCODE, String EMP_PHONE, Date EMP_REFRESHDATE, String EMP_PRIMARYFLAG, String EMP_EMPLOYEEID) {
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(REL_REFRESHDATE);
+	
+		return "INSERT [dbo].[EMP_PHONE] ([EMP_PHONETYPEKEY], [EMP_AREACODE], [EMP_COUNTRYCODE], [EMP_PHONE], [EMP_REFRESHDATE], [EMP_PRIMARYFLAG], [EMP_EMPLOYEEID]) VALUES (N'" + EMP_PHONETYPEKEY + "', N'" + EMP_AREACODE + "', N'" + EMP_COUNTRYCODE + "', N'" + EMP_PHONE +"', CAST(N'" + simpleDateFormat.format(EMP_REFRESHDATE) + "' AS DateTime2), N'" + EMP_PRIMARYFLAG + "', N'" + EMP_EMPLOYEEID + "');";
+	}
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("EMT_EMPLOYEEYPEKEY=Aon-Emp")
+	 * {param} string("EMT_EMPLOYEETYPENAME=Employee")
+	 * {param} string("EMT_ACTIVEFLAG=Y")
+	 * {param} string("EMT_REFRESHDATE=DATE")
+	 * {param} string("EMT_SRCREFRESHDATE=DATE")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_EMPLOYEETYPETRANSLATION(String EMT_EMPLOYEEYPEKEY, String EMT_EMPLOYEETYPENAME, String EMT_ACTIVEFLAG, Date EMT_REFRESHDATE, Date EMT_SRCREFRESHDATE) {
+
+	String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+	SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+	//String date = simpleDateFormat.format(REL_REFRESHDATE);	
+			
+	return "INSERT [dbo].[SDO_EMPLOYEETYPETRANSLATION] ([EMT_EMPLOYEEYPEKEY], [EMT_EMPLOYEETYPENAME], [EMT_ACTIVEFLAG], [EMT_REFRESHDATE], [EMT_SRCREFRESHDATE]) VALUES (N'" + EMT_EMPLOYEEYPEKEY + "', N'" + EMT_EMPLOYEETYPENAME + "', N'" + EMT_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(EMT_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(EMT_SRCREFRESHDATE) + "' AS DateTime2))";
+	}
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("EMT_EMPLOYEEYPEKEY=Aon-Emp")
+	 * {param} string("EMT_EMPLOYEETYPECODE=Aon-Emp")
+	 * {param} string("EMT_ACTIVEFLAG=Y")
+	 * {param} string("EMT_REFRESHDATE=DATE")
+	 * {param} string("EMT_SRCREFRESHDATE=DATE")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_EMPLOYEETYPE(String EMT_EMPLOYEEYPEKEY, String EMT_EMPLOYEETYPECODE, String EMT_ACTIVEFLAG, Date EMT_REFRESHDATE, Date EMT_SRCREFRESHDATE) {
+		
+	String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+	SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+	//String date = simpleDateFormat.format(REL_REFRESHDATE);	
+					
+	return "INSERT [dbo].[SDO_EMPLOYEETYPE] ([EMT_EMPLOYEEYPEKEY], [EMT_EMPLOYEETYPECODE], [EMT_ACTIVEFLAG], [EMT_REFRESHDATE], [EMT_SRCREFRESHDATE]) VALUES (N'" + EMT_EMPLOYEEYPEKEY + "', N'" + EMT_EMPLOYEETYPECODE +"', N'" + EMT_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(EMT_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(EMT_SRCREFRESHDATE) + "' AS DateTime2));";
+	}
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("EMP_EMPLOYEEID=IEEGLFAHYN01_ODS")
+	 * {param} string("EMP_EMPLOYEENAME=Noel Fahy")
+	 * {param} string("EMP_FIRSTNAME=Noel")
+	 * {param} string("EMP_LASTNAME=Fahy")
+	 * {param} string("EMP_BUSINESSTITLE=BusTitle")
+	 * {param} string("EMP_JOBTITLE=JobTitle")
+	 * {param} string("EMP_LANGUAGECODE=EN")
+	 * {param} string("EMP_DEPARTMENTNAME=DeptName")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_EMPLOYEETRANSLATION(String EMP_EMPLOYEEID, String EMP_EMPLOYEENAME, String EMP_FIRSTNAME, String EMP_LASTNAME, String EMP_BUSINESSTITLE, String EMP_JOBTITLE, String EMP_LANGUAGECODE, String EMP_DEPARTMENTNAME) {
+
+	String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+	SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+	//String date = simpleDateFormat.format(REL_REFRESHDATE);	
+	
+	String EMP_DEPARTMENTNAMEClean = "";
+	if (EMP_DEPARTMENTNAME != null) {
+		EMP_DEPARTMENTNAMEClean = EMP_DEPARTMENTNAME.replaceAll("'", "''");
+	}
+	
+	String EMP_LASTNAMEClean = "";
+	if (EMP_LASTNAME != null) {
+		EMP_LASTNAMEClean = EMP_LASTNAME.replaceAll("'", "''");
+	}
+	
+	String EMP_EMPLOYEENAMEClean = "";
+	if (EMP_EMPLOYEENAME != null) {
+		EMP_EMPLOYEENAMEClean = EMP_EMPLOYEENAME.replaceAll("'", "''");
+	}
+	
+	return "INSERT [dbo].[SDO_EMPLOYEETRANSLATION] ([EMP_EMPLOYEEID], [EMP_EMPLOYEENAME], [EMP_FIRSTNAME], [EMP_LASTNAME], [EMP_BUSINESSTITLE], [EMP_JOBTITLE], [EMP_LANGUAGECODE], [EMP_DEPARTMENTNAME]) VALUES (N'" + EMP_EMPLOYEEID + "', N'" + EMP_EMPLOYEENAMEClean +"', N'" + EMP_FIRSTNAME +"', N'"+ EMP_LASTNAMEClean +"', N'" + EMP_BUSINESSTITLE + "', N'" + EMP_JOBTITLE + "', N'" + EMP_LANGUAGECODE + "', N'"+ EMP_DEPARTMENTNAMEClean +"');";
+	}
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("CAR_CARRIERKEY=IEM317")
+	 * {param} string("CAR_CARRIERCODE=M317")
+	 * {param} string("CAR_SOURCECOUNTRYCODE=IE")
+	 * {param} string("CAR_OVERSEASFLAG=N")
+	 * {param} string("CAR_DUNS=NULL")
+	 * {param} string("CAR_ACTIVEFLAG=Y")
+	 * {param} string("CAR_INTERCOMPANYREF=NULL")
+	 * {param} string("CAR_STANDARDCODE=NULL")
+	 * {param} string("CAR_CARRIERTYPECODE=NULL")
+	 * {param} string("CAR_GLOBALCODE=NULL")
+	 * {param} string("CAR_GLOBALRECOMMCODE=NULL")
+	 * {param} string("CAR_REGION=NULL")
+	 * {param} string("CAR_REFRESHDATE=DATE")
+	 * {param} string("CAR_SRCREFRESHDATE=DATE")
+	 *      
+	 */
+	public static String makeSDO_CARRIER(String CAR_CARRIERKEY, String CAR_CARRIERCODE, String CAR_SOURCECOUNTRYCODE, String CAR_OVERSEASFLAG, String CAR_DUNS, String CAR_ACTIVEFLAG, String CAR_INTERCOMPANYREF, String CAR_STANDARDCODE, String CAR_CARRIERTYPECODE, String CAR_GLOBALCODE, String CAR_GLOBALRECOMMCODE, String CAR_REGION, Date CAR_REFRESHDATE, Date CAR_SRCREFRESHDATE) {
+		
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(XXXX);	
+		
+	return "INSERT [dbo].[SDO_CARRIER] ([CAR_CARRIERKEY], [CAR_CARRIERCODE], [CAR_SOURCECOUNTRYCODE], [CAR_OVERSEASFLAG], [CAR_DUNS], [CAR_ACTIVEFLAG], [CAR_INTERCOMPANYREF], [CAR_STANDARDCODE], [CAR_CARRIERTYPECODE], [CAR_GLOBALCODE], [CAR_GLOBALRECOMMCODE], [CAR_REGION], [CAR_REFRESHDATE], [CAR_SRCREFRESHDATE]) VALUES (N'" + CAR_CARRIERKEY + "', N'" + CAR_CARRIERCODE + "', N'" + CAR_SOURCECOUNTRYCODE + "', N'" + CAR_OVERSEASFLAG + "', "  + sqlNull(CAR_DUNS) + ", N'" + CAR_ACTIVEFLAG + "', " + sqlNull(CAR_INTERCOMPANYREF) + ", " + sqlNull(CAR_STANDARDCODE) + ", " + sqlNull(CAR_CARRIERTYPECODE) + ", " + sqlNull(CAR_GLOBALCODE) + ", " + sqlNull(CAR_GLOBALRECOMMCODE) + ", " + sqlNull(CAR_REGION) + ", CAST(N'" + simpleDateFormat.format(CAR_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(CAR_SRCREFRESHDATE) + "' AS DateTime2));";
+	}
+	
+	public static String makeSDO_REVSHAREENTITY(String RSE_REVSHAREENTITYKEY, String RSE_REVSHAREENTITYCODE, String RSE_SOURCECOUNTRYCODE,  String RSE_ACTIVEFLAG, Date RSE_REFRESHDATE, Date RSE_SRCREFRESHDATE) {
+		
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(XXXX);	
+		
+	return "INSERT [dbo].[SDO_REVSHAREENTITY] ([RSE_REVSHAREENTITYKEY], [RSE_REVSHAREENTITYCODE], [RSE_SOURCECOUNTRYCODE], [RSE_ACTIVEFLAG], [RSE_REFRESHDATE], [RSE_SRCREFRESHDATE]) VALUES (N'" + RSE_REVSHAREENTITYKEY + "', N'" + RSE_REVSHAREENTITYCODE + "', N'" + RSE_SOURCECOUNTRYCODE + "', N'"  + RSE_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(RSE_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(RSE_SRCREFRESHDATE) + "' AS DateTime2));";
+	}
+	
+	public static String makeSDO_REVSHAREENTITYTRANSLATION(String RSE_REVSHAREENTITYKEY, String RSE_FULLNAME, String RSE_LANGUAGECODE) {
+
+		
+	return "INSERT [dbo].[SDO_REVSHAREENTITYTRANSLATION] ([RSE_REVSHAREENTITYKEY], [RSE_FULLNAME], [RSE_LANGUAGECODE]) VALUES (N'" + RSE_REVSHAREENTITYKEY + "', N'" + RSE_FULLNAME + "', N'" + RSE_LANGUAGECODE +"');";
+	}
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("CAB_CARRIERBRANCHKEY=IEM193001")
+	 * {param} string("CAB_CARRIERBRANCHCODE=001")
+	 * {param} string("CAB_SOURCECOUNTRYCODE=IE")
+	 * {param} string("CAB_CARRIERKEY=IEM193")
+	 * {param} string("CAB_ACTIVEFLAG=N")
+	 * {param} string("CAB_REFRESHDATE=DATE")
+	 * {param} string("CAB_SRCREFRESHDATE=DATE")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_CARRIERBRANCH(String CAB_CARRIERBRANCHKEY,String CAB_CARRIERBRANCHCODE,String CAB_SOURCECOUNTRYCODE,String CAB_CARRIERKEY,String CAB_ACTIVEFLAG,Date CAB_REFRESHDATE,Date CAB_SRCREFRESHDATE) {
+			
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(XXXX);	
+		
+	return "INSERT [dbo].[SDO_CARRIERBRANCH] ([CAB_CARRIERBRANCHKEY], [CAB_CARRIERBRANCHCODE], [CAB_SOURCECOUNTRYCODE], [CAB_CARRIERKEY], [CAB_ACTIVEFLAG], [CAB_REFRESHDATE], [CAB_SRCREFRESHDATE]) VALUES (N'" + CAB_CARRIERBRANCHKEY + "', N'" + CAB_CARRIERBRANCHCODE + "', N'" + CAB_SOURCECOUNTRYCODE +"', N'" + CAB_CARRIERKEY + "', N'" + CAB_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(CAB_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(CAB_SRCREFRESHDATE) + "' AS DateTime2));";
+	}
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("CAB_CARRIERBRANCHKEY=IEM193001")
+	 * {param} string("CAB_CARRIERBRANCHNAME=DUBLIN ALL CLASSES")
+	 * {param} string("CAB_LANGUAGECODE=EN")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_CARRIERBRANCHTRANSLATION(String CAB_CARRIERBRANCHKEY, String CAB_CARRIERBRANCHNAME, String CAB_LANGUAGECODE) {
+
+		
+	return "INSERT [dbo].[SDO_CARRIERBRANCHTRANSLATION] ([CAB_CARRIERBRANCHKEY], [CAB_CARRIERBRANCHNAME], [CAB_LANGUAGECODE]) VALUES (N'" + CAB_CARRIERBRANCHKEY + "', N'" + CAB_CARRIERBRANCHNAME + "', N'" + CAB_LANGUAGECODE +"');";
+	}
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("CAR_CARRIERKEY=IEM317")
+	 * {param} string("CAR_CARRIERNAME=Liberty Insurance")
+	 * {param} string("CAR_LOCALNAME=CONSUMER LIBERTY")
+	 * {param} string("CAR_STANDARDNAME=NULL")
+	 * {param} string("CAR_CARRIERTYPENAME=NULL")
+	 * {param} string("CAR_GLOBALNAME=NULL")
+	 * {param} string("CAR_GLOBALRECOMMNAME=NULL")
+	 * {param} string("CAR_LANGUAGECODE=EN")
+	 *      
+	 */
+	public static String makeSDO_CARRIERTRANSLATION(String CAR_CARRIERKEY, String CAR_CARRIERNAME, String CAR_LOCALNAME, String CAR_STANDARDNAME, String CAR_CARRIERTYPENAME, String CAR_GLOBALNAME, String CAR_GLOBALRECOMMNAME, String CAR_LANGUAGECODE) {
+
+		return "INSERT [dbo].[SDO_CARRIERTRANSLATION] ([CAR_CARRIERKEY], [CAR_CARRIERNAME], [CAR_LOCALNAME], [CAR_STANDARDNAME], [CAR_CARRIERTYPENAME], [CAR_GLOBALNAME], [CAR_GLOBALRECOMMNAME], [CAR_LANGUAGECODE]) VALUES (N'" + CAR_CARRIERKEY + "', N'" + CAR_CARRIERNAME +"', N'" + CAR_LOCALNAME + "', " + sqlNull(CAR_STANDARDNAME) + ", " + sqlNull(CAR_CARRIERTYPENAME) + ", " + sqlNull(CAR_GLOBALNAME) + ", " + sqlNull(CAR_GLOBALRECOMMNAME) + ", N'" + CAR_LANGUAGECODE + "');";
+	}
+	
+
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("TTY_TRANSACTIONTYPEKEY=R")
+	 * {param} string("TTY_TRANSACTIONTYPEDESCRIPTION=Renewal")
+	 * {param} string("TTY_LANGUAGECODE=EN")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_TRANSACTIONTYPETRANSLATION(String TTY_TRANSACTIONTYPEKEY, String TTY_TRANSACTIONTYPEDESCRIPTION, String TTY_LANGUAGECODE) {
+			
+	return "INSERT [dbo].[SDO_TRANSACTIONTYPETRANSLATION] ([TTY_TRANSACTIONTYPEKEY], [TTY_TRANSACTIONTYPEDESCRIPTION], [TTY_LANGUAGECODE]) VALUES (N'" + TTY_TRANSACTIONTYPEKEY + "', N'" + TTY_TRANSACTIONTYPEDESCRIPTION +"', N'" + TTY_LANGUAGECODE + "')";
+	
+	
+	}
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("TTY_TRANSACTIONTYPEKEY=R")
+	 * {param} string("TTY_TRANSACTIONTYPECODE=R")
+	 * {param} string("TTY_ACTIVEFLAG=Y")
+	 * {param} string("TTY_REFRESHDATE=DATE")
+	 * {param} string("TTY_SRCREFRESHDATE=DATA")
+	 * {param} string("TTY_TRANSACTIONTYPECATEGORY=A")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_TRANSACTIONTYPE(String TTY_TRANSACTIONTYPEKEY,String TTY_TRANSACTIONTYPECODE,String TTY_ACTIVEFLAG,Date TTY_REFRESHDATE,Date TTY_SRCREFRESHDATE,String TTY_TRANSACTIONTYPECATEGORY) {
+	
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(XXXX);	
+			
+	return "INSERT [dbo].[SDO_TRANSACTIONTYPE] ([TTY_TRANSACTIONTYPEKEY], [TTY_TRANSACTIONTYPECODE], [TTY_ACTIVEFLAG], [TTY_REFRESHDATE], [TTY_SRCREFRESHDATE], [TTY_TRANSACTIONTYPECATEGORY]) VALUES (N'" + TTY_TRANSACTIONTYPEKEY + "', N'" + TTY_TRANSACTIONTYPECODE + "', N'" + TTY_ACTIVEFLAG +"', CAST(N'" + simpleDateFormat.format(TTY_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(TTY_SRCREFRESHDATE) + "' AS DateTime2), N'" + TTY_TRANSACTIONTYPECATEGORY + "')";
+	}
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("PYS_PAYMENTSTATUSKEY=1")
+	 * {param} string("PYS_PAYMENTSTATUS=Paid")
+	 * {param} string("PYS_LANGUAGECODE=EN")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_PAYMENTSTATUSTRANSLATION(String PYS_PAYMENTSTATUSKEY, String PYS_PAYMENTSTATUS, String PYS_LANGUAGECODE) {
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(XXXX);	
+				
+	return "INSERT [dbo].[SDO_PAYMENTSTATUSTRANSLATION] ([PYS_PAYMENTSTATUSKEY], [PYS_PAYMENTSTATUS], [PYS_LANGUAGECODE]) VALUES (N'" + PYS_PAYMENTSTATUSKEY + "', N'" + PYS_PAYMENTSTATUS + "', N'" + PYS_LANGUAGECODE +"')";
+	}
+	
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("PYS_PAYMENTSTATUSKEY=1")
+	 * {param} string("PYS_PAYMENTSTATUSCODE=1")
+	 * {param} string("PYS_ACTIVEFLAG=Y")
+	 * {param} string("PYS_REFRESHDATE=Date")
+	 * {param} string("PYS_SRCREFRESHDATE=Date")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_PAYMENTSTATUS(String PYS_PAYMENTSTATUSKEY, String PYS_PAYMENTSTATUSCODE, String PYS_ACTIVEFLAG, Date PYS_REFRESHDATE, Date PYS_SRCREFRESHDATE) {
+			
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(XXXX);		
+
+		
+		
+	return "INSERT [dbo].[SDO_PAYMENTSTATUS] ([PYS_PAYMENTSTATUSKEY], [PYS_PAYMENTSTATUSCODE], [PYS_ACTIVEFLAG], [PYS_REFRESHDATE], [PYS_SRCREFRESHDATE]) VALUES (N'" + PYS_PAYMENTSTATUSKEY + "', N'" + PYS_PAYMENTSTATUSCODE +"', N'" + PYS_ACTIVEFLAG + "', CAST(N'" + simpleDateFormat.format(PYS_REFRESHDATE) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(PYS_SRCREFRESHDATE) + "' AS DateTime2))";
+	}
+
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("FNC_SOURCECOUNTRYCODE=IE")
+	 * {param} string("FNC_FINANCIALCOMPONENTCODE=ADMFEE")
+	 * {param} string("FNC_SEQUENCENUMBER=7")
+	 * {param} string("FNC_AONREVENUEFLAG=N")
+	 * {param} string("FNC_PREMIUMBREAKDOWNFLAG=Y")
+	 * {param} string("FNC_GOVTCHARGEFLAG=N")
+	 * {param} string("FNC_ACTIVEFLAG=Y")
+	 * {param} string("FNC_AONREVENUESEQUENCENUMBER=11")
+	 * {param} string("FNC_FAPSEQUENCENUMBER=NULL")
+	 * {param} string("FNC_FAPCOMPONENTFLAG=N")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_FINANCIALCOMPONENT(String FNC_SOURCECOUNTRYCODE, String FNC_FINANCIALCOMPONENTCODE, String FNC_SEQUENCENUMBER, String FNC_AONREVENUEFLAG, String FNC_PREMIUMBREAKDOWNFLAG, String FNC_GOVTCHARGEFLAG, String FNC_ACTIVEFLAG, String FNC_AONREVENUESEQUENCENUMBER, String FNC_FAPSEQUENCENUMBER, String FNC_FAPCOMPONENTFLAG ) {
+		
+		
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		Date date = new Date(System.currentTimeMillis());
+		
+		
+		
+	
+		
+	return "INSERT [dbo].[SDO_FINANCIALCOMPONENT] ([FNC_FINANCIALCOMPONENTKEY], [FNC_SOURCECOUNTRYCODE], [FNC_FINANCIALCOMPONENTCODE], [FNC_SEQUENCENUMBER], [FNC_AONREVENUEFLAG], [FNC_PREMIUMBREAKDOWNFLAG], [FNC_GOVTCHARGEFLAG], [FNC_ACTIVEFLAG], [FNC_REFRESHDATE], [FNC_SRCREFRESHDATE], [FNC_AONREVENUESEQUENCENUMBER], [FNC_FAPSEQUENCENUMBER], [FNC_FAPCOMPONENTFLAG]) VALUES (N'" + FNC_SOURCECOUNTRYCODE + FNC_FINANCIALCOMPONENTCODE + "', N'"+ FNC_SOURCECOUNTRYCODE + "', N'" + FNC_FINANCIALCOMPONENTCODE + "', " + FNC_SEQUENCENUMBER + ", N'" + FNC_AONREVENUEFLAG + "', N'" + FNC_PREMIUMBREAKDOWNFLAG + "', N'" + FNC_GOVTCHARGEFLAG + "', N'" + FNC_ACTIVEFLAG +"', CAST(N'" + simpleDateFormat.format(date) + "' AS DateTime2), CAST(N'" + simpleDateFormat.format(date) + "' AS DateTime2), " + FNC_AONREVENUESEQUENCENUMBER +", NULL, N'" + FNC_FAPCOMPONENTFLAG +"')";
+	}
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("FNC_FINANCIALCOMPONENTKEY=IELEVIESA")
+	 * {param} string("FNC_FINANCIALCOMPDESCRIPTION=E.Q.W.D.")
+	 * {param} string("FNC_LANGUAGECODE=EN")
+	 *    
+	 *      
+	 */
+	public static String makeSDO_FINANCIALCOMPONENTTRANSLATION(String FNC_FINANCIALCOMPONENTKEY, String FNC_FINANCIALCOMPDESCRIPTION, String FNC_LANGUAGECODE) {
+			
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(XXXX);		
+	
+	return "INSERT [dbo].[SDO_FINANCIALCOMPONENTTRANSLATION] ([FNC_FINANCIALCOMPONENTKEY], [FNC_FINANCIALCOMPDESCRIPTION], [FNC_LANGUAGECODE]) VALUES (N'" + FNC_FINANCIALCOMPONENTKEY + "', N'" + FNC_FINANCIALCOMPDESCRIPTION + "', N'" + FNC_LANGUAGECODE + "')";
+	}
+	
+	/**
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("XXX=XX")
+	 *    
+	 *      
+	 */
+	public static String makeXXX(String XXX) {
+			
+		String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		//String date = simpleDateFormat.format(XXXX);		
+		
+		
+	return "";
+	}
+	
+
+	private static String sqlNull(String sqlValue) {	
+		if (sqlValue == null) {
+			return "NULL";
+		} else {
+			return "N'" + sqlValue + "'";
+		}
+	}
+	
+	
+
+
+
+	
+
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+}

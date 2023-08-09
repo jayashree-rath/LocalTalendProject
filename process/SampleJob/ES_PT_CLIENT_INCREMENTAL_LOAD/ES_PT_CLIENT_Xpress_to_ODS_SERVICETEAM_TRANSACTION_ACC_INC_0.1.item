@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="DDL_LandingPath" prompt="DDL_LandingPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="ExtractPath" prompt="ExtractPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="InputFilePath" prompt="InputFilePath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="LogPath" prompt="LogPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="OutputPath" prompt="OutputPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="OutputSQL" prompt="OutputSQL?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="SQLPath" prompt="SQLPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="STGLoadPath" prompt="STGLoadPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_yCoCQDX1Ee6YOr0WthLGaw" name="XMLOutputPath" prompt="XMLOutputPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="API_URL" prompt="API_URL?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="CLIENTACCOUNTID" prompt="CLIENTACCOUNTID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="32"/>
+    <contextParameter comment="" name="CLIENTLIST" prompt="CLIENTLIST?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="CONTACTID" prompt="CONTACTID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_BigDecimal" value=""/>
+    <contextParameter comment="" name="DoneMandatory" prompt="DoneMandatory?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="EMPLOYEEID" prompt="EMPLOYEEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ENDMONTH" prompt="ENDMONTH?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ENDTIME" prompt="ENDTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="ENTITYID" prompt="ENTITYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="INSTANCEID" prompt="INSTANCEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="INVOICEID" prompt="INVOICEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="320001316740"/>
+    <contextParameter comment="" name="IS_RUNNABLE" prompt="IS_RUNNABLE?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="JOBDURATION" prompt="JOBDURATION?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="JOBID" prompt="JOBID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LASTRUNTIME" prompt="LASTRUNTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Date" value="2021-02-05 17:02:59"/>
+    <contextParameter comment="" name="LISTOFENTITYID" prompt="LISTOFENTITYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="LOADTYPE" prompt="LOADTYPE?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="SPC"/>
+    <contextParameter comment="" name="MAXDATE" prompt="MAXDATE?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="NUMBEROFYEARS" prompt="NUMBEROFYEARS?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="NUMOFOUTPUT" prompt="NUMOFOUTPUT?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="NUMOFRECORDS" prompt="NUMOFRECORDS?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="OUTPUTFILENAME" prompt="OUTPUTFILENAME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="POLICYID" prompt="POLICYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="320002591991"/>
+    <contextParameter comment="" name="POLICYLIST" prompt="POLICYLIST?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="QUERYFILTER" prompt="QUERYFILTER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ROWNUMBER" prompt="ROWNUMBER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="1"/>
+    <contextParameter comment="" name="SERVICERID" prompt="SERVICERID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="STARTMONTH" prompt="STARTMONTH?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="STARTTIME" prompt="STARTTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="TABLENAME" prompt="TABLENAME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="TRANIDENTIFIER" prompt="TRANIDENTIFIER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="USERID" prompt="USERID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_BigDecimal" value=""/>
+    <contextParameter comment="" name="XMLCONTENT" prompt="XMLCONTENT?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_AdditionalParams" prompt="ODSDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Database" prompt="ODSDB_Database?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Login" prompt="ODSDB_Login?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Password" prompt="ODSDB_Password?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Port" prompt="ODSDB_Port?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Schema" prompt="ODSDB_Schema?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Server" prompt="ODSDB_Server?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ReferenceDB_AdditionalParams" prompt="ReferenceDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="integratedSecurity=true;instance=FRAEMMAP01"/>
+    <contextParameter comment="" name="ReferenceDB_Database" prompt="ReferenceDB_Database?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="TLD_REF"/>
+    <contextParameter comment="" name="ReferenceDB_Login" prompt="ReferenceDB_Login?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Password" prompt="ReferenceDB_Password?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_Password" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Port" prompt="ReferenceDB_Port?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="13163"/>
+    <contextParameter comment="" name="ReferenceDB_Schema" prompt="ReferenceDB_Schema?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Server" prompt="ReferenceDB_Server?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="FRAWIPDB001095"/>
+    <contextParameter comment="" name="StagingDB_AdditionalParams" prompt="StagingDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="integratedSecurity=true"/>
+    <contextParameter comment="" name="StagingDB_Database" prompt="StagingDB_Database?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="TLD_UAT_REF"/>
+    <contextParameter comment="" name="StagingDB_Login" prompt="StagingDB_Login?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value=""/>
+    <contextParameter comment="" name="StagingDB_Password" prompt="StagingDB_Password?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_Password" value=""/>
+    <contextParameter comment="" name="StagingDB_Port" prompt="StagingDB_Port?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="13163"/>
+    <contextParameter comment="" name="StagingDB_Schema" prompt="StagingDB_Schema?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="STG"/>
+    <contextParameter comment="" name="StagingDB_Server" prompt="StagingDB_Server?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="FRAWIPDB001095"/>
+    <contextParameter comment="" name="XpressESPT_AdditionalParams" prompt="XpressESPT_AdditionalParams?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value=""/>
+    <contextParameter comment="" name="XpressESPT_Login" prompt="XpressESPT_Login?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="Emma"/>
+    <contextParameter comment="" name="XpressESPT_Password" prompt="XpressESPT_Password?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_Password" value=""/>
+    <contextParameter comment="" name="XpressESPT_Port" prompt="XpressESPT_Port?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="1521"/>
+    <contextParameter comment="" name="XpressESPT_Schema" prompt="XpressESPT_Schema?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value=""/>
+    <contextParameter comment="" name="XpressESPT_Server" prompt="XpressESPT_Server?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="fravipap001144"/>
+    <contextParameter comment="" name="XpressESPT_ServiceName" prompt="XpressESPT_ServiceName?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="XPMSPRD.mpc.aon.net"/>
+    <contextParameter comment="" internalId="_yCoCQTX1Ee6YOr0WthLGaw" name="TRANSACTIONACCOUNTID" prompt="TRANSACTIONACCOUNTID?" promptNeeded="false" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="UAT">
+    <contextParameter comment="" name="DDL_LandingPath" prompt="DDL_LandingPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="ExtractPath" prompt="ExtractPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="InputFilePath" prompt="InputFilePath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="LogPath" prompt="LogPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="OutputPath" prompt="OutputPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value="\\\\frawipdb001095\\Emma_Talend_UAT\\"/>
+    <contextParameter comment="" name="OutputSQL" prompt="OutputSQL?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="SQLPath" prompt="SQLPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="STGLoadPath" prompt="STGLoadPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_yCoCQjX1Ee6YOr0WthLGaw" name="XMLOutputPath" prompt="XMLOutputPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="API_URL" prompt="API_URL?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="CLIENTACCOUNTID" prompt="CLIENTACCOUNTID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="32"/>
+    <contextParameter comment="" name="CLIENTLIST" prompt="CLIENTLIST?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="CONTACTID" prompt="CONTACTID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_BigDecimal" value="0"/>
+    <contextParameter comment="" name="DoneMandatory" prompt="DoneMandatory?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="EMPLOYEEID" prompt="EMPLOYEEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ENDMONTH" prompt="ENDMONTH?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="ENDTIME" prompt="ENDTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="ENTITYID" prompt="ENTITYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="INSTANCEID" prompt="INSTANCEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="INVOICEID" prompt="INVOICEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="320001316740"/>
+    <contextParameter comment="" name="IS_RUNNABLE" prompt="IS_RUNNABLE?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="JOBDURATION" prompt="JOBDURATION?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="JOBID" prompt="JOBID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="LASTRUNTIME" prompt="LASTRUNTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Date" value="2021-02-05 17:02:59"/>
+    <contextParameter comment="" name="LISTOFENTITYID" prompt="LISTOFENTITYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="LOADTYPE" prompt="LOADTYPE?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="SPC"/>
+    <contextParameter comment="" name="MAXDATE" prompt="MAXDATE?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="NUMBEROFYEARS" prompt="NUMBEROFYEARS?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="NUMOFOUTPUT" prompt="NUMOFOUTPUT?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="NUMOFRECORDS" prompt="NUMOFRECORDS?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="OUTPUTFILENAME" prompt="OUTPUTFILENAME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="POLICYID" prompt="POLICYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="320000097115"/>
+    <contextParameter comment="" name="POLICYLIST" prompt="POLICYLIST?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="QUERYFILTER" prompt="QUERYFILTER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ROWNUMBER" prompt="ROWNUMBER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="000"/>
+    <contextParameter comment="" name="SERVICERID" prompt="SERVICERID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="STARTMONTH" prompt="STARTMONTH?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="STARTTIME" prompt="STARTTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="TABLENAME" prompt="TABLENAME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="TRANIDENTIFIER" prompt="TRANIDENTIFIER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="USERID" prompt="USERID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_BigDecimal" value="0"/>
+    <contextParameter comment="" name="XMLCONTENT" prompt="XMLCONTENT?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_AdditionalParams" prompt="ODSDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="TRUE"/>
+    <contextParameter comment="" name="ODSDB_Database" prompt="ODSDB_Database?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="ODSPUB_UAT"/>
+    <contextParameter comment="" name="ODSDB_Login" prompt="ODSDB_Login?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Password" prompt="ODSDB_Password?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Port" prompt="ODSDB_Port?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="13163"/>
+    <contextParameter comment="" name="ODSDB_Schema" prompt="ODSDB_Schema?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Server" prompt="ODSDB_Server?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="10.143.144.34"/>
+    <contextParameter comment="" name="StagingDB_AdditionalParams" prompt="StagingDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="integratedSecurity=true"/>
+    <contextParameter comment="" name="StagingDB_Database" prompt="StagingDB_Database?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="TLD_UAT_REF"/>
+    <contextParameter comment="" name="StagingDB_Login" prompt="StagingDB_Login?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value=""/>
+    <contextParameter comment="" name="StagingDB_Password" prompt="StagingDB_Password?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_Password" value=""/>
+    <contextParameter comment="" name="StagingDB_Port" prompt="StagingDB_Port?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="13163"/>
+    <contextParameter comment="" name="StagingDB_Schema" prompt="StagingDB_Schema?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="STG"/>
+    <contextParameter comment="" name="StagingDB_Server" prompt="StagingDB_Server?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="FRAWIPDB001095"/>
+    <contextParameter comment="" name="XpressESPT_AdditionalParams" prompt="XpressESPT_AdditionalParams?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value=""/>
+    <contextParameter comment="" name="XpressESPT_Login" prompt="XpressESPT_Login?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="Emma"/>
+    <contextParameter comment="" name="XpressESPT_Password" prompt="XpressESPT_Password?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_Password" value=""/>
+    <contextParameter comment="" name="XpressESPT_Port" prompt="XpressESPT_Port?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="1521"/>
+    <contextParameter comment="" name="XpressESPT_Schema" prompt="XpressESPT_Schema?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value=""/>
+    <contextParameter comment="" name="XpressESPT_Server" prompt="XpressESPT_Server?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="fravipap001144"/>
+    <contextParameter comment="" name="XpressESPT_ServiceName" prompt="XpressESPT_ServiceName?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="XPMSPRD.mpc.aon.net"/>
+    <contextParameter comment="" internalId="_yCoCQzX1Ee6YOr0WthLGaw" name="TRANSACTIONACCOUNTID" prompt="TRANSACTIONACCOUNTID?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Login" prompt="ReferenceDB_Login?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Password" prompt="ReferenceDB_Password?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_Password" value=""/>
+    <contextParameter comment="" name="ReferenceDB_AdditionalParams" prompt="ReferenceDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="integratedSecurity=true;instance=FRAEMMAP01"/>
+    <contextParameter comment="" name="ReferenceDB_Database" prompt="ReferenceDB_Database?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="TLD_UAT"/>
+    <contextParameter comment="" name="ReferenceDB_Schema" prompt="ReferenceDB_Schema?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Server" prompt="ReferenceDB_Server?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="FRAWIPDB001095"/>
+    <contextParameter comment="" name="ReferenceDB_Port" prompt="ReferenceDB_Port?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="13163"/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="DDL_LandingPath" prompt="DDL_LandingPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="ExtractPath" prompt="ExtractPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="InputFilePath" prompt="InputFilePath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="LogPath" prompt="LogPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="OutputPath" prompt="OutputPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value="\\\\frawipdb001095\\Emma_Talend_UAT\\"/>
+    <contextParameter comment="" name="OutputSQL" prompt="OutputSQL?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="SQLPath" prompt="SQLPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" name="STGLoadPath" prompt="STGLoadPath?" promptNeeded="false" repositoryContextId="_mnxjcGfKEeu0suk6_XQzAA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_yCoCRDX1Ee6YOr0WthLGaw" name="XMLOutputPath" prompt="XMLOutputPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="API_URL" prompt="API_URL?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="CLIENTACCOUNTID" prompt="CLIENTACCOUNTID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="32"/>
+    <contextParameter comment="" name="CLIENTLIST" prompt="CLIENTLIST?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="CONTACTID" prompt="CONTACTID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_BigDecimal" value="0"/>
+    <contextParameter comment="" name="DoneMandatory" prompt="DoneMandatory?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="EMPLOYEEID" prompt="EMPLOYEEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ENDMONTH" prompt="ENDMONTH?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="ENDTIME" prompt="ENDTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="ENTITYID" prompt="ENTITYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="INSTANCEID" prompt="INSTANCEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="INVOICEID" prompt="INVOICEID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="320001316740"/>
+    <contextParameter comment="" name="IS_RUNNABLE" prompt="IS_RUNNABLE?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="JOBDURATION" prompt="JOBDURATION?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="JOBID" prompt="JOBID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="LASTRUNTIME" prompt="LASTRUNTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Date" value="2021-02-05 17:02:59"/>
+    <contextParameter comment="" name="LISTOFENTITYID" prompt="LISTOFENTITYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="LOADTYPE" prompt="LOADTYPE?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="SPC"/>
+    <contextParameter comment="" name="MAXDATE" prompt="MAXDATE?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="NUMBEROFYEARS" prompt="NUMBEROFYEARS?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="NUMOFOUTPUT" prompt="NUMOFOUTPUT?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="NUMOFRECORDS" prompt="NUMOFRECORDS?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="OUTPUTFILENAME" prompt="OUTPUTFILENAME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="POLICYID" prompt="POLICYID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="320000097115"/>
+    <contextParameter comment="" name="POLICYLIST" prompt="POLICYLIST?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="QUERYFILTER" prompt="QUERYFILTER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ROWNUMBER" prompt="ROWNUMBER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value="000"/>
+    <contextParameter comment="" name="SERVICERID" prompt="SERVICERID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="STARTMONTH" prompt="STARTMONTH?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="STARTTIME" prompt="STARTTIME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_Long" value="0"/>
+    <contextParameter comment="" name="TABLENAME" prompt="TABLENAME?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="TRANIDENTIFIER" prompt="TRANIDENTIFIER?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="USERID" prompt="USERID?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_BigDecimal" value="0"/>
+    <contextParameter comment="" name="XMLCONTENT" prompt="XMLCONTENT?" promptNeeded="false" repositoryContextId="_boOW8FvoEeuW0OYL6pkQtA" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_AdditionalParams" prompt="ODSDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="TRUE"/>
+    <contextParameter comment="" name="ODSDB_Database" prompt="ODSDB_Database?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="ODSPUB_UAT"/>
+    <contextParameter comment="" name="ODSDB_Login" prompt="ODSDB_Login?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Password" prompt="ODSDB_Password?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Port" prompt="ODSDB_Port?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="13163"/>
+    <contextParameter comment="" name="ODSDB_Schema" prompt="ODSDB_Schema?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value=""/>
+    <contextParameter comment="" name="ODSDB_Server" prompt="ODSDB_Server?" promptNeeded="false" repositoryContextId="_lS8MQGugEeuES5GChPnD1A" type="id_String" value="10.143.144.34"/>
+    <contextParameter comment="" name="StagingDB_AdditionalParams" prompt="StagingDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="integratedSecurity=true"/>
+    <contextParameter comment="" name="StagingDB_Database" prompt="StagingDB_Database?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="TLD_UAT_REF"/>
+    <contextParameter comment="" name="StagingDB_Login" prompt="StagingDB_Login?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value=""/>
+    <contextParameter comment="" name="StagingDB_Password" prompt="StagingDB_Password?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_Password" value=""/>
+    <contextParameter comment="" name="StagingDB_Port" prompt="StagingDB_Port?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="13163"/>
+    <contextParameter comment="" name="StagingDB_Schema" prompt="StagingDB_Schema?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="STG"/>
+    <contextParameter comment="" name="StagingDB_Server" prompt="StagingDB_Server?" promptNeeded="false" repositoryContextId="_MDe6YNmiEeuievltw_ZGMw" type="id_String" value="FRAWIPDB001095"/>
+    <contextParameter comment="" name="XpressESPT_AdditionalParams" prompt="XpressESPT_AdditionalParams?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value=""/>
+    <contextParameter comment="" name="XpressESPT_Login" prompt="XpressESPT_Login?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="Emma"/>
+    <contextParameter comment="" name="XpressESPT_Password" prompt="XpressESPT_Password?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_Password" value=""/>
+    <contextParameter comment="" name="XpressESPT_Port" prompt="XpressESPT_Port?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="1521"/>
+    <contextParameter comment="" name="XpressESPT_Schema" prompt="XpressESPT_Schema?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value=""/>
+    <contextParameter comment="" name="XpressESPT_Server" prompt="XpressESPT_Server?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="fravipap001144"/>
+    <contextParameter comment="" name="XpressESPT_ServiceName" prompt="XpressESPT_ServiceName?" promptNeeded="false" repositoryContextId="_0qi08HBtEeu6mNeMW3QmFA" type="id_String" value="XPMSPRD.mpc.aon.net"/>
+    <contextParameter comment="" internalId="_yCoCRTX1Ee6YOr0WthLGaw" name="TRANSACTIONACCOUNTID" prompt="TRANSACTIONACCOUNTID?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Login" prompt="ReferenceDB_Login?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Password" prompt="ReferenceDB_Password?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_Password" value=""/>
+    <contextParameter comment="" name="ReferenceDB_AdditionalParams" prompt="ReferenceDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="integratedSecurity=true;instance=FRAEMMAP01"/>
+    <contextParameter comment="" name="ReferenceDB_Database" prompt="ReferenceDB_Database?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="TLD_REF"/>
+    <contextParameter comment="" name="ReferenceDB_Schema" prompt="ReferenceDB_Schema?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value=""/>
+    <contextParameter comment="" name="ReferenceDB_Server" prompt="ReferenceDB_Server?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="FRAWIPDB001095"/>
+    <contextParameter comment="" name="ReferenceDB_Port" prompt="ReferenceDB_Port?" promptNeeded="false" repositoryContextId="_3BfJsGFwEeusJ8cTfs4rmg" type="id_String" value="13163"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:vzUvddgU1wSmqWP/pwm1QATcE7oRRBXZamPz78Lk"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/svc-GBNH138017/Downloads/LocalTalend/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:8Z4dT6usbz8SCg0rVLhBy7SDvyzuX/oupjfIOxgh"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_vCmvcCJ0Eem2TuRweb92Tg" name="DataOperation"/>
+    <routinesParameter id="_vDQ2wCJ0Eem2TuRweb92Tg" name="Mathematical"/>
+    <routinesParameter id="_vDb14CJ0Eem2TuRweb92Tg" name="Numeric"/>
+    <routinesParameter id="_vDoDICJ0Eem2TuRweb92Tg" name="Relational"/>
+    <routinesParameter id="_vDs7oCJ0Eem2TuRweb92Tg" name="StringHandling"/>
+    <routinesParameter id="_vD0QYCJ0Eem2TuRweb92Tg" name="TalendDataGenerator"/>
+    <routinesParameter id="_vEEIACJ0Eem2TuRweb92Tg" name="TalendDate"/>
+    <routinesParameter id="_vENR8CJ0Eem2TuRweb92Tg" name="TalendString"/>
+    <routinesParameter id="_vET_oCJ0Eem2TuRweb92Tg" name="TalendStringUtil"/>
+    <routinesParameter id="_zz-ygKvWEemAOq48iY0W5A" name="utils"/>
+    <routinesParameter id="_kLGQgKyDEemAOq48iY0W5A" name="XMLGeneration"/>
+    <routinesParameter id="_H1Oe8HBfEeu8UNOivPccFA" name="DataMasking"/>
+    <routinesParameter id="_H18QoHBfEeu8UNOivPccFA" name="DqStringHandling"/>
+    <routinesParameter id="_H1tAEHBfEeu8UNOivPccFA" name="DataQualityDependencies"/>
+    <routinesParameter id="_Hz30EHBfEeu8UNOivPccFA" name="SQLike"/>
+    <routinesParameter id="_H1dIcHBfEeu8UNOivPccFA" name="DataQuality"/>
+    <routinesParameter id="_H2JE8HBfEeu8UNOivPccFA" name="DQTechnical"/>
+  </parameters>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_6"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_sFLNENnVEeuievltw_ZGMw"/>
+    <elementParameter field="TEXT" name="HOST" value="context.StagingDB_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.StagingDB_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.StagingDB_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.StagingDB_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.StagingDB_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:u3xAGUMYEGvmZ24rWUZQaJ9Ew7EfMkugp8MBVahUtiD2A9yqEXYdXE3jjgpAb8t3vcMtGKwb"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select distinct *&#13;&#10;from [STG].[ESPT_EXP_CLI_TRANSACTIONACC_SERVICE_TEAM]&#13;&#10;where TRANSACTIONACCOUNTID='&quot;+context.TRANSACTIONACCOUNTID+&quot;' and V_PRIMARY_YNFLAG ='Y'&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.StagingDB_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ENTITY_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRANSACTIONACCOUNTID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="I_TENANT_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="V_EMPLOYEE_EID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EMP_EMAIL_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY_CODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="I_ROLE_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="V_PRIMARY_YNFLAG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRIMARY_USER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EMP_EMPLOYEEID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EMP_AONNETID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOURCECOUNTRYCODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Get ServiceTeam"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_6">
+      <column comment="" key="false" length="-1" name="ENTITY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSACTIONACCOUNTID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="I_TENANT_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="V_EMPLOYEE_EID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EMP_EMAIL_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="COUNTRY_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="I_ROLE_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="V_PRIMARY_YNFLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRIMARY_USER" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EMP_EMPLOYEEID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EMP_AONNETID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SOURCECOUNTRYCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_FyO6Wt0SEey63t-RaZDA7g-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CLIENTSERVICETEAM-Org" name="ClientAccountPrimaryServicer">
+      <column comment="" key="false" length="-1" name="DoneMandatory" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICETEAMLIST" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="TYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="MESSAGEID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ACTION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SUBTYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="AUDITID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ISCOMPREHENSIVE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SOURCETIME" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SOURCECOUNTRYCODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SOURCESYSTEMCODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="TRANSACTIONACCOUNTID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="utils.getUUID() " name="UUID" type="id_String"/>
+        <mapperTableEntries expression="&quot;EXP&quot;" name="SourceSystem" type="id_String"/>
+        <mapperTableEntries expression="&quot;exp&quot; " name="IDLIST" type="id_String"/>
+        <mapperTableEntries expression="XMLGeneration.makeXpressServiceTeam(&quot;EXP&quot;,row1.I_ROLE_ID.toString(),row1.V_PRIMARY_YNFLAG,context.DoneMandatory,&#13;&#10;row1.EMP_EMPLOYEEID,row1.EMP_AONNETID&#13;&#10;) " name="SERVICETEAMLIST" type="id_Object"/>
+        <mapperTableEntries expression="row1.I_ROLE_ID.intValue() == 2 &amp;&amp; row1.V_PRIMARY_YNFLAG.equalsIgnoreCase(&quot;Y&quot;)? true :&#13;&#10;context.DoneMandatory == true ? true :&#13;&#10;false " name="DoneMandatory" type="id_Boolean"/>
+      </varTables>
+      <outputTables activateExpressionFilter="true" expressionFilter="row1.TRANSACTIONACCOUNTID!=null" name="ClientAccountPrimaryServicer" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Var.DoneMandatory " name="DoneMandatory" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="Var.SERVICETEAMLIST " name="SERVICETEAMLIST" nullable="true" type="id_Object"/>
+        <mapperTableEntries expression="&quot;CLI&quot;" name="TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.UUID " name="MESSAGEID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;C&quot;" name="ACTION" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;TRANSACTIONSERVICETEAM&quot;" name="SUBTYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.UUID " name="AUDITID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;Y&quot;" name="ISCOMPREHENSIVE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="SOURCETIME" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.SOURCECOUNTRYCODE" name="SOURCECOUNTRYCODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.SourceSystem " name="SOURCESYSTEMCODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.TRANSACTIONACCOUNTID " name="TRANSACTIONACCOUNTID" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="FIRST_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="ENTITY_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TRANSACTIONACCOUNTID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="I_TENANT_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="V_EMPLOYEE_EID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EMP_EMAIL_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="COUNTRY_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="I_ROLE_ID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="V_PRIMARY_YNFLAG" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PRIMARY_USER" type="id_String"/>
+        <mapperTableEntries name="EMP_EMPLOYEEID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EMP_AONNETID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SOURCECOUNTRYCODE" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="128" sizeX="64" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;output_row.DoneMandatory = input_row.DoneMandatory;&#13;&#10;output_row.SERVICETEAMLIST = input_row.SERVICETEAMLIST;&#13;&#10;output_row.TYPE = input_row.TYPE;&#13;&#10;output_row.MESSAGEID = input_row.MESSAGEID; &#13;&#10;output_row.ACTION = input_row.ACTION;&#13;&#10;output_row.SUBTYPE = input_row.SUBTYPE; &#13;&#10;output_row.AUDITID = input_row.AUDITID; &#13;&#10;output_row.ISCOMPREHENSIVE = input_row.ISCOMPREHENSIVE;&#13;&#10;output_row.SOURCETIME = input_row.SOURCETIME;&#13;&#10;output_row.SOURCECOUNTRYCODE = input_row.SOURCECOUNTRYCODE;&#13;&#10;output_row.SOURCESYSTEMCODE = input_row.SOURCESYSTEMCODE; &#13;&#10;output_row.TRANSACTIONACCOUNTID = input_row.TRANSACTIONACCOUNTID;&#10;context.DoneMandatory = input_row.DoneMandatory;&#10;&#10;System.out.println(&quot;*AccountID&quot; + input_row.TRANSACTIONACCOUNTID);&#10;&#13;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CLIENTSERVICETEAM-Org" name="tJavaRow_2">
+      <column comment="" key="false" length="-1" name="DoneMandatory" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICETEAMLIST" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="TYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="MESSAGEID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ACTION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SUBTYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="AUDITID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ISCOMPREHENSIVE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SOURCETIME" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SOURCECOUNTRYCODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SOURCESYSTEMCODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="TRANSACTIONACCOUNTID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tAdvancedFileOutputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="128" sizeX="64" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tAdvancedFileOutputXML_2"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.XMLOutputPath + &quot;ODSCTASERVICETEAM_ESPT_&quot;+ context.TRANSACTIONACCOUNTID+&quot;.xml&quot; "/>
+    <elementParameter field="TABLE" name="ROOT" show="false">
+      <elementValue elementRef="PATH" value="/REQUEST"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="1"/>
+      <elementValue elementRef="PATH" value="/REQUEST/HEADER"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="2"/>
+      <elementValue elementRef="PATH" value="/REQUEST/HEADER/TYPE"/>
+      <elementValue elementRef="COLUMN" value="TYPE"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="3"/>
+      <elementValue elementRef="PATH" value="/REQUEST/HEADER/MESSAGEID"/>
+      <elementValue elementRef="COLUMN" value="MESSAGEID"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="4"/>
+      <elementValue elementRef="PATH" value="/REQUEST/HEADER/ACTION"/>
+      <elementValue elementRef="COLUMN" value="ACTION"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="5"/>
+      <elementValue elementRef="PATH" value="/REQUEST/HEADER/SUBTYPE"/>
+      <elementValue elementRef="COLUMN" value="SUBTYPE"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="6"/>
+      <elementValue elementRef="PATH" value="/REQUEST/HEADER/AUDITID"/>
+      <elementValue elementRef="COLUMN" value="AUDITID"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="7"/>
+      <elementValue elementRef="PATH" value="/REQUEST/HEADER/ISCOMPREHENSIVE"/>
+      <elementValue elementRef="COLUMN" value="ISCOMPREHENSIVE"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="8"/>
+      <elementValue elementRef="PATH" value="/REQUEST/DATA"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="9"/>
+      <elementValue elementRef="PATH" value="/REQUEST/DATA/SOURCETIME"/>
+      <elementValue elementRef="COLUMN" value="SOURCETIME"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="10"/>
+      <elementValue elementRef="PATH" value="/REQUEST/DATA/SOURCECOUNTRYCODE"/>
+      <elementValue elementRef="COLUMN" value="SOURCECOUNTRYCODE"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="11"/>
+      <elementValue elementRef="PATH" value="/REQUEST/DATA/SOURCESYSTEMCODE"/>
+      <elementValue elementRef="COLUMN" value="SOURCESYSTEMCODE"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="12"/>
+      <elementValue elementRef="PATH" value="/REQUEST/DATA/TRANSACTIONACCOUNTID"/>
+      <elementValue elementRef="COLUMN" value="TRANSACTIONACCOUNTID"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="13"/>
+      <elementValue elementRef="PATH" value="/REQUEST/DATA/SERVICETEAMLIST"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="14"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false">
+      <elementValue elementRef="PATH" value="/REQUEST/DATA/SERVICETEAMLIST/XMLWRAPPERTOREPLACE"/>
+      <elementValue elementRef="COLUMN" value="SERVICETEAMLIST"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="15"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="MERGE" value="false"/>
+    <elementParameter field="CHECK" name="PRETTY_COMPACT" value="false"/>
+    <elementParameter field="CHECK" name="FILE_VALID" value="false"/>
+    <elementParameter field="RADIO" name="DTD_VALID" show="false" value="true"/>
+    <elementParameter field="TEXT" name="DTD_NAME" show="false" value="&quot;Root&quot;"/>
+    <elementParameter field="TEXT" name="DTD_SYSTEMID" show="false" value="&quot;Talend.dtd&quot;"/>
+    <elementParameter field="RADIO" name="XSL_VALID" show="false" value="false"/>
+    <elementParameter field="TEXT" name="XSL_TYPE" show="false" value="&quot;text/xsl&quot;"/>
+    <elementParameter field="TEXT" name="XSL_HREF" show="false" value="&quot;Talend.xsl&quot;"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM" value="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="CREATE_EMPTY_ELEMENT" value="false"/>
+    <elementParameter field="CHECK" name="ADD_EMPTY_ATTRIBUTE" value="false"/>
+    <elementParameter field="CHECK" name="ADD_UNMAPPED_ATTRIBUTE" value="false"/>
+    <elementParameter field="CHECK" name="ADD_DOCUMENT_AS_NODE" value="false"/>
+    <elementParameter field="CHECK" name="OUTPUT_AS_XSD" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="XMLNODE_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="CLIENTSERVICETEAMTRANSACTIONACCOUNT"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CLIENTSERVICETEAM-Org" name="tAdvancedFileOutputXML_2">
+      <column comment="" key="false" length="-1" name="DoneMandatory" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICETEAMLIST" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="TYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="MESSAGEID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ACTION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SUBTYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="AUDITID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ISCOMPREHENSIVE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SOURCETIME" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SOURCECOUNTRYCODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SOURCESYSTEMCODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="TRANSACTIONACCOUNTID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_6" offsetLabelX="0" offsetLabelY="0" source="tDBInput_6" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="ClientAccountPrimaryServicer" lineStyle="0" metaname="ClientAccountPrimaryServicer" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tJavaRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ClientAccountPrimaryServicer"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tAdvancedFileOutputXML_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_6"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cf0d53c2-2b85-401f-902b-0ef5d6ce77e9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cP53QiWgUMgwgetxKqZzy7UqD9h/pj/qAs7McWqUvCZTiz6khFwAkQ4DysmtraAZyFS33b43Omq6
+tpRCa4u53Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9324a1e7-6943-4c08-9969-ba5da84a9b72"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>g1GlhrBU/fwwFvVCi+aSSYbcEdA7bep5Ft0mTJQ6kNvGWCogBWQixI1lUVlMYS6c9ukgu973dBm6
+/ilQ3NCC5g==</DigestValue></Reference></SignedInfo><SignatureValue>FLh8/2hAt5v5wciGcUQ843V5W1MoQXKFGyp31niNhH3j2+xvNLUVCObwRIGaNzYUCMF9XzBo8niR
+UnsnIOe8aKkJbyVBr9O4A7o3IvFo1tDogtSbjsv7F2rIJzmRAuGouQ0EfKf2VIWYCd4fb25Uqwh8
+hqZlCc4QqOroNnpbKZABBpDAP2cvezhKwdwY1Z91hi0LCTlmEeiHFqoJKdTbjOqHcIUT4qbBGCrd
+Eetfe0AlZkz9BxfD9t94tZkrEQkDk1seIovrlvLu6NagjaGNx2l3787VXuu2YelN/+p+u0Xe2aZN
+jp3pe/2wln5ZTdullpuJgfodz0TGGgnptdRNDA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9324a1e7-6943-4c08-9969-ba5da84a9b72" Target="#_cf0d53c2-2b85-401f-902b-0ef5d6ce77e9"><Timestamp>2023-08-08 15:13:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
